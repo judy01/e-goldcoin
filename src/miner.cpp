@@ -363,8 +363,8 @@ CBlock* CreateNewBlock(CWallet* pwallet, bool fProofOfStake, int64_t* pFees)
         if (fDebug && GetBoolArg("-printpriority"))
             printf("CreateNewBlock(): total size %"PRIu64"\n", nBlockSize);
 
-        if (!fProofOfStake) //todo: find out if ok to comment out?
-            //pblock->vtx[0].vout[0].nValue = GetProofOfWorkReward(pindex->nHeight, nFees);
+        if (!fProofOfStake)
+            pblock->vtx[0].vout[0].nValue = GetProofOfWorkReward(nFees);
 
         if (pFees)
             *pFees = nFees;
@@ -450,7 +450,7 @@ void FormatHashBuffers(CBlock* pblock, char* pmidstate, char* pdata, char* phash
 bool CheckWork(CBlock* pblock, CWallet& wallet, CReserveKey& reservekey)
 {
     uint256 hashBlock = pblock->GetHash();
-    uint256 hashProof = pblock->GetPoWHash();
+    uint256 hashProof = pblock->GetHash();
     uint256 hashTarget = CBigNum().SetCompact(pblock->nBits).getuint256();
 
     if(!pblock->IsProofOfWork())
@@ -529,7 +529,7 @@ void StakeMiner(CWallet *pwallet)
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
 
     // Make this thread recognisable as the mining thread
-    RenameThread("egold-miner");
+    RenameThread("E-Gold-miner");
 
     bool fTryToSync = true;
 
