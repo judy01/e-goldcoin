@@ -40,11 +40,12 @@ CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimitV2(~uint256(0) >> 48);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nStakeMinAge = 8 * 60 * 60; // 8 hours
-unsigned int nStakeMaxAge = -1; // unlimited
+unsigned int nStakeMinAge = 60 * 60 * 24 * 1;	// minimum age for coin age: 1d
+unsigned int nStakeMaxAge = 60 * 60 * 24 * 100;	// stake age of full weight: 100d
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
+unsigned int nStakeTargetSpacing = 30; // 60 sec block spacing
 
-int nCoinbaseMaturity = 500;
+int nCoinbaseMaturity = 30;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
 
@@ -67,7 +68,7 @@ map<uint256, set<uint256> > mapOrphanTransactionsByPrev;
 // Constant stuff for coinbase transactions we create:
 CScript COINBASE_FLAGS;
 
-const string strMessageMagic = "BlackCoin Signed Message:\n";
+const string strMessageMagic = "E-Gold Signed Message:\n";
 
 // Settings
 int64_t nTransactionFee = MIN_TX_FEE;
@@ -979,28 +980,49 @@ static CBigNum GetProofOfStakeLimit(int nHeight)
 }
 
 // miner's coin base reward
-int64_t GetProofOfWorkReward(int64_t nFees)
+int64_t GetProofOfWorkReward(int nHeight, int64_t nFees, uint256 prevHash)
 {
-    int64_t nSubsidy = 10000 * COIN;
+    int64_t nSubsidy = 0.0 * COIN;
 
-    if (fDebug && GetBoolArg("-printcreation"))
-        printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
+    if(nHeight == 1)
+    {
+        nSubsidy = 73500000 * COIN;	// 100 millions coins, that all pow coins
+        return nSubsidy + nFees;
+    }
 
     return nSubsidy + nFees;
 }
 
-// miner's coin stake reward based on coin age spent (coin-days)
-int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
+
+// miner's coin stake reward based on nBits and coin age spent (coin-days)
+// simple algorithm, not depend on the diff
+const int YEARLY_BLOCKCOUNT = 1051200;	// 365 * 1440 * 2 //60 ->30
+int64_t GetProofOfStakeReward(int64_t nCoinAge, unsigned int nBits, unsigned int nTime, int nHeight)
 {
-    int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+    int64_t nRewardCoinYear;
+    nRewardCoinYear = MAX_MINT_PROOF_OF_STAKE;
 
-    if (fDebug && GetBoolArg("-printcreation"))
-        printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
+    if (nHeight <= 4*YEARLY_BLOCKCOUNT)
+    {
+        nRewardCoinYear = 1.75 * MAX_MINT_PROOF_OF_STAKE;
+    }
+    else
+    {
+        nRewardCoinYear = 1.75 * (pow(0.475,((nHeight-1)/4*YEARLY_BLOCKCOUNT))) * MAX_MINT_PROOF_OF_STAKE;
+    }
 
-    return nSubsidy + nFees;
+    nRewardCoinYear = max(nRewardCoinYear,(int64_t)(MAX_MINT_PROOF_OF_STAKE * 0.01));
+
+    int64_t nSubsidy = nCoinAge * nRewardCoinYear / 365;
+
+    return nSubsidy; //todo: why not return nSubsidy + nFees; ??
 }
 
-static const int64_t nTargetTimespan = 16 * 60;  // 16 mins
+
+static const int64_t nTargetTimespan = 30 * 60; // 30 mins
+static const int64_t nTargetSpacingWorkMax = 12 * nStakeTargetSpacing;
+
+
 
 //
 // maximum nBits value could possible be required nTime after
@@ -1020,6 +1042,8 @@ unsigned int ComputeMaxBits(CBigNum bnTargetLimit, unsigned int nBase, int64_t n
         bnResult = bnTargetLimit;
     return bnResult.GetCompact();
 }
+
+
 
 //
 // minimum amount of work that could possibly be required nTime after
@@ -2005,7 +2029,7 @@ bool CBlock::CheckBlock(bool fCheckPOW, bool fCheckMerkleRoot, bool fCheckSig) c
         return DoS(100, error("CheckBlock() : size limits failed"));
 
     // Check proof of work matches claimed amount
-    if (fCheckPOW && IsProofOfWork() && !CheckProofOfWork(GetPoWHash(), nBits))
+    if (fCheckPOW && IsProofOfWork() && !CheckProofOfWork(GetPoWHash(), nBits)) //todo:gethash?
         return DoS(50, error("CheckBlock() : proof of work failed"));
 
     // First transaction must be coinbase, the rest must not be
@@ -2418,7 +2442,7 @@ bool CheckDiskSpace(uint64_t nAdditionalBytes)
         string strMessage = _("Warning: Disk space is low!");
         strMiscWarning = strMessage;
         printf("*** %s\n", strMessage.c_str());
-        uiInterface.ThreadSafeMessageBox(strMessage, "BlackCoin", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
+        uiInterface.ThreadSafeMessageBox(strMessage, "E-Gold", CClientUIInterface::OK | CClientUIInterface::ICON_EXCLAMATION | CClientUIInterface::MODAL);
         StartShutdown();
         return false;
     }
@@ -2535,6 +2559,7 @@ bool LoadBlockIndex(bool fAllowNew)
         txNew.vout.resize(1);
         txNew.vin[0].scriptSig = CScript() << 486604799 << CBigNum(9999) << vector<unsigned char>((const unsigned char*)pszTimestamp, (const unsigned char*)pszTimestamp + strlen(pszTimestamp));
         txNew.vout[0].SetEmpty();
+
         CBlock block;
         block.vtx.push_back(txNew);
         block.hashPrevBlock = 0;
@@ -2545,7 +2570,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nNonce   = 13577538;
 
         //// debug print
-        //assert(block.hashMerkleRoot == uint256("0x12630d16a97f24b287c8c2594dda5fb98c9e6c70fc61d44191931ea2aa08dc90"));
+        assert(block.hashMerkleRoot == uint256("0x353e1297d424b2f4860bed9f46e5f4271a173ebc5faa3c17a3b9a067d530d213"));
         block.print();
         assert(block.GetHash() == (!fTestNet ? hashGenesisBlock : hashGenesisBlockTestNet));
         assert(block.CheckBlock());
