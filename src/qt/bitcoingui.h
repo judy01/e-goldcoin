@@ -101,7 +101,11 @@ private:
     TransactionView *transactionView;
     RPCConsole *rpcConsole;
 
-    QMovie *syncIconMovie;
+    /** Keep track of previous number of blocks, to detect progress */
+    int prevBlocks;
+    int spinnerFrame;
+
+    //QMovie *syncIconMovie;
 
     uint64_t nWeight;
 
