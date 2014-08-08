@@ -5,12 +5,12 @@ http://www.egoldcoin.com
 What is E-goldCoin?
 ----------------
 E-goldCoin is a lite version of peercoin using a proof-of-stake algorithm.
- - 30 seconds block targets
- - subsidy halves in 4.2M blocks (~4 years)
+ - 60 seconds block targets
+ - 1% Interest per year
  - ~84 million total coins
 
 For more information, as well as an immediately useable, binary version of
-the E-goldcoin client sofware, see http://www.egoldcoin.com.
+the E-goldcoin client software, see http://www.egoldcoin.com.
 
 RPCPort: 51453
 RPCPort Testnet: 41453

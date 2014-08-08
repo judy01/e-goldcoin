@@ -978,7 +978,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 {
     int64_t nSubsidy = 0;
     if(pindexBest->nHeight <= nLastPowBlock)
-        nSubsidy = 73500000 * COIN; // Block 1 = 75 mio coins
+        nSubsidy = 735 000 * COIN; // 100 x 735.000 = 75 mio coins
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
