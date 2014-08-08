@@ -46,6 +46,8 @@ unsigned int nStakeMaxAge = 60 * 60 * 24 * 100;	// stake age of full weight: 100
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 int nLastPowBlock = LAST_POW_BLOCK;
 
+
+
 int nCoinbaseMaturity = 30;
 CBlockIndex* pindexGenesisBlock = NULL;
 int nBestHeight = -1;
@@ -977,8 +979,11 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
     int64_t nSubsidy = 0;
-    if(pindexBest->nHeight <= nLastPowBlock)
+
+    if(pindexBest->nHeight <= (nLastPowBlock - 400))
         nSubsidy = 735000 * COIN; // 100 x 735.000 = 75 mio coins
+    else if (pindexBest->nHeight <= nLastPowBlock)
+        nSubsidy = 0 * COIN; // Allow more empty PoWBlocks to get staking going
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
