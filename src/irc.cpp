@@ -306,10 +306,10 @@ void ThreadIRCSeed2(void* parg)
             Send(hSocket, "WHO #E-GoldTESTNET\r");
         } else {
             // randomly join #E-Goldcoin00-#E-Goldcoin05
-            int channel_number = GetRandInt(5);
+            //int channel_number = GetRandInt(5);
 
             // Channel number is always 0 for initial release
-            int channel_number = 0; //todo: comment out when enough users are in the network
+            int channel_number = 0; //todo: comment out when enough users are in the network, enable random
             Send(hSocket, strprintf("JOIN #E-Goldcoin%02d\r", channel_number).c_str());
             Send(hSocket, strprintf("WHO #E-Goldcoin%02d\r", channel_number).c_str());
         }
