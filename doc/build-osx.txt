@@ -49,6 +49,6 @@ make -f makefile.osx
 Run:
   ./egdd --help  # for a list of command-line options.
 Run
-  ./egdd -daemon # to start the blackcoin daemon.
+  ./egdd -daemon # to start the E-Gold daemon.
 Run
   ./egdd help # When the daemon is running, to get a list of RPC commands
