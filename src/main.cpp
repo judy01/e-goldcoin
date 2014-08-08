@@ -41,7 +41,7 @@ CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 
 //todo: Why limit the stake max age? -1 is unlimited.
 unsigned int nTargetSpacing = 1 * 60; // 1 minute
-unsigned int nStakeMinAge = 8 * 60 * 60; // 8 hours
+unsigned int nStakeMinAge = 1 * 60 * 60; // 8 hours
 unsigned int nStakeMaxAge = 60 * 60 * 24 * 100;	// stake age of full weight: 100d
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 int nLastPowBlock = LAST_POW_BLOCK;
