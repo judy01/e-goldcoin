@@ -302,16 +302,16 @@ void ThreadIRCSeed2(void* parg)
         }
 
         if (fTestNet) {
-            Send(hSocket, "JOIN #E-GoldTEST\r");
-            Send(hSocket, "WHO #E-GoldTEST\r");
+            Send(hSocket, "JOIN #E-GoldTESTNET\r");
+            Send(hSocket, "WHO #E-GoldTESTNET\r");
         } else {
             // randomly join #E-Gold00-#E-Gold05
             int channel_number = GetRandInt(5);
 
             // Channel number is always 0 for initial release
-            //int channel_number = 0;
-            Send(hSocket, strprintf("JOIN #E-Gold%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #E-Gold%02d\r", channel_number).c_str());
+            int channel_number = 0; //todo: comment out when enough users are in the network
+            Send(hSocket, strprintf("JOIN #E-Goldcoin%02d\r", channel_number).c_str());
+            Send(hSocket, strprintf("WHO #E-Goldcoin%02d\r", channel_number).c_str());
         }
 
         int64_t nStart = GetTime();
