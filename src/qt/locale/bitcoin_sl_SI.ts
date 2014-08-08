@@ -3,19 +3,19 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BlackCoin</source>
-        <translation>O BlackCoin</translation>
+        <source>About E-Gold</source>
+        <translation>O E-Gold</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;BlackCoin&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;BlackCoin&lt;/b&gt; verzija</translation>
+        <source>&lt;b&gt;E-Gold&lt;/b&gt; version</source>
+        <translation>&lt;b&gt;E-Gold&lt;/b&gt; verzija</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The BlackCoin developers</source>
+Copyright © 2014 The E-Gold developers</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -63,8 +63,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your BlackCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>To so vaši BlackCoin naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
+        <source>These are your E-Gold addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>To so vaši E-Gold naslovi za prejemanje plačil. Priporočeno je da vsakemu pošiljatelju namenite drugega in tako dobite večji pregled nad svojimi nakazili.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -78,8 +78,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a BlackCoin address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva BlackCoin naslova</translation>
+        <source>Sign a message to prove you own a E-Gold address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva E-Gold naslova</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -93,8 +93,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified BlackCoin address</source>
-        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim BlackCoin naslovom</translation>
+        <source>Verify a message to ensure it was signed with a specified E-Gold address</source>
+        <translation>Potrdi sporočilo, da zagotovite, da je bilo podpisano z izbranim E-Gold naslovom</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -261,8 +261,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-58"/>
-        <source>BlackCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>BlackCoin se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
+        <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>E-Gold se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -375,8 +375,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about BlackCoin</source>
-        <translation>Pokaži informacije o BlackCoin</translation>
+        <source>Show information about E-Gold</source>
+        <translation>Pokaži informacije o E-Gold</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -425,13 +425,13 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a BlackCoin address</source>
-        <translation>Pošlji kovance na BlackCoin naslov</translation>
+        <source>Send coins to a E-Gold address</source>
+        <translation>Pošlji kovance na E-Gold naslov</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for BlackCoin</source>
-        <translation>Spremeni nastavitve za Blackcoin</translation>
+        <source>Modify configuration options for E-Gold</source>
+        <translation>Spremeni nastavitve za E-Gold</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -470,8 +470,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="-200"/>
-        <source>BlackCoin</source>
-        <translation>BlackCoin</translation>
+        <source>E-Gold</source>
+        <translation>E-Gold</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -480,8 +480,8 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About BlackCoin</source>
-        <translation>&amp;O BlackCoin</translation>
+        <source>&amp;About E-Gold</source>
+        <translation>&amp;O E-Gold</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -537,13 +537,13 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>BlackCoin client</source>
-        <translation>BlackCoin program</translation>
+        <source>E-Gold client</source>
+        <translation>E-Gold program</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to BlackCoin network</source>
-        <translation><numerusform>%n aktivne povezave na BlackCoin omrežje</numerusform><numerusform>%n aktivnih povezav na BlackCoin omrežje</numerusform><numerusform>%n aktivnih povezav na BlackCoin omrežje</numerusform><numerusform>%n aktivnih povezav na BlackCoin omrežje</numerusform></translation>
+        <source>%n active connection(s) to E-Gold network</source>
+        <translation><numerusform>%n aktivne povezave na E-Gold omrežje</numerusform><numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform><numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform><numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -657,8 +657,8 @@ Naslov: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid BlackCoin address or malformed URI parameters.</source>
-        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega BlackCoin naslova ali slabih parametrov URI.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid E-Gold address or malformed URI parameters.</source>
+        <translation>URI ne more biti razčlenjen! To se lahko zgodi zaradi neveljavnega E-Gold naslova ali slabih parametrov URI.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -717,8 +717,8 @@ Naslov: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. BlackCoin can no longer continue safely and will quit.</source>
-        <translation>Prišlo je do usodne napake. Program BlackCoin se ne more več varno nadaljevati in se bo zato zaprl. </translation>
+        <source>A fatal error occurred. E-Gold can no longer continue safely and will quit.</source>
+        <translation>Prišlo je do usodne napake. Program E-Gold se ne more več varno nadaljevati in se bo zato zaprl. </translation>
     </message>
 </context>
 <context>
@@ -1051,8 +1051,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid BlackCoin address.</source>
-        <translation>Vneseni naslov &quot;%1&quot; ni veljaven BlackCoin naslov.</translation>
+        <source>The entered address &quot;%1&quot; is not a valid E-Gold address.</source>
+        <translation>Vneseni naslov &quot;%1&quot; ni veljaven E-Gold naslov.</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1070,8 +1070,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>BlackCoin-Qt</source>
-        <translation>BlackCoin-Qt</translation>
+        <source>E-Gold-Qt</source>
+        <translation>E-Gold-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1143,13 +1143,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start BlackCoin after logging in to the system.</source>
-        <translation>Avtomatično zaženi BlackCoin ob zagonu sistema.</translation>
+        <source>Automatically start E-Gold after logging in to the system.</source>
+        <translation>Avtomatično zaženi E-Gold ob zagonu sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start BlackCoin on system login</source>
-        <translation>&amp;Zaženi BlackCoin ob prijavi v sistem</translation>
+        <source>&amp;Start E-Gold on system login</source>
+        <translation>&amp;Zaženi E-Gold ob prijavi v sistem</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1168,8 +1168,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the BlackCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Avtomatično odpri vrata na routerju za BlackCoin program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
+        <source>Automatically open the E-Gold client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Avtomatično odpri vrata na routerju za E-Gold program. To deluje le če vaš router podpira UPnP in je ta omogočen. </translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1178,8 +1178,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the BlackCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Poveži se na BlackCoin omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
+        <source>Connect to the E-Gold network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Poveži se na E-Gold omrežje skozi SOCKS proxy (npr. ko se povezujete prek Tora)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1253,8 +1253,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting BlackCoin.</source>
-        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu BlackCoin aplikacije. </translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting E-Gold.</source>
+        <translation>Tu lahko nastavite jezik uporabniškega vmesnika. Nastavitve bodo pričele delovati ob ponovnem zagonu E-Gold aplikacije. </translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1268,8 +1268,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show BlackCoin addresses in the transaction list or not.</source>
-        <translation>Izbira prikaza BlackCoin naslovov v seznamu transakcij.</translation>
+        <source>Whether to show E-Gold addresses in the transaction list or not.</source>
+        <translation>Izbira prikaza E-Gold naslovov v seznamu transakcij.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1315,8 +1315,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting BlackCoin.</source>
-        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu BlackCoin aplikacije</translation>
+        <source>This setting will take effect after restarting E-Gold.</source>
+        <translation>Ta nastavitev bo pričela delovati ob ponovnem zagonu E-Gold aplikacije</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1334,8 +1334,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BlackCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z BlackCoin omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the E-Gold network after a connection is established, but this process has not completed yet.</source>
+        <translation>Prikazane informacije so morda zastarele. Vaša denarnica se avtomatično sinhronizira z E-Gold omrežjem, ko je vzpostavljena povezava, toda ta proces še ni bil zaključen.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1550,8 +1550,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the BlackCoin-Qt help message to get a list with possible BlackCoin command-line options.</source>
-        <translation>Prikaži BlackCoin-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice BlackCoin aplikacije</translation>
+        <source>Show the E-Gold-Qt help message to get a list with possible E-Gold command-line options.</source>
+        <translation>Prikaži E-Gold-Qt sporočilo za pomoč , ki prikaže vse možnosti ukazne vrstice E-Gold aplikacije</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1570,13 +1570,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="-104"/>
-        <source>BlackCoin - Debug window</source>
-        <translation>BlackCoin - okno za odpravljanje napak</translation>
+        <source>E-Gold - Debug window</source>
+        <translation>E-Gold - okno za odpravljanje napak</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>BlackCoin Core</source>
-        <translation>BlackCoin jedro</translation>
+        <source>E-Gold Core</source>
+        <translation>E-Gold jedro</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1585,8 +1585,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the BlackCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Odpri BlackCoin datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
+        <source>Open the E-Gold debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Odpri E-Gold datoteko zapisov odpravljanja napak iz trenutnega direktorija podatkov. Če so datoteke zapisov velike, to lahko traja nekaj sekund.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1595,8 +1595,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the BlackCoin RPC console.</source>
-        <translation>Dobrodošli v BlackCoin RPC konzoli.</translation>
+        <source>Welcome to the E-Gold RPC console.</source>
+        <translation>Dobrodošli v E-Gold RPC konzoli.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1754,8 +1754,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite BlackCoin naslov (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite E-Gold naslov (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1854,8 +1854,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid BlackCoin address</source>
-        <translation>OPOZORILO: Neveljaven BlackCoin naslov</translation>
+        <source>WARNING: Invalid E-Gold address</source>
+        <translation>OPOZORILO: Neveljaven E-Gold naslov</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1928,8 +1928,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite BlackCoin naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite E-Gold naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1989,8 +1989,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this BlackCoin address</source>
-        <translation>Podpišite sporočilo, kot dokazilo lastništva BlackCoin naslova</translation>
+        <source>Sign the message to prove you own this E-Gold address</source>
+        <translation>Podpišite sporočilo, kot dokazilo lastništva E-Gold naslova</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2021,8 +2021,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified BlackCoin address</source>
-        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim BlackCoin naslovom</translation>
+        <source>Verify the message to ensure it was signed with the specified E-Gold address</source>
+        <translation>Potrdite sporočilo, da zagotovite, da je bilo podpisano z izbranim E-Gold naslovom</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2032,8 +2032,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite BlackCoin naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Vnesite E-Gold naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2042,8 +2042,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter BlackCoin signature</source>
-        <translation>Vnesite BlackCoin podpis</translation>
+        <source>Enter E-Gold signature</source>
+        <translation>Vnesite E-Gold podpis</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2613,8 +2613,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>BlackCoin version</source>
-        <translation>BlackCoin različica</translation>
+        <source>E-Gold version</source>
+        <translation>E-Gold različica</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2623,7 +2623,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or blackcoind</source>
+        <source>Send command to -server or E-Goldd</source>
         <translation>Pošlji ukaz na -server ali blackoind</translation>
     </message>
     <message>
@@ -2643,13 +2643,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: blackcoin.conf)</source>
-        <translation>Določi konfiguracijsko datoteko (privzeto: blackcoin.conf)</translation>
+        <source>Specify configuration file (default: E-Gold.conf)</source>
+        <translation>Določi konfiguracijsko datoteko (privzeto: E-Gold.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: blackcoind.pid)</source>
-        <translation>Določi pid datoteko (privzeto: blackcoin.pid)</translation>
+        <source>Specify pid file (default: E-Goldd.pid)</source>
+        <translation>Določi pid datoteko (privzeto: E-Gold.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2798,8 +2798,8 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BlackCoin will not work properly.</source>
-        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno BlackCoin ne bo deloval.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong E-Gold will not work properly.</source>
+        <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno E-Gold ne bo deloval.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2988,24 +2988,24 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=blackcoinrpc
+rpcuser=E-Goldrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
 </source>
         <translation>%s, nastaviti morate rpcgeslo v konfiguracijski datoteki: 
  %s
 Priporočeno je, da uporabite naslednje naključno geslo:
-rpcuser=blackcoinrpc
+rpcuser=E-Goldrpc
 rpcpassword=%s
 (tega gesla si vam ni potrebno zapomniti)
 Uporabniško ime in geslo NE SMETA biti ista. 
 Če datoteka ne obstaja, jo ustvarite z lastniškimi dovoljenji za datoteke. 
 Prav tako je priporočeno, da nastavite alernotify, tkako da vas opozori na probleme;
-na primer: alertnotify=echo %%s | mail -s &quot;BlackCoin Alarm&quot; admin@foo.com
+na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3130,13 +3130,13 @@ na primer: alertnotify=echo %%s | mail -s &quot;BlackCoin Alarm&quot; admin@foo.
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  BlackCoin is probably already running.</source>
-        <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija BlackCoin je verjetno že zagnana.</translation>
+        <source>Cannot obtain a lock on data directory %s.  E-Gold is probably already running.</source>
+        <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija E-Gold je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>BlackCoin</source>
-        <translation>BlackCoin</translation>
+        <source>E-Gold</source>
+        <translation>E-Gold</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3170,13 +3170,13 @@ na primer: alertnotify=echo %%s | mail -s &quot;BlackCoin Alarm&quot; admin@foo.
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of BlackCoin</source>
-        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo BlackCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of E-Gold</source>
+        <translation>Napaka pri nalaganju wallet.dat: denarnica zahteva novejšo verzijo E-Gold</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart BlackCoin to complete</source>
-        <translation>Denarnica mora biti prepisana: ponovno odprite BlackCoin za dokončanje</translation>
+        <source>Wallet needed to be rewritten: restart E-Gold to complete</source>
+        <translation>Denarnica mora biti prepisana: ponovno odprite E-Gold za dokončanje</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3245,8 +3245,8 @@ na primer: alertnotify=echo %%s | mail -s &quot;BlackCoin Alarm&quot; admin@foo.
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. BlackCoin is probably already running.</source>
-        <translation>Navezava v %s  na tem računalniku ni mogoča BlackCoin aplikacija je verjetno že zagnana.</translation>
+        <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
+        <translation>Navezava v %s  na tem računalniku ni mogoča E-Gold aplikacija je verjetno že zagnana.</translation>
     </message>
     <message>
         <location line="-97"/>

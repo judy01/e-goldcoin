@@ -39,10 +39,10 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 32);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 32);
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 
-
+//todo: Why limit the stake max age? -1 is unlimited.
 unsigned int nTargetSpacing = 1 * 60; // 1 minute
-unsigned int nStakeMinAge = 1 * 60 * 60; // 8 hours
-unsigned int nStakeMaxAge = -1; // unlimited
+unsigned int nStakeMinAge = 60 * 60 * 24 * 1; // 1 day
+unsigned int nStakeMaxAge = 60 * 60 * 24 * 100;	// stake age of full weight: 100d
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 int nLastPowBlock = LAST_POW_BLOCK;
 
@@ -976,7 +976,9 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 // miner's coin base reward
 int64_t GetProofOfWorkReward(int64_t nFees)
 {
-    int64_t nSubsidy = 10000 * COIN;
+    int64_t nSubsidy = 0;
+    if(pindexBest->nHeight <= nLastPowBlock)
+        nSubsidy = 73500000 * COIN; // Block 1 = 75 mio coins
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
@@ -2482,7 +2484,7 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nTime    = 1407444851;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
         block.nNonce   = !fTestNet ? 3188021359 : 216178;
-        /*
+
         if(block.GetHash() != (fTestNet ? hashGenesisBlockTestNet : hashGenesisBlock))
         {
             uint256 target = CBigNum().SetCompact(block.nBits).getuint256();
@@ -2492,14 +2494,11 @@ bool LoadBlockIndex(bool fAllowNew)
             }
             block.print();
         }
-        */
+
 
         // debug print
 
         uint256 hash = block.GetHash();
-        printf("%s\n", hash.ToString().c_str());
-        printf("%s\n", hashGenesisBlock.ToString().c_str());
-        printf("%s\n", block.hashMerkleRoot.ToString().c_str());
         block.print();
         assert(block.hashMerkleRoot == uint256("0x12f8bf45718a2ddb765981094f27016d518530d927358e5f84eb0d328f36b143"));
 

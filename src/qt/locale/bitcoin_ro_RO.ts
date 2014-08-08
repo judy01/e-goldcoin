@@ -3,22 +3,22 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About BlackCoin</source>
-        <translation>Despre BlackCoin</translation>
+        <source>About E-Gold</source>
+        <translation>Despre E-Gold</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;BlackCoin&lt;/b&gt; version</source>
-        <translation>Versiune &lt;b&gt;BlackCoin&lt;/b&gt;</translation>
+        <source>&lt;b&gt;E-Gold&lt;/b&gt; version</source>
+        <translation>Versiune &lt;b&gt;E-Gold&lt;/b&gt;</translation>
     </message>
     <message>
         <location line="+41"/>
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The BlackCoin developers</source>
+Copyright © 2014 The E-Gold developers</source>
         <translation>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
-Copyright © 2014 The BlackCoin developers</translation>
+Copyright © 2014 The E-Gold developers</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -65,8 +65,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-46"/>
-        <source>These are your BlackCoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>Acestea sunt adresele BlackCoin pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
+        <source>These are your E-Gold addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <translation>Acestea sunt adresele E-Gold pentru a primi plăți. Poate doriți sa dați o adresa noua fiecarui expeditor pentru a putea ține evidența la cine efectuează plăti.</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -80,8 +80,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a BlackCoin address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă BlackCoin</translation>
+        <source>Sign a message to prove you own a E-Gold address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă E-Gold</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -95,8 +95,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-14"/>
-        <source>Verify a message to ensure it was signed with a specified BlackCoin address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă BlackCoin</translation>
+        <source>Verify a message to ensure it was signed with a specified E-Gold address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă E-Gold</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -263,8 +263,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-58"/>
-        <source>BlackCoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>BlackCoin se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
+        <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
+        <translation>E-Gold se va inchide pentru a termina procesul de encriptie. Amintiți-vă, criptarea portofelul dumneavoastră nu poate proteja pe deplin monedele dvs. de a fi furate de  infectarea cu malware a computerului.</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -377,8 +377,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about BlackCoin</source>
-        <translation>Arată informații despre BlackCoin</translation>
+        <source>Show information about E-Gold</source>
+        <translation>Arată informații despre E-Gold</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -427,13 +427,13 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-62"/>
-        <source>Send coins to a BlackCoin address</source>
-        <translation>Trimite monede către o adresă BlackCoin</translation>
+        <source>Send coins to a E-Gold address</source>
+        <translation>Trimite monede către o adresă E-Gold</translation>
     </message>
     <message>
         <location line="+45"/>
-        <source>Modify configuration options for BlackCoin</source>
-        <translation>Modifică opțiuni de configurare pentru BlackCoin</translation>
+        <source>Modify configuration options for E-Gold</source>
+        <translation>Modifică opțiuni de configurare pentru E-Gold</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -472,8 +472,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="-200"/>
-        <source>BlackCoin</source>
-        <translation>BlackCoin</translation>
+        <source>E-Gold</source>
+        <translation>E-Gold</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -482,8 +482,8 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     </message>
     <message>
         <location line="+178"/>
-        <source>&amp;About BlackCoin</source>
-        <translation>Despre BlackCoin</translation>
+        <source>&amp;About E-Gold</source>
+        <translation>Despre E-Gold</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -539,13 +539,13 @@ Acest produs include programe dezvoltate de către OpenSSL Project pentru a fi f
     <message>
         <location line="+0"/>
         <location line="+60"/>
-        <source>BlackCoin client</source>
-        <translation>Clientul BlackCoin</translation>
+        <source>E-Gold client</source>
+        <translation>Clientul E-Gold</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
-        <source>%n active connection(s) to BlackCoin network</source>
-        <translation><numerusform>%n conexiune activă la reteaua BlackCoin</numerusform><numerusform>%n conexiuni active la reteaua BlackCoin</numerusform><numerusform>%n conexiuni active la reteaua BlackCoin</numerusform></translation>
+        <source>%n active connection(s) to E-Gold network</source>
+        <translation><numerusform>%n conexiune activă la reteaua E-Gold</numerusform><numerusform>%n conexiuni active la reteaua E-Gold</numerusform><numerusform>%n conexiuni active la reteaua E-Gold</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -659,8 +659,8 @@ Adresa: %4
     <message>
         <location line="-15"/>
         <location line="+15"/>
-        <source>URI can not be parsed! This can be caused by an invalid BlackCoin address or malformed URI parameters.</source>
-        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa BlackCoin invalidă sau parametrii URI malformați.</translation>
+        <source>URI can not be parsed! This can be caused by an invalid E-Gold address or malformed URI parameters.</source>
+        <translation>URI nu poate fi parsatt! Cauza poate fi o adresa E-Gold invalidă sau parametrii URI malformați.</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -719,8 +719,8 @@ Adresa: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
-        <source>A fatal error occurred. BlackCoin can no longer continue safely and will quit.</source>
-        <translation>A apărut o eroare fatală. BlackCoin nu mai poate continua în condiții de siguranță și va iesi.</translation>
+        <source>A fatal error occurred. E-Gold can no longer continue safely and will quit.</source>
+        <translation>A apărut o eroare fatală. E-Gold nu mai poate continua în condiții de siguranță și va iesi.</translation>
     </message>
 </context>
 <context>
@@ -1053,8 +1053,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid BlackCoin address.</source>
-        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă BlackCoin validă</translation>
+        <source>The entered address &quot;%1&quot; is not a valid E-Gold address.</source>
+        <translation>Adresa introdusă &quot;%1&quot; nu este o adresă E-Gold validă</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1072,8 +1072,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
-        <source>BlackCoin-Qt</source>
-        <translation>BlackCoin-Qt</translation>
+        <source>E-Gold-Qt</source>
+        <translation>E-Gold-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1145,13 +1145,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start BlackCoin after logging in to the system.</source>
-        <translation>Pornește BlackCoin imdiat după logarea în sistem</translation>
+        <source>Automatically start E-Gold after logging in to the system.</source>
+        <translation>Pornește E-Gold imdiat după logarea în sistem</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start BlackCoin on system login</source>
-        <translation>$Pornește BlackCoin la logarea în sistem</translation>
+        <source>&amp;Start E-Gold on system login</source>
+        <translation>$Pornește E-Gold la logarea în sistem</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -1170,8 +1170,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the BlackCoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>Deschide automat portul pentru cientul BlackCoin pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
+        <source>Automatically open the E-Gold client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <translation>Deschide automat portul pentru cientul E-Gold pe router. Aces lucru este posibil doara daca routerul suporta UPnP si este activat</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1180,8 +1180,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the BlackCoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>Conecteaza la reteaua BlackCoin prinr-un proxy SOCKS(ex. cand te conectezi prin Tor)</translation>
+        <source>Connect to the E-Gold network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <translation>Conecteaza la reteaua E-Gold prinr-un proxy SOCKS(ex. cand te conectezi prin Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1255,8 +1255,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting BlackCoin.</source>
-        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea BlackCoin.</translation>
+        <source>The user interface language can be set here. This setting will take effect after restarting E-Gold.</source>
+        <translation>Limba interfeței utilizator poate fi setat aici. Această setare va avea efect după repornirea E-Gold.</translation>
     </message>
     <message>
         <location line="+11"/>
@@ -1270,8 +1270,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show BlackCoin addresses in the transaction list or not.</source>
-        <translation>Dacă să arate adrese BlackCoin din lista de tranzacție sau nu.</translation>
+        <source>Whether to show E-Gold addresses in the transaction list or not.</source>
+        <translation>Dacă să arate adrese E-Gold din lista de tranzacție sau nu.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1317,8 +1317,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting BlackCoin.</source>
-        <translation>Aceasta setare va avea efect dupa repornirea BlackCoin.</translation>
+        <source>This setting will take effect after restarting E-Gold.</source>
+        <translation>Aceasta setare va avea efect dupa repornirea E-Gold.</translation>
     </message>
     <message>
         <location line="+29"/>
@@ -1336,8 +1336,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location line="+33"/>
         <location line="+231"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the BlackCoin network after a connection is established, but this process has not completed yet.</source>
-        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua BlackCoin după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the E-Gold network after a connection is established, but this process has not completed yet.</source>
+        <translation>Informatia afisata poate fi depasita.  Portofel se sincronizează automat cu rețeaua E-Gold după ce se stabilește o conexiune, dar acest proces nu s-a finalizat încă.</translation>
     </message>
     <message>
         <location line="-160"/>
@@ -1552,8 +1552,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the BlackCoin-Qt help message to get a list with possible BlackCoin command-line options.</source>
-        <translation>Afișa mesajul de ajutor BlackCoin-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă BlackCoin.</translation>
+        <source>Show the E-Gold-Qt help message to get a list with possible E-Gold command-line options.</source>
+        <translation>Afișa mesajul de ajutor E-Gold-Qt pentru a obține o listă cu posibile opțiuni de linie de comandă E-Gold.</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1572,13 +1572,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>BlackCoin - Debug window</source>
-        <translation>BlackCoin - fereastră depanare</translation>
+        <source>E-Gold - Debug window</source>
+        <translation>E-Gold - fereastră depanare</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>BlackCoin Core</source>
-        <translation>BlackCoin Core</translation>
+        <source>E-Gold Core</source>
+        <translation>E-Gold Core</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1587,8 +1587,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the BlackCoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
-        <translation>Deschideti fisierul de depanare BlackCoin din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
+        <source>Open the E-Gold debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <translation>Deschideti fisierul de depanare E-Gold din folderul curent. Acest lucru poate dura cateva secunde pentru fisiere de log mari.</translation>
     </message>
     <message>
         <location line="+102"/>
@@ -1597,8 +1597,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
-        <source>Welcome to the BlackCoin RPC console.</source>
-        <translation>Bine ati venit la consola BlackCoin RPC.</translation>
+        <source>Welcome to the E-Gold RPC console.</source>
+        <translation>Bine ati venit la consola E-Gold RPC.</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1756,8 +1756,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă BlackCoin(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă E-Gold(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1856,8 +1856,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+251"/>
-        <source>WARNING: Invalid BlackCoin address</source>
-        <translation>Atenție: Adresă BlackCoin invalidă</translation>
+        <source>WARNING: Invalid E-Gold address</source>
+        <translation>Atenție: Adresă E-Gold invalidă</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1930,8 +1930,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă BlackCoin(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă E-Gold(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -1991,8 +1991,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this BlackCoin address</source>
-        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă BlackCoin</translation>
+        <source>Sign the message to prove you own this E-Gold address</source>
+        <translation>Semnează un mesaj pentru a dovedi că dețineti o adresă E-Gold</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2023,8 +2023,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified BlackCoin address</source>
-        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă BlackCoin</translation>
+        <source>Verify the message to ensure it was signed with the specified E-Gold address</source>
+        <translation>Verifică un mesaj pentru a vă asigura că a fost semnat cu o anumită adresă E-Gold</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2034,8 +2034,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a BlackCoin address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduceți o adresă BlackCoin(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introduceți o adresă E-Gold(ex:B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2044,8 +2044,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter BlackCoin signature</source>
-        <translation>Introduceti semnatura BlackCoin</translation>
+        <source>Enter E-Gold signature</source>
+        <translation>Introduceti semnatura E-Gold</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2615,8 +2615,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
-        <source>BlackCoin version</source>
-        <translation>Versiune BlackCoin</translation>
+        <source>E-Gold version</source>
+        <translation>Versiune E-Gold</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2625,8 +2625,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Send command to -server or blackcoind</source>
-        <translation>Trimite comanda catre server sau blackcoind</translation>
+        <source>Send command to -server or E-Goldd</source>
+        <translation>Trimite comanda catre server sau E-Goldd</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2645,13 +2645,13 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Specify configuration file (default: blackcoin.conf)</source>
-        <translation>Specifica fisier de configurare(implicit: blackcoin.conf)</translation>
+        <source>Specify configuration file (default: E-Gold.conf)</source>
+        <translation>Specifica fisier de configurare(implicit: E-Gold.conf)</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Specify pid file (default: blackcoind.pid)</source>
-        <translation>Speficica fisier pid(implicit: blackcoin.pid)</translation>
+        <source>Specify pid file (default: E-Goldd.pid)</source>
+        <translation>Speficica fisier pid(implicit: E-Gold.pid)</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2800,8 +2800,8 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
     </message>
     <message>
         <location line="+61"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong BlackCoin will not work properly.</source>
-        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit BlackCoin nu va functiona corect.</translation>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong E-Gold will not work properly.</source>
+        <translation>Atentie: Va rugam verificati ca timpul si data calculatorului sunt corete. Daca timpul este gresit E-Gold nu va functiona corect.</translation>
     </message>
     <message>
         <location line="-31"/>
@@ -2990,22 +2990,22 @@ Acest lucru înseamnă că o taxă de cel puțin %2 este necesară</translation>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
-rpcuser=blackcoinrpc
+rpcuser=E-Goldrpc
 rpcpassword=%s
 (you do not need to remember this password)
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
 </source>
         <translation>%s, trebuie să configurați o parolă rpc în fișierul de configurare: %s
-Este recomandat să folosiți următoarea parolă generată aleator: rpcuser=blackcoinrpc
+Este recomandat să folosiți următoarea parolă generată aleator: rpcuser=E-Goldrpc
 rpcpassword=%s
 (nu trebuie să țineți minte această parolă)
 Username-ul și parola NU TREBUIE să fie aceleași.
 Dacă fișierul nu există, creați-l cu drepturi de citire doar de către deținător.
 Este deasemenea recomandat să setați alertnotify pentru a fi notificat de probleme;
-de exemplu: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo.com
+de exemplu: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -3130,13 +3130,13 @@ de exemplu: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Cannot obtain a lock on data directory %s.  BlackCoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s.  E-Gold is probably already running.</source>
         <translation>Nu se poate obtine un lock pe directorul de date &amp;s. Blackoin probabil ruleaza deja.</translation>
     </message>
     <message>
         <location line="-98"/>
-        <source>BlackCoin</source>
-        <translation>BlackCoin</translation>
+        <source>E-Gold</source>
+        <translation>E-Gold</translation>
     </message>
     <message>
         <location line="+140"/>
@@ -3170,13 +3170,13 @@ de exemplu: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+4"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of BlackCoin</source>
-        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de BlackCoin</translation>
+        <source>Error loading wallet.dat: Wallet requires newer version of E-Gold</source>
+        <translation>Eroare la încărcarea wallet.dat: Portofelul necesita o versiune mai noua de E-Gold</translation>
     </message>
     <message>
         <location line="+1"/>
-        <source>Wallet needed to be rewritten: restart BlackCoin to complete</source>
-        <translation>A fost nevoie de rescrierea portofelului: restartați BlackCoin pentru a finaliza</translation>
+        <source>Wallet needed to be rewritten: restart E-Gold to complete</source>
+        <translation>A fost nevoie de rescrierea portofelului: restartați E-Gold pentru a finaliza</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3245,8 +3245,8 @@ de exemplu: alertnotify=echo %%s | mail -s &quot;BlackCoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+122"/>
-        <source>Unable to bind to %s on this computer. BlackCoin is probably already running.</source>
-        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil BlackCoin ruleaza</translation>
+        <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
+        <translation>Imposibil de conectat %s pe acest computer. Cel mai probabil E-Gold ruleaza</translation>
     </message>
     <message>
         <location line="-97"/>

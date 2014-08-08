@@ -7,7 +7,7 @@ cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP
 software written by Thomas Bernard.
 
 
-See readme-qt.rst for instructions on building BlackCoin QT, the
+See readme-qt.rst for instructions on building E-Gold QT, the
 graphical user interface.
 
 WINDOWS BUILD NOTES
@@ -79,6 +79,6 @@ cp *.h miniupnpc/
 BlackCoin
 -------
 DOS prompt:
-cd \blackcoin\src
+cd \e-goldcoin\src
 mingw32-make -f makefile.mingw
-strip blackcoind.exe
+strip egdd.exe
