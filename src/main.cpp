@@ -2456,26 +2456,16 @@ bool LoadBlockIndex(bool fAllowNew)
 
         // MainNet:
 
-        //CBlock(hash=000001faef25dec4fbcf906e6242621df2c183bf232f263d0ba5b101911e4563, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=12630d16a97f24b287c8c2594dda5fb98c9e6c70fc61d44191931ea2aa08dc90, nTime=1393221600, nBits=1e0fffff, nNonce=164482, vtx=1, vchBlockSig=)
-        //  Coinbase(hash=12630d16a9, nTime=1393221600, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341)
-        //    CTxOut(empty)
-        //  vMerkleTree: 12630d16a9
-
         //E-GOLD:
-        //CBlock(hash=81f5b5c627114078767243a0537639c27818315afcb379b7a34f1b505755fa4e, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=12f8bf45718a2ddb765981094f27016d518530d927358e5f84eb0d328f36b143, nTime=1407444851, nBits=1d00ffff, nNonce=164482, vtx=1, vchBlockSig=)
+        //Block(hash=00000000178b78f5c890be80fb54a562766fc3121125afc9a47331bb1dd88a75, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=12f8bf45718a2ddb765981094f27016d518530d927358e5f84eb0d328f36b143, nTime=1407444851, nBits=1d00ffff, nNonce=3188021359, vtx=1, vchBlockSig=)
         //  Coinbase(hash=12f8bf4571, nTime=1407444851, ver=1, vin.size=1, vout.size=1, nLockTime=0)
         //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a11452d474f4c442030382f30372f32303134)
         //    CTxOut(empty)
         //  vMerkleTree: 12f8bf4571
 
         // TestNet:
+        // todo generate testnet
 
-        //CBlock(hash=0000724595fb3b9609d441cbfb9577615c292abf07d996d3edabc48de843642d, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=12630d16a97f24b287c8c2594dda5fb98c9e6c70fc61d44191931ea2aa08dc90, nTime=1393221600, nBits=1f00ffff, nNonce=216178, vtx=1, vchBlockSig=)
-        //  Coinbase(hash=12630d16a9, nTime=1393221600, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a24323020466562203230313420426974636f696e2041544d7320636f6d6520746f20555341)
-        //    CTxOut(empty)
-        //  vMerkleTree: 12630d16a9
 
         const char* pszTimestamp = "E-GOLD 08/07/2014";
         CTransaction txNew;
@@ -2491,9 +2481,25 @@ bool LoadBlockIndex(bool fAllowNew)
         block.nVersion = 1;
         block.nTime    = 1407444851;
         block.nBits    = bnProofOfWorkLimit.GetCompact();
-        block.nNonce   = !fTestNet ? 164482 : 216178;
+        block.nNonce   = !fTestNet ? 3188021359 : 216178;
+        /*
+        if(block.GetHash() != (fTestNet ? hashGenesisBlockTestNet : hashGenesisBlock))
+        {
+            uint256 target = CBigNum().SetCompact(block.nBits).getuint256();
+            while(block.GetHash() > target)
+            {
+                block.nNonce++;
+            }
+            block.print();
+        }
+        */
 
-        //// debug print
+        // debug print
+
+        uint256 hash = block.GetHash();
+        printf("%s\n", hash.ToString().c_str());
+        printf("%s\n", hashGenesisBlock.ToString().c_str());
+        printf("%s\n", block.hashMerkleRoot.ToString().c_str());
         block.print();
         assert(block.hashMerkleRoot == uint256("0x12f8bf45718a2ddb765981094f27016d518530d927358e5f84eb0d328f36b143"));
 
