@@ -41,7 +41,7 @@ CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 
 //todo: Why limit the stake max age? -1 is unlimited.
 unsigned int nTargetSpacing = 1 * 60; // 1 minute
-unsigned int nStakeMinAge = 1 * 60 * 60; // 8 hours
+unsigned int nStakeMinAge = 8 * 60 * 60; // 8 hours
 unsigned int nStakeMaxAge = 60 * 60 * 24 * 100;	// stake age of full weight: 100d
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
 int nLastPowBlock = LAST_POW_BLOCK;
@@ -980,10 +980,10 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 {
     int64_t nSubsidy = 0;
 
-    if(pindexBest->nHeight <= (nLastPowBlock - 400))
-        nSubsidy = 735000 * COIN; // 100 x 735.000 = 75 mio coins
+    if(pindexBest->nHeight = (1)
+        nSubsidy = 73500000 * COIN; // 75 mio coins
     else if (pindexBest->nHeight <= nLastPowBlock)
-        nSubsidy = 0 * COIN; // Allow more empty PoWBlocks to get staking going
+        nSubsidy = 0 * COIN; // Allow more empty PoWBlocks to get staking going and move coins around
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
