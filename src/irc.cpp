@@ -309,9 +309,11 @@ void ThreadIRCSeed2(void* parg)
             //int channel_number = GetRandInt(5);
 
             // Channel number is always 0 for initial release
-            int channel_number = 0; //todo: comment out when enough users are in the network, enable random
-            Send(hSocket, strprintf("JOIN #E-Goldcoin%02d\r", channel_number).c_str());
-            Send(hSocket, strprintf("WHO #E-Goldcoin%02d\r", channel_number).c_str());
+            //int channel_number = 0; //todo: comment out when enough users are in the network, enable random
+            //Send(hSocket, strprintf("JOIN #E-Goldcoin%02d\r", channel_number).c_str());
+            //Send(hSocket, strprintf("WHO #E-Goldcoin%02d\r", channel_number).c_str());
+            Send(hSocket, "JOIN #E-GoldMAINNET\r");
+            Send(hSocket, "WHO #E-GoldMAINNET\r");
         }
 
         int64_t nStart = GetTime();
