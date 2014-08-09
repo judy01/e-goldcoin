@@ -122,12 +122,6 @@ bool static GetTransaction(const uint256& hashTx, CWalletTx& wtx)
     return false;
 }
 
-// erases transaction with the given hash from all wallets
-void static EraseFromWallets(uint256 hash)
-{
-    BOOST_FOREACH(CWallet* pwallet, setpwalletRegistered)
-        pwallet->EraseFromWallet(hash);
-}
 
 // make sure all wallets know about the given transaction, in the given block
 void SyncWithWallets(const CTransaction& tx, const CBlock* pblock, bool fUpdate, bool fConnect)
@@ -981,7 +975,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     int64_t nSubsidy = 0;
 
     if(pindexBest->nHeight == 1)
-        nSubsidy = 73500000 * COIN; // 75 mio coins
+        nSubsidy = 73500000 * COIN; // 73.5 mio coins
     else if (pindexBest->nHeight <= nLastPowBlock)
         nSubsidy = 0 * COIN; // Allow more empty PoWBlocks to get staking going and move coins around
 
@@ -992,9 +986,25 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 }
 
 // miner's coin stake reward based on coin age spent (coin-days)
+/* todo: remove
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
+
+    if (fDebug && GetBoolArg("-printcreation"))
+        printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
+
+    return nSubsidy + nFees;
+}
+*/
+
+const int BLOCKS_PER_SUBSIDY_REDUCTION = 2102400; //4 years at 60 second block times
+const int SUBSIDY_REDUCTION_MULTIPLIER = 0.475;
+int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
+{
+
+    //reduce subsidy by a multiplier of 0.475 every 2102400 blocks or approx 4 years
+    int64_t nSubsidy = nCoinAge * (0.0036842105263 * pow(SUBSIDY_REDUCTION_MULTIPLIER,((pindexBest->nHeight-1)/BLOCKS_PER_SUBSIDY_REDUCTION)+1)) * 33 / (365 * 33 + 8);
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
