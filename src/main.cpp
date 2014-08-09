@@ -980,7 +980,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 {
     int64_t nSubsidy = 0;
 
-    if(pindexBest->nHeight = (1)
+    if(pindexBest->nHeight = 1)
         nSubsidy = 73500000 * COIN; // 75 mio coins
     else if (pindexBest->nHeight <= nLastPowBlock)
         nSubsidy = 0 * COIN; // Allow more empty PoWBlocks to get staking going and move coins around
