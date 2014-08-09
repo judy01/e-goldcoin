@@ -48,7 +48,9 @@ unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier 
 
 
 int nLastPowBlock = LAST_POW_BLOCK;
-
+int64_t nSubsidyReductionMultiplier = SUBSIDY_REDUCTION_MULTIPLIER;
+int64_t nBlocksPerSubsidyReduction = BLOCKS_PER_SUBSIDY_REDUCTION;
+int64_t nRewardMultiplier = REWARD_MULTIPLIER;
 
 
 int nCoinbaseMaturity = 30;
@@ -989,16 +991,18 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 }
 
 
+
+
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
     //reduce subsidy by a multiplier of 0.475 every 2102400 blocks or approx 4 years
 
     //debug
-    printf("GetProofOfStakeReward(): nCoinAge=%"PRId64" REWARD_MULTIPLIER%"PRId64" SUBSIDY_REDUCTION_MULTIPLIER%"PRId64" BLOCKS_PER_SUBSIDY_REDUCTION%"PRId64" \n", nCoinAge, REWARD_MULTIPLIER, SUBSIDY_REDUCTION_MULTIPLIER, BLOCKS_PER_SUBSIDY_REDUCTION);
+    printf("GetProofOfStakeReward(): nCoinAge=%"PRId64" REWARD_MULTIPLIER: %"PRId64" SUBSIDY_REDUCTION_MULTIPLIER: %"PRId64" BLOCKS_PER_SUBSIDY_REDUCTION: %"PRId64" \n", nCoinAge, nRewardMultiplier, nSubsidyReductionMultiplier, nBlocksPerSubsidyReduction);
 
 
 
-    int64_t nSubsidy = nCoinAge * (REWARD_MULTIPLIER * pow(SUBSIDY_REDUCTION_MULTIPLIER,((pindexBest->nHeight-1) / BLOCKS_PER_SUBSIDY_REDUCTION)+1)) * 33 / (365 * 33 + 8);
+    int64_t nSubsidy = nCoinAge * (nRewardMultiplier * pow(nSubsidyReductionMultiplier,((pindexBest->nHeight-1) / nBlocksPerSubsidyReduction)+1)) * 33 / (365 * 33 + 8);
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
