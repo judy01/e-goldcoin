@@ -13,11 +13,6 @@
 using namespace json_spirit;
 using namespace std;
 
-int64_t rpcSubsidyReductionMultiplier = SUBSIDY_REDUCTION_MULTIPLIER;
-int64_t rpcBlocksPerSubsidyReduction = BLOCKS_PER_SUBSIDY_REDUCTION;
-int64_t rpcRewardMultiplier = REWARD_MULTIPLIER;
-
-
 Value getsubsidy(const Array& params, bool fHelp)
 {
     if (fHelp || params.size() > 1)
@@ -59,7 +54,7 @@ Value getmininginfo(const Array& params, bool fHelp)
     weight.push_back(Pair("combined",  (uint64_t)nWeight));
     obj.push_back(Pair("stakeweight", weight));
 
-    obj.push_back(Pair("stakeinterest",    (uint64_t)(rpcRewardMultiplier * pow(rpcSubsidyReductionMultiplier,((pindexBest->nHeight-1) / rpcBlocksPerSubsidyReduction)+1))));
+    obj.push_back(Pair("stakeinterest",    (uint64_t)(0.0036842105263 * pow(0.475,((pindexBest->nHeight-1)/2102400)+1))));
     obj.push_back(Pair("testnet",       fTestNet));
     return obj;
 }
@@ -530,4 +525,3 @@ Value submitblock(const Array& params, bool fHelp)
 
     return Value::null;
 }
-

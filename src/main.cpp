@@ -36,7 +36,7 @@ set<pair<COutPoint, unsigned int> > setStakeSeen;
 
 
 CBigNum bnProofOfWorkLimit(~uint256(0) >> 32);
-CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 26);
+CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 
 //todo: Why limit the stake max age? -1 is unlimited.
@@ -44,13 +44,8 @@ unsigned int nTargetSpacing = 1 * 60; // 1 minute
 unsigned int nStakeMinAge = 8 * 60 * 60; // 8 hours
 unsigned int nStakeMaxAge = 60 * 60 * 24 * 100;	// stake age of full weight: 100d
 unsigned int nModifierInterval = 10 * 60; // time to elapse before new modifier is computed
-
-
-
 int nLastPowBlock = LAST_POW_BLOCK;
-int64_t nSubsidyReductionMultiplier = SUBSIDY_REDUCTION_MULTIPLIER;
-int64_t nBlocksPerSubsidyReduction = BLOCKS_PER_SUBSIDY_REDUCTION;
-int64_t nRewardMultiplier = REWARD_MULTIPLIER;
+
 
 
 int nCoinbaseMaturity = 30;
@@ -990,23 +985,29 @@ int64_t GetProofOfWorkReward(int64_t nFees)
     return nSubsidy + nFees;
 }
 
-
-
-
+// miner's coin stake reward based on coin age spent (coin-days)
+/* todo: remove
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
-    //reduce subsidy by a multiplier of 0.475 every 2102400 blocks or approx 4 years
-
-    //debug
-    printf("GetProofOfStakeReward(): nCoinAge=%"PRId64" REWARD_MULTIPLIER: %"PRId64" SUBSIDY_REDUCTION_MULTIPLIER: %"PRId64" BLOCKS_PER_SUBSIDY_REDUCTION: %"PRId64" \n", nCoinAge, nRewardMultiplier, nSubsidyReductionMultiplier, nBlocksPerSubsidyReduction);
-
-
-
-    int64_t nSubsidy = nCoinAge * (nRewardMultiplier * pow(nSubsidyReductionMultiplier,((pindexBest->nHeight-1) / nBlocksPerSubsidyReduction)+1)) * 33 / (365 * 33 + 8);
+    int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
 
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
 
+    return nSubsidy + nFees;
+}
+*/
+
+const int BLOCKS_PER_SUBSIDY_REDUCTION = 2102400; //4 years at 60 second block times
+const int SUBSIDY_REDUCTION_MULTIPLIER = 0.475;
+int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
+{
+
+    //reduce subsidy by a multiplier of 0.475 every 2102400 blocks or approx 4 years
+    int64_t nSubsidy = nCoinAge * (0.0036842105263 * pow(SUBSIDY_REDUCTION_MULTIPLIER,((pindexBest->nHeight-1)/BLOCKS_PER_SUBSIDY_REDUCTION)+1)) * 33 / (365 * 33 + 8);
+
+    if (fDebug && GetBoolArg("-printcreation"))
+        printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
 
     return nSubsidy + nFees;
 }
@@ -1829,7 +1830,7 @@ bool CBlock::SetBestChain(CTxDB& txdb, CBlockIndex* pindexNew)
 // ppcoin: total coin age spent in transaction, in the unit of coin-days.
 // Only those coins meeting minimum age requirement counts. As those
 // transactions not in main chain are not currently indexed so we
-// might not find out about their coin age. Older transactions are 
+// might not find out about their coin age. Older transactions are
 // guaranteed to be in main chain by sync-checkpoint. This rule is
 // introduced to help nodes establish a consistent view of the coin
 // age (trust score) of competing branches.
@@ -3087,7 +3088,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                     if (inv.hash == pfrom->hashContinue)
                     {
                         // ppcoin: send latest proof-of-work block to allow the
-                        // download node to accept as orphan (proof-of-stake 
+                        // download node to accept as orphan (proof-of-stake
                         // block might be rejected by stake connection check)
                         vector<CInv> vInv;
                         vInv.push_back(CInv(MSG_BLOCK, GetLastBlockIndex(pindexBest, false)->GetBlockHash()));
