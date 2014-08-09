@@ -27,7 +27,7 @@ class CNode;
 
 class CTxMemPool;
 
-static const int LAST_POW_BLOCK = 500;
+static const int LAST_POW_BLOCK = 375;
 
 /** The maximum allowed size for a serialized block, in bytes (network rule) */
 static const unsigned int MAX_BLOCK_SIZE = 1000000;
@@ -60,14 +60,20 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
-static const int64_t COIN_YEAR_REWARD = 1.75 * CENT; // 1.75 % per year starting reward; unused for us.
+static const int64_t COIN_YEAR_REWARD = 1.75 * CENT; // 1.75 % per year starting reward
+static const int64_t SUBSIDY_REDUCTION_MULTIPLIER = 0.475;
+static const int64_t BLOCKS_PER_SUBSIDY_REDUCTION = 2102400; //4 years at 60 second block times
+static const int64_t REWARD_MULTIPLIER = 0.0036842105263; // COINYEAR_REWARD / SUBSIDY_REDUCTION_MULTIPLIER
 
 static const uint256 hashGenesisBlock("0x00000000178b78f5c890be80fb54a562766fc3121125afc9a47331bb1dd88a75");
 static const uint256 hashGenesisBlockTestNet("0x00000000178b78f5c890be80fb54a562766fc3121125afc9a47331bb1dd88a75b");
 
 
+
 inline int64_t PastDrift(int64_t nTime)   { return nTime - 10 * 60; } // up to 10 minutes from the past
 inline int64_t FutureDrift(int64_t nTime) { return nTime + 10 * 60; } // up to 10 minutes from the future
+
+
 
 
 extern CScript COINBASE_FLAGS;
