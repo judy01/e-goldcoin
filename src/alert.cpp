@@ -19,12 +19,11 @@ using namespace std;
 map<uint256, CAlert> mapAlerts;
 CCriticalSection cs_mapAlerts;
 
-// todo: change alertkeys
 static const char* pszMainKey = "0416861d08e0f5d2ad9dd449bb69c28d01aa81e23b4cbf465f830ba83727d27dceeaf4836d7d3a711d11843288f09ffd498703b824c6b4780f288711aaef49662a";
 
 
 // TestNet alerts pubKey
-static const char* pszTestKey = "changeme6f2b5ed0f340e3f17f57389c3c2af113a8cbcc885bde73305a553b5640c83021128008ddf882e856336269080496";
+static const char* pszTestKey = "0416861d08e0f5d2ad9dd449bb69c28d01aa81e23b4cbf465f830ba83727d27dceeaf4836d7d3a711d11843288f09ffd498703b824c6b4780f288711aaef49662a";
 
 
 
