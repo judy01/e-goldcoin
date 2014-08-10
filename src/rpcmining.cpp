@@ -54,7 +54,7 @@ Value getmininginfo(const Array& params, bool fHelp)
     weight.push_back(Pair("combined",  (uint64_t)nWeight));
     obj.push_back(Pair("stakeweight", weight));
 
-    obj.push_back(Pair("stakeinterest",    (uint64_t)(0.0036842105263 * pow(0.475,((pindexBest->nHeight-1)/2102400)+1)))); //todo: changeme when the stakereward algo changes
+    obj.push_back(Pair("stakeinterest",    (uint64_t)(3684211 * pow(0.475,((pindexBest->nHeight-1)/2102400)+1)))); //todo: changeme when the stakereward algo changes
     obj.push_back(Pair("testnet",       fTestNet));
     return obj;
 }
