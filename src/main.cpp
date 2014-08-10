@@ -2472,10 +2472,10 @@ bool LoadBlockIndex(bool fAllowNew)
         // Genesis block for E-Gold
 
         // MainNet:
-        //Block(hash=00000000178b78f5c890be80fb54a562766fc3121125afc9a47331bb1dd88a75, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=12f8bf45718a2ddb765981094f27016d518530d927358e5f84eb0d328f36b143, nTime=1407444851, nBits=1d00ffff, nNonce=3188021359, vtx=1, vchBlockSig=)
-        //  Coinbase(hash=12f8bf4571, nTime=1407444851, ver=1, vin.size=1, vout.size=1, nLockTime=0)
-        //    CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a11452d474f4c442030382f30372f32303134)
-        //    CTxOut(empty)
+        // CBlock(hash=00000000178b78f5c890be80fb54a562766fc3121125afc9a47331bb1dd88a75, ver=1, hashPrevBlock=0000000000000000000000000000000000000000000000000000000000000000, hashMerkleRoot=12f8bf45718a2ddb765981094f27016d518530d927358e5f84eb0d328f36b143, nTime=1407444851, nBits=1d00ffff, nNonce=3188021359, vtx=1, vchBlockSig=)
+        //   Coinbase(hash=12f8bf4571, nTime=1407444851, ver=1, vin.size=1, vout.size=1, nLockTime=0)
+        //     CTxIn(COutPoint(0000000000, 4294967295), coinbase 00012a11452d474f4c442030382f30372f32303134)
+        //     CTxOut(empty)
         //  vMerkleTree: 12f8bf4571
 
         // TestNet:
