@@ -986,19 +986,6 @@ int64_t GetProofOfWorkReward(int64_t nFees)
 }
 
 // miner's coin stake reward based on coin age spent (coin-days)
-/* todo: remove
-int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
-{
-    int64_t nSubsidy = nCoinAge * COIN_YEAR_REWARD * 33 / (365 * 33 + 8);
-
-    if (fDebug && GetBoolArg("-printcreation"))
-        printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
-
-    return nSubsidy + nFees;
-}
-*/
-
-
 int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
 {
 
@@ -1006,8 +993,6 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     int64_t nCoinYearReward =  3684211 * pow(0.475,((pindexBest->nHeight-1)/2102400)+1); //reduce subsidy by a multiplier of 0.475 every 2102400 blocks or approx 4 years
     int64_t nSubsidy = nCoinAge * nCoinYearReward * 33 / (365 * 33 + 8);
 
-    //todo: remove debug print
-    printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64" pindexBest->nHeight-1=%"PRId64" nCoinYearReward=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge, pindexBest->nHeight-1, nCoinYearReward);
     if (fDebug && GetBoolArg("-printcreation"))
         printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
 
@@ -1067,10 +1052,6 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 {
     CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
 
-    //debug, todo: remove me
-    //printf("bnTargetlimit:%"PRIszu" bnProofofStakelimit:%"PRIszu" \n", bnTargetLimit, bnProofOfStakeLimit);
-    printf("bnTargetlimit: %08x \n", bnTargetLimit.GetCompact());
-    printf("bnProofofStakelimit:  %08x \n", bnProofOfWorkLimit.GetCompact());
     if (pindexLast == NULL)
         return bnTargetLimit.GetCompact(); // genesis block
 
