@@ -1065,6 +1065,10 @@ unsigned int GetNextTargetRequired(const CBlockIndex* pindexLast, bool fProofOfS
 {
     CBigNum bnTargetLimit = fProofOfStake ? bnProofOfStakeLimit : bnProofOfWorkLimit;
 
+    //debug, todo: remove me
+    //printf("bnTargetlimit:%"PRIszu" bnProofofStakelimit:%"PRIszu" \n", bnTargetLimit, bnProofOfStakeLimit);
+    printf("bnTargetlimit: %08x \n", bnTargetLimit.GetCompact());
+    printf("bnProofofStakelimit:  %08x \n", bnProofOfWorkLimit.GetCompact());
     if (pindexLast == NULL)
         return bnTargetLimit.GetCompact(); // genesis block
 
