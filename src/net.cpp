@@ -1239,29 +1239,17 @@ void MapPort()
 #endif
 
 
-
-
-
-
-
-
-
 // DNS seeds
 // Each pair gives a source name and a seed name.
 // The first name is used as information source for addrman.
 // The second name should resolve to a list of seed addresses.
 static const char *strDNSSeed[][2] = {
-    {"South America (São Paulo)", "54.210.131.228"},
-    {"EU (Ireland)", "54.210.142.210"},
-    {"Asia Pacific (Singapore)", "54.210.208.239"},
-    {"Asia Pacific (Tokyo)", "54.210.95.102"},
-    {"US East (N. Virginia)", "54.88.158.206"}
+    {"South America (São Paulo)", "54.94.161.254"},
+    {"EU (Ireland)", "54.76.224.149"},
+    {"Asia Pacific (Singapore)", "54.255.173.68"},
+    {"Asia Pacific (Tokyo)", "54.64.14.156"},
+    {"US East (N. Virginia)", "54.210.142.210"}
 };
-
-
-
-
-
 
 
 
