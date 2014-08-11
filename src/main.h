@@ -54,7 +54,7 @@ static const int64_t MIN_TX_FEE = 10000;
 static const int64_t MIN_RELAY_TX_FEE = MIN_TX_FEE;
 
 /** No amount larger than this (in satoshi) is valid */
-static const int64_t MAX_MONEY = 84000000 * COIN; // 84 Million; todo: Check if limiting makes sense
+static const int64_t MAX_MONEY = 84000000 * COIN; // 84 Million;
 inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MONEY); }
 
 /** Threshold for nLockTime: below this value it is interpreted as block number, otherwise as UNIX timestamp. */
