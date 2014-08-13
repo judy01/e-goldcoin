@@ -994,7 +994,7 @@ boost::filesystem::path GetDefaultDataDir()
     // Unix: ~/.E-Gold
 #ifdef WIN32
     // Windows
-    return GetSpecialFolderPath(CSIDL_APPDATA) / "Coin";
+    return GetSpecialFolderPath(CSIDL_APPDATA) / "E-Gold";
 #else
     fs::path pathRet;
     char* pszHome = getenv("HOME");
