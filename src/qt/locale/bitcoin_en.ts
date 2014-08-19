@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.1" language="en">
+<TS version="2.0" language="en">
+<defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>AboutDialog</name>
     <message>
@@ -306,7 +307,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+280"/>
+        <location filename="../bitcoingui.cpp" line="+282"/>
         <source>Sign &amp;message...</source>
         <translation>Sign &amp;message...</translation>
     </message>
@@ -554,7 +555,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Downloaded %1 blocks of transaction history.</translation>
     </message>
     <message>
-        <location line="+427"/>
+        <location line="+435"/>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation></translation>
     </message>
@@ -579,7 +580,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation></translation>
     </message>
     <message numerus="yes">
-        <location line="-417"/>
+        <location line="-425"/>
         <source>%n second(s) ago</source>
         <translation>
             <numerusform>%n second ago</numerusform>
@@ -626,7 +627,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Catching up...</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+16"/>
         <source>Last received block was generated %1.</source>
         <translation>Last received block was generated %1.</translation>
     </message>
@@ -706,7 +707,7 @@ Address: %4
         <translation>There was an error trying to save the wallet data to the new location.</translation>
     </message>
     <message numerus="yes">
-        <location line="+90"/>
+        <location line="+91"/>
         <source>%n second(s)</source>
         <translation>
             <numerusform>%n second</numerusform>
@@ -738,7 +739,7 @@ Address: %4
         </translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+19"/>
         <source>Not staking</source>
         <translation type="unfinished"></translation>
     </message>
@@ -1270,17 +1271,15 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Choose the default subdivision unit to show in the interface and when sending coins.</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Whether to show E-Gold addresses in the transaction list or not.</source>
-        <translation>Whether to show E-Gold addresses in the transaction list or not.</translation>
+        <translation type="obsolete">Whether to show E-Gold addresses in the transaction list or not.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Display addresses in transaction list</translation>
+        <translation type="obsolete">&amp;Display addresses in transaction list</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+9"/>
         <source>Whether to show coin control features or not.</source>
         <translation></translation>
     </message>
@@ -1310,7 +1309,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>default</translation>
     </message>
     <message>
-        <location line="+148"/>
+        <location line="+147"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>Warning</translation>
@@ -1756,9 +1755,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-173"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="-173"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1930,9 +1933,13 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Remove this recipient</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsentry.cpp" line="+1"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>

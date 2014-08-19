@@ -1,4 +1,7 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sv" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="sv">
+<defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>AboutDialog</name>
     <message>
@@ -25,10 +28,19 @@ Copyright © 2014 The E-Gold developers</translation>
         <source>
 This is experimental software.
 
+Distributed under the MIT/X11 software license, see the accompanying file COPYING or &lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;http://www.opensource.org/licenses/mit-license.php&lt;/a&gt;.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (&lt;a href=&quot;https://www.openssl.org/&quot;&gt;https://www.openssl.org/&lt;/a&gt;) and cryptographic software written by Eric Young (&lt;a href=&quot;mailto:eay@cryptsoft.com&quot;&gt;eay@cryptsoft.com&lt;/a&gt;) and UPnP software written by Thomas Bernard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>
+This is experimental software.
+
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
+        <translation type="obsolete">
 Detta är experimentell mjukvara.
 
 
@@ -191,12 +203,11 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Endast för &quot;staking&quot;</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+35"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Ange plånbokens nya lösenord. &lt;br/&gt; Använd ett lösenord på &lt;b&gt;10 eller fler slumpmässiga tecken,&lt;/b&gt; eller &lt;b&gt;åtta eller fler ord.&lt;/b&gt;</translation>
+        <translation type="obsolete">Ange plånbokens nya lösenord. &lt;br/&gt; Använd ett lösenord på &lt;b&gt;10 eller fler slumpmässiga tecken,&lt;/b&gt; eller &lt;b&gt;åtta eller fler ord.&lt;/b&gt;</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location filename="../askpassphrasedialog.cpp" line="+38"/>
         <source>Encrypt wallet</source>
         <translation>Kryptera plånbok</translation>
     </message>
@@ -231,7 +242,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Ange plånbokens gamla och nya lösenord.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+45"/>
         <source>Confirm wallet encryption</source>
         <translation>Bekräfta kryptering av plånbok</translation>
     </message>
@@ -263,7 +274,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Plånboken är krypterad</translation>
     </message>
     <message>
-        <location line="-58"/>
+        <location line="-140"/>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
         <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>E-Gold plånboken kommer nu att stängas för att slutföra krypteringen: Kom ihåg att även en krypterad plånboks säkerhet kan äventyras genom keyloggers eller dylika malwares.</translation>
     </message>
@@ -312,7 +328,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+280"/>
+        <location filename="../bitcoingui.cpp" line="+282"/>
         <source>Sign &amp;message...</source>
         <translation>Signera &amp;meddelande...</translation>
     </message>
@@ -414,7 +430,10 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message numerus="yes">
         <location line="+250"/>
         <source>~%n block(s) remaining</source>
-        <translation><numerusform>~%n block remaining</numerusform><numerusform>~%n block kvar</numerusform></translation>
+        <translation>
+            <numerusform>~%n block remaining</numerusform>
+            <numerusform>~%n block kvar</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -546,7 +565,10 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message numerus="yes">
         <location line="+70"/>
         <source>%n active connection(s) to E-Gold network</source>
-        <translation><numerusform>%n aktiv anslutning till E-Gold nätverket</numerusform><numerusform>%n aktiva anslutning till E-Gold nätverket</numerusform></translation>
+        <translation>
+            <numerusform>%n aktiv anslutning till E-Gold nätverket</numerusform>
+            <numerusform>%n aktiva anslutning till E-Gold nätverket</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+40"/>
@@ -554,7 +576,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Laddade ner %1 block av transaktionshistoriken.</translation>
     </message>
     <message>
-        <location line="+413"/>
+        <location line="+435"/>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation>Staking.&lt;br&gt;Din vikt är %1&lt;br&gt;Nätverkets vikt är %2&lt;br&gt;Uppskattad tid för att få belöning är %3</translation>
     </message>
@@ -579,9 +601,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Ingen staking för att dina coins är ännu inte föråldrade</translation>
     </message>
     <message numerus="yes">
-        <location line="-403"/>
+        <location line="-425"/>
         <source>%n second(s) ago</source>
-        <translation><numerusform>%n sekund sen</numerusform><numerusform>%n sekunder sen</numerusform></translation>
+        <translation>
+            <numerusform>%n sekund sen</numerusform>
+            <numerusform>%n sekunder sen</numerusform>
+        </translation>
     </message>
     <message>
         <location line="-284"/>
@@ -591,17 +616,26 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message numerus="yes">
         <location line="+288"/>
         <source>%n minute(s) ago</source>
-        <translation><numerusform>%n minut sen</numerusform><numerusform>%n minuter sen</numerusform></translation>
+        <translation>
+            <numerusform>%n minut sen</numerusform>
+            <numerusform>%n minuter sen</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s) ago</source>
-        <translation><numerusform>%n timme sen</numerusform><numerusform>%n timmar sen</numerusform></translation>
+        <translation>
+            <numerusform>%n timme sen</numerusform>
+            <numerusform>%n timmar sen</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s) ago</source>
-        <translation><numerusform>%n dag sen</numerusform><numerusform>%n dagar sen</numerusform></translation>
+        <translation>
+            <numerusform>%n dag sen</numerusform>
+            <numerusform>%n dagar sen</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -614,7 +648,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
         <translation>Hämtar senaste...</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+16"/>
         <source>Last received block was generated %1.</source>
         <translation>Senaste mottagna block genererades %1.</translation>
     </message>
@@ -694,27 +728,39 @@ Adress: %4
         <translation>Ett fel uppstod vid sparandet av plånboken till den nya platsen.</translation>
     </message>
     <message numerus="yes">
-        <location line="+76"/>
+        <location line="+91"/>
         <source>%n second(s)</source>
-        <translation><numerusform>%n sekund</numerusform><numerusform>%n sekunder</numerusform></translation>
+        <translation>
+            <numerusform>%n sekund</numerusform>
+            <numerusform>%n sekunder</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
-        <translation><numerusform>%n minut</numerusform><numerusform>%n minuter</numerusform></translation>
+        <translation>
+            <numerusform>%n minut</numerusform>
+            <numerusform>%n minuter</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation><numerusform>%n timme</numerusform><numerusform>%n timmar</numerusform></translation>
+        <translation>
+            <numerusform>%n timme</numerusform>
+            <numerusform>%n timmar</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation><numerusform>%n dag</numerusform><numerusform>%n dagar</numerusform></translation>
+        <translation>
+            <numerusform>%n dag</numerusform>
+            <numerusform>%n dagar</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+19"/>
         <source>Not staking</source>
         <translation>Ingen staking</translation>
     </message>
@@ -727,7 +773,7 @@ Adress: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+90"/>
+        <location filename="../clientmodel.cpp" line="+98"/>
         <source>Network Alert</source>
         <translation>Nätverkslarm</translation>
     </message>
@@ -1071,7 +1117,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+420"/>
+        <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>E-Gold-Qt</source>
         <translation>E-Gold-Qt</translation>
@@ -1155,14 +1201,12 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>&amp;Starta E-Gold vid inloggning</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
-        <translation>Koppla ifrån block och adress-databaserna vid nedstängning. Detta betyder att det kan flyttas till en annan datamapp men saktar ner avstängningen. Plånboken är alltid frånkopplad.</translation>
+        <translation type="obsolete">Koppla ifrån block och adress-databaserna vid nedstängning. Detta betyder att det kan flyttas till en annan datamapp men saktar ner avstängningen. Plånboken är alltid frånkopplad.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Detach databases at shutdown</source>
-        <translation>Koppla bort &amp;databaserna vid nedkörning</translation>
+        <translation type="obsolete">Koppla bort &amp;databaserna vid nedkörning</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1270,17 +1314,15 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Välj en måttenhet att visa när du skickar mynt.</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Whether to show E-Gold addresses in the transaction list or not.</source>
-        <translation>Om E-Gold adresser skall visas i transaktionslistan eller inte.</translation>
+        <translation type="obsolete">Om E-Gold adresser skall visas i transaktionslistan eller inte.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Visa adresser i transaktionslistan</translation>
+        <translation type="obsolete">&amp;Visa adresser i transaktionslistan</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+9"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Om coin kontrollinställningar skall visas eller inte.</translation>
     </message>
@@ -1310,7 +1352,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>standard</translation>
     </message>
     <message>
-        <location line="+149"/>
+        <location line="+147"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>Varning</translation>
@@ -1756,9 +1798,13 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>&amp;Skicka</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-173"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Fyll i en E-Gold adress (t.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Fyll i en E-Gold adress (t.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="-173"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1930,9 +1976,13 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Ta bort denna mottagare</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Fyll i en E-Gold adress (t.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Fyll i en E-Gold adress (t.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsentry.cpp" line="+1"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2118,17 +2168,19 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+19"/>
+        <location filename="../transactiondesc.cpp" line="+20"/>
         <source>Open until %1</source>
         <translation>Öppet till %1</translation>
     </message>
     <message numerus="yes">
-        <location line="-2"/>
         <source>Open for %n block(s)</source>
-        <translation><numerusform>Öppen för %n block</numerusform><numerusform>Öppen för %n block</numerusform></translation>
+        <translation type="obsolete">
+            <numerusform>Öppen för %n block</numerusform>
+            <numerusform>Öppen för %n block</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>conflicted</source>
         <translation>konflikt</translation>
     </message>
@@ -2148,14 +2200,17 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>%1 bekräftelser</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+17"/>
         <source>Status</source>
         <translation>Status</translation>
     </message>
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, sänd genom %n nod</numerusform><numerusform>, sänd genom %n noder</numerusform></translation>
+        <translation>
+            <numerusform>, sänd genom %n nod</numerusform>
+            <numerusform>, sänd genom %n noder</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2208,7 +2263,10 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>mognar om %n block</numerusform><numerusform>mognar om %n fler block</numerusform></translation>
+        <translation>
+            <numerusform>mognar om %n block</numerusform>
+            <numerusform>mognar om %n fler block</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2269,7 +2327,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Inputs</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+21"/>
         <source>Amount</source>
         <translation>Mängd</translation>
     </message>
@@ -2284,12 +2342,20 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>falsk</translation>
     </message>
     <message>
-        <location line="-211"/>
+        <location line="-209"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, har inte lyckats skickas ännu</translation>
     </message>
+    <message numerus="yes">
+        <location line="-36"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform>Öppet för %n mer block</numerusform>
+            <numerusform>Öppet för %n mer block</numerusform>
+        </translation>
+    </message>
     <message>
-        <location line="+35"/>
+        <location line="+71"/>
         <source>unknown</source>
         <translation>okänd</translation>
     </message>
@@ -2310,7 +2376,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+226"/>
+        <location filename="../transactiontablemodel.cpp" line="+230"/>
         <source>Date</source>
         <translation>Datum</translation>
     </message>
@@ -2330,7 +2396,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Mängd</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+52"/>
         <source>Open until %1</source>
         <translation>Öppet till %1</translation>
     </message>
@@ -2342,7 +2408,10 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
     <message numerus="yes">
         <location line="-15"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Öppet för %n mer block</numerusform><numerusform>Öppet för %n mer block</numerusform></translation>
+        <translation>
+            <numerusform>Öppet för %n mer block</numerusform>
+            <numerusform>Öppet för %n mer block</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2607,7 +2676,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+206"/>
+        <location filename="../walletmodel.cpp" line="+219"/>
         <source>Sending...</source>
         <translation>Skickar...</translation>
     </message>
@@ -2700,12 +2769,11 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Bind till angiven adress. Använd [host]:port för IPv6</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Stake your coins to support network and gain reward (default: 1)</source>
-        <translation>Använd dina coins för stake-processen, du upprätthåller då nätverket och får belöning (förval: 1)</translation>
+        <translation type="obsolete">Använd dina coins för stake-processen, du upprätthåller då nätverket och får belöning (förval: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Tröskelvärde för att koppla ifrån klienter som missköter sig (förvalt: 100)</translation>
     </message>
@@ -2715,17 +2783,16 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Antal sekunder att hindra klienter som missköter sig från att ansluta (förvalt: 86400)</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-43"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Ett fel uppstod vid upprättandet av RPC port %u för att lyssna på IPv4: %s</translation>
     </message>
     <message>
-        <location line="+51"/>
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation>Koppla ifrån block och adress databaser. Ökar nedstängningstid (standard: 0)</translation>
+        <translation type="obsolete">Koppla ifrån block och adress databaser. Ökar nedstängningstid (standard: 0)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+157"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Fel: Transaktionen nekades. Detta kan hända om vissa av mynten i din plånbok redan är använda, t.ex om du använder en kopia av wallet.dat och mynten redan var använda i kopia men inte markerade som använda här.</translation>
     </message>
@@ -2775,7 +2842,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Använd testnätverket</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-21"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Acceptera anslutningar utifrån (förvalt: 1 om ingen -proxy eller -connect)</translation>
     </message>
@@ -2785,12 +2852,12 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Ett fel uppstod vid upprättandet av RPC port %u för att lyssna på IPv6, faller tillbaka till IPV4: %s</translation>
     </message>
     <message>
-        <location line="+117"/>
+        <location line="+115"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation>Ett fel uppstod vid initialiseringen av databasen %s! För att återställa, SÄKERHETSKOPIERA MAPPEN, radera sedan allt från mappen förutom wallet.dat.</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-21"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Ställ in max storlek för hög prioritet/lågavgifts transaktioner i bytes (förval: 27000)</translation>
     </message>
@@ -2805,7 +2872,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Varning: Kolla att din dators tid och datum är rätt. E-Gold kan inte fungera ordentligt om tiden i datorn är fel.</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-30"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Varning: fel vid läsning av wallet.dat! Alla nycklar lästes korrekt, men transaktionsdatan eller adressbokens poster kanske saknas eller är felaktiga.</translation>
     </message>
@@ -2815,7 +2882,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Varning: wallet.dat korrupt, datan har räddats! Den ursprungliga wallet.dat har sparas som wallet.{timestamp}.bak i %s; om ditt saldo eller transaktioner är felaktiga ska du återställa från en säkerhetskopia.</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-31"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Försök att rädda de privata nycklarna från en korrupt wallet.dat</translation>
     </message>
@@ -2825,7 +2892,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Block skapande inställningar:</translation>
     </message>
     <message>
-        <location line="-62"/>
+        <location line="-59"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Koppla enbart upp till den/de specificerade noden/noder</translation>
     </message>
@@ -2835,22 +2902,22 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Hitta egen IP-adress (förvalt: 1 under lyssning och utan -externalip)</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+92"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Misslyckades att lyssna på någon port. Använd -listen=0 om du vill detta.</translation>
     </message>
     <message>
-        <location line="-90"/>
+        <location line="-88"/>
         <source>Find peers using DNS lookup (default: 1)</source>
         <translation>Hitta andra klienter via DNS uppsökning (standard: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>Synka kontrollpunkts policy (standard: strict)</translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+82"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Fel -tor adress: &apos;%s&apos;</translation>
     </message>
@@ -2860,7 +2927,7 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Fel mängd för -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-81"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Maximal buffert för mottagning per anslutning, &lt;n&gt;*1000 byte (förvalt: 5000)</translation>
     </message>
@@ -2870,12 +2937,12 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Maximal buffert för sändning per anslutning, &lt;n&gt;*1000 byte (förvalt: 5000)</translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-15"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>Anslut enbart till noder i nätverket &lt;net&gt; (IPv4, IPv6 eller Tor)</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+25"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Skriv ut extra debug information. Betyder alla andra -debug* alternativ </translation>
     </message>
@@ -2895,12 +2962,12 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>SSL-inställningar: (se Bitcoin-wikin för SSL-setup instruktioner)</translation>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-71"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
         <translation>Välj version av socks proxy (4-5, förval 5)</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+38"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Skicka trace-/debuginformation till terminalen istället för till debug.log</translation>
     </message>
@@ -2925,19 +2992,19 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Krymp debug.log filen vid klient start (förvalt: 1 vid ingen -debug)</translation>
     </message>
     <message>
-        <location line="-42"/>
+        <location line="-39"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Ange timeout för uppkoppling i millisekunder (förvalt: 5000)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+107"/>
         <source>Unable to sign checkpoint, wrong checkpointkey?
 </source>
         <translation>Kan inte signera checkpoint, fel checkpointkey?
 </translation>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-79"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Använd UPnP för att mappa den lyssnande porten (förvalt: 0)</translation>
     </message>
@@ -2947,22 +3014,22 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Använd UPnP för att mappa den lyssnande porten (förvalt: 1 under lyssning)</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-24"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Använd proxy för att nå Tor gömda servicer (standard: samma som -proxy)</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+39"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Användarnamn för JSON-RPC-anslutningar</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+48"/>
         <source>Verifying database integrity...</source>
         <translation>Verifierar integriteten i databasen...</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+56"/>
         <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
         <translation>VARNING: synkroniserad kontrollpunkts brott upptäckt, men hoppades över!</translation>
     </message>
@@ -2977,17 +3044,17 @@ Detta betyder att en avgift på minst %2 krävs.</translation>
         <translation>Varning: denna version är föråldrad, uppgradering krävs!</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-47"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat korrupt, räddning misslyckades</translation>
     </message>
     <message>
-        <location line="-54"/>
+        <location line="-55"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Lösenord för JSON-RPC-anslutningar</translation>
     </message>
     <message>
-        <location line="-84"/>
+        <location line="-81"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -3017,12 +3084,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Hitta andra klienter genom internet relay chat (standard: 1) {0)?}</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
         <translation>Synkronisera tiden med andra noder. Avaktivera om klockan i ditt sytem är exakt som t.ex. synkroniserad med NTP (förval: 1)</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+13"/>
         <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
         <translation>När transaktioner skapas, ignorera värden som är lägre än detta (standard: 0.01)</translation>
     </message>
@@ -3112,7 +3179,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Godtagbara chiffer (standard: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+8"/>
+        <source>Initialization sanity check failed. E-Gold is shutting down.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
         <translation>Fel: Plånboken öppnad endast för stake-process, kan inte skapa transaktion.</translation>
     </message>
@@ -3122,12 +3194,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>VARNING: Felaktig kontrollpunkt hittad! Visade transaktioner kan vara felaktiga! Du kan behöva uppgradera eller kontakta utvecklarna.</translation>
     </message>
     <message>
-        <location line="-158"/>
+        <location line="-155"/>
         <source>This help message</source>
         <translation>Det här hjälp medelandet</translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+93"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>Plånbok %s ligger utanför datamappen %s.</translation>
     </message>
@@ -3137,17 +3209,17 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Kan inte låsa datan i mappen %s. E-Gold är kanske redan startad.</translation>
     </message>
     <message>
-        <location line="-98"/>
+        <location line="-96"/>
         <source>E-Gold</source>
         <translation>E-Gold</translation>
     </message>
     <message>
-        <location line="+140"/>
+        <location line="+137"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Det går inte att binda till %s på den här datorn (bind returnerade felmeddelande %d, %s)</translation>
     </message>
     <message>
-        <location line="-130"/>
+        <location line="-127"/>
         <source>Connect through socks proxy</source>
         <translation>Koppla genom en socks proxy</translation>
     </message>
@@ -3157,12 +3229,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Tillåt DNS-sökningar för -addnode, -seednode och -connect</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+119"/>
         <source>Loading addresses...</source>
         <translation>Laddar adresser...</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-14"/>
         <source>Error loading blkindex.dat</source>
         <translation>Fel vid laddande av blkindex.dat</translation>
     </message>
@@ -3212,7 +3284,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Kan inte matcha -externalip adress: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-25"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Ogiltigt belopp för -paytxfee=&lt;belopp&gt;:&apos;%s&apos;</translation>
     </message>
@@ -3237,17 +3309,17 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Otillräckligt med bitcoins</translation>
     </message>
     <message>
-        <location line="-34"/>
+        <location line="-33"/>
         <source>Loading block index...</source>
         <translation>Laddar blockindex...</translation>
     </message>
     <message>
-        <location line="-103"/>
+        <location line="-101"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Lägg till en nod att koppla upp mot och försök att hålla anslutningen öppen</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+119"/>
         <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
         <translation>Kan inte binda till %s på denna dator. E-Gold är sannolikt redan startad.</translation>
     </message>
@@ -3262,7 +3334,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Fel mängd för  -mininput=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+26"/>
         <source>Loading wallet...</source>
         <translation>Laddar plånbok...</translation>
     </message>
@@ -3272,9 +3344,8 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Kan inte nedgradera plånboken</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Cannot initialize keypool</source>
-        <translation>Kan inte initialisera keypool</translation>
+        <translation type="obsolete">Kan inte initialisera keypool</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3292,7 +3363,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;E-Gold Varning&quot; admin@fo
         <translation>Klar med laddning</translation>
     </message>
     <message>
-        <location line="-167"/>
+        <location line="-164"/>
         <source>To use the %s option</source>
         <translation>Att använda %s alternativet</translation>
     </message>

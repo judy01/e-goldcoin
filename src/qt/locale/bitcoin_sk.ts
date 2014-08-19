@@ -1,4 +1,7 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sk" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="sk">
+<defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>AboutDialog</name>
     <message>
@@ -25,10 +28,19 @@ Copyright © 2014 The E-Gold developers</translation>
         <source>
 This is experimental software.
 
+Distributed under the MIT/X11 software license, see the accompanying file COPYING or &lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;http://www.opensource.org/licenses/mit-license.php&lt;/a&gt;.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (&lt;a href=&quot;https://www.openssl.org/&quot;&gt;https://www.openssl.org/&lt;/a&gt;) and cryptographic software written by Eric Young (&lt;a href=&quot;mailto:eay@cryptsoft.com&quot;&gt;eay@cryptsoft.com&lt;/a&gt;) and UPnP software written by Thomas Bernard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>
+This is experimental software.
+
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
+        <translation type="obsolete">
 Toto je experimentálny softvér. 
 
 Distribuovaný pod softvérovou licenciou MIT/X11, viď priložený súbor COPYING alebo http://www.opensource.org/licenses/mit-license.php. 
@@ -190,12 +202,11 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
         <translation>Len pre stávkovanie</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+35"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Zadajte nové heslo k peňaženke.&lt;br/&gt;Prosím použite heslo s dĺžkou aspon &lt;b&gt;10 a viac náhodných znakov&lt;/b&gt;, alebo &lt;b&gt;8 a viac slov&lt;/b&gt;.</translation>
+        <translation type="obsolete">Zadajte nové heslo k peňaženke.&lt;br/&gt;Prosím použite heslo s dĺžkou aspon &lt;b&gt;10 a viac náhodných znakov&lt;/b&gt;, alebo &lt;b&gt;8 a viac slov&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location filename="../askpassphrasedialog.cpp" line="+38"/>
         <source>Encrypt wallet</source>
         <translation>Zašifrovať peňaženku</translation>
     </message>
@@ -230,7 +241,7 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
         <translation>Zadajte staré a nové heslo k peňaženke.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+45"/>
         <source>Confirm wallet encryption</source>
         <translation>Potvrďte zašifrovanie peňaženky</translation>
     </message>
@@ -262,7 +273,12 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
         <translation>Peňaženka zašifrovaná</translation>
     </message>
     <message>
-        <location line="-58"/>
+        <location line="-140"/>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
         <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>E-Gold sa teraz zavrie aby dokončil proces zašifrovania. Nezabudnite, že zašifrovanie vašej peňaženky nemôže plne chrániť vaše mince pred krádežou malwarom napadnutím vašeho počítača.</translation>
     </message>
@@ -311,7 +327,7 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+280"/>
+        <location filename="../bitcoingui.cpp" line="+282"/>
         <source>Sign &amp;message...</source>
         <translation>Podpísať &amp;správu...</translation>
     </message>
@@ -413,7 +429,11 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message numerus="yes">
         <location line="+250"/>
         <source>~%n block(s) remaining</source>
-        <translation><numerusform>~%n blok zostáva</numerusform><numerusform>~%n blokov zostáva</numerusform><numerusform>Zostáva ~%n blokov</numerusform></translation>
+        <translation>
+            <numerusform>~%n blok zostáva</numerusform>
+            <numerusform>~%n blokov zostáva</numerusform>
+            <numerusform>Zostáva ~%n blokov</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -545,7 +565,11 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message numerus="yes">
         <location line="+70"/>
         <source>%n active connection(s) to E-Gold network</source>
-        <translation><numerusform>%n aktívne spojenie s E-Gold sieťov</numerusform><numerusform>%n aktívnych spojení s E-Gold sieťov</numerusform><numerusform>%n aktívnych spojení s E-Gold sieťou</numerusform></translation>
+        <translation>
+            <numerusform>%n aktívne spojenie s E-Gold sieťov</numerusform>
+            <numerusform>%n aktívnych spojení s E-Gold sieťov</numerusform>
+            <numerusform>%n aktívnych spojení s E-Gold sieťou</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+40"/>
@@ -553,7 +577,7 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
         <translation>Stiahnutých %1 blokov z transakčnej histórie.</translation>
     </message>
     <message>
-        <location line="+413"/>
+        <location line="+435"/>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation>Stávkovanie.&lt;br&gt;Vaša váha je %1&lt;br&gt;Váha siete je %2&lt;br&gt;Odhadovaný čas pre získanie odmeny je %3</translation>
     </message>
@@ -578,9 +602,13 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
         <translation>Nestávkujem pretože nemáte odležané mince</translation>
     </message>
     <message numerus="yes">
-        <location line="-403"/>
+        <location line="-425"/>
         <source>%n second(s) ago</source>
-        <translation><numerusform>pred %n sekundou</numerusform><numerusform>pred %n sekundami</numerusform><numerusform>pred %n sekundami</numerusform></translation>
+        <translation>
+            <numerusform>pred %n sekundou</numerusform>
+            <numerusform>pred %n sekundami</numerusform>
+            <numerusform>pred %n sekundami</numerusform>
+        </translation>
     </message>
     <message>
         <location line="-284"/>
@@ -590,17 +618,29 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
     <message numerus="yes">
         <location line="+288"/>
         <source>%n minute(s) ago</source>
-        <translation><numerusform>pred %n minutou</numerusform><numerusform>pred %n minutami</numerusform><numerusform>pred %n minutami</numerusform></translation>
+        <translation>
+            <numerusform>pred %n minutou</numerusform>
+            <numerusform>pred %n minutami</numerusform>
+            <numerusform>pred %n minutami</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s) ago</source>
-        <translation><numerusform>pred %n hodinou</numerusform><numerusform>pred %n hodinami</numerusform><numerusform>pred %n hodinami</numerusform></translation>
+        <translation>
+            <numerusform>pred %n hodinou</numerusform>
+            <numerusform>pred %n hodinami</numerusform>
+            <numerusform>pred %n hodinami</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s) ago</source>
-        <translation><numerusform>pred %n dňom</numerusform><numerusform>pred %n dňami</numerusform><numerusform>pred %n dňami</numerusform></translation>
+        <translation>
+            <numerusform>pred %n dňom</numerusform>
+            <numerusform>pred %n dňami</numerusform>
+            <numerusform>pred %n dňami</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -613,7 +653,7 @@ Tento produkt obsahuje softvér vyvinutý projektom OpenSSL Project pre použiti
         <translation>Sťahujem...</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+16"/>
         <source>Last received block was generated %1.</source>
         <translation>Posledný prijatý blok bol vytvorený %1.</translation>
     </message>
@@ -692,27 +732,43 @@ Adresa: %4</translation>
         <translation>Došlo k chybe pri pokuse o uloženie dát peňaženky do nového umiestnenia.</translation>
     </message>
     <message numerus="yes">
-        <location line="+76"/>
+        <location line="+91"/>
         <source>%n second(s)</source>
-        <translation><numerusform>%n sekunda</numerusform><numerusform>%n sekúnd</numerusform><numerusform>%n sekúnd</numerusform></translation>
+        <translation>
+            <numerusform>%n sekunda</numerusform>
+            <numerusform>%n sekúnd</numerusform>
+            <numerusform>%n sekúnd</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
-        <translation><numerusform>%n minúta</numerusform><numerusform>%n minút</numerusform><numerusform>%n minút</numerusform></translation>
+        <translation>
+            <numerusform>%n minúta</numerusform>
+            <numerusform>%n minút</numerusform>
+            <numerusform>%n minút</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation><numerusform>%n hodina</numerusform><numerusform>%n hodiny</numerusform><numerusform>%n hodín</numerusform></translation>
+        <translation>
+            <numerusform>%n hodina</numerusform>
+            <numerusform>%n hodiny</numerusform>
+            <numerusform>%n hodín</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation><numerusform>%n deň</numerusform><numerusform>%n dni</numerusform><numerusform>%n dní</numerusform></translation>
+        <translation>
+            <numerusform>%n deň</numerusform>
+            <numerusform>%n dni</numerusform>
+            <numerusform>%n dní</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+19"/>
         <source>Not staking</source>
         <translation>Nestávkuje sa</translation>
     </message>
@@ -725,7 +781,7 @@ Adresa: %4</translation>
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+90"/>
+        <location filename="../clientmodel.cpp" line="+98"/>
         <source>Network Alert</source>
         <translation>Výstraha siete</translation>
     </message>
@@ -1069,7 +1125,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+420"/>
+        <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>E-Gold-Qt</source>
         <translation>E-Gold-Qt</translation>
@@ -1153,14 +1209,12 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>&amp;Spustiť E-Gold pri prihlásení do systému</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
-        <translation>Odpojiť blok a databázy z adresami pri vypnutí počítača. To znamená, že môžu byť presunuté do iného adresára dát, ale to spomaľuje vypnutie. Peňaženka je vždy odpojená.</translation>
+        <translation type="obsolete">Odpojiť blok a databázy z adresami pri vypnutí počítača. To znamená, že môžu byť presunuté do iného adresára dát, ale to spomaľuje vypnutie. Peňaženka je vždy odpojená.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;Odpojiť databázy pri vypnutí</translation>
+        <translation type="obsolete">&amp;Odpojiť databázy pri vypnutí</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1268,17 +1322,15 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Vyberte si predvolené delenie jednotiek zobrazované v rozhraní a pri odosielaní mincí.</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Whether to show E-Gold addresses in the transaction list or not.</source>
-        <translation>Či chcete zobraziť E-Gold adresy v zozname transakcií alebo nie.</translation>
+        <translation type="obsolete">Či chcete zobraziť E-Gold adresy v zozname transakcií alebo nie.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Zobraziť adresy v zozname transakcií</translation>
+        <translation type="obsolete">&amp;Zobraziť adresy v zozname transakcií</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+9"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Či sa majú zobraziť coin control features alebo nie.</translation>
     </message>
@@ -1308,7 +1360,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>predvolené</translation>
     </message>
     <message>
-        <location line="+149"/>
+        <location line="+147"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>Upozornenie</translation>
@@ -1754,9 +1806,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>&amp;Odoslať</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-173"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte E-Gold adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Zadajte E-Gold adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="-173"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1928,9 +1984,13 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Odstrániť tohto príjemcu</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Zadajte E-Gold adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Zadajte E-Gold adresu (napr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsentry.cpp" line="+1"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2116,17 +2176,20 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+19"/>
+        <location filename="../transactiondesc.cpp" line="+20"/>
         <source>Open until %1</source>
         <translation>Otvorené do %1</translation>
     </message>
     <message numerus="yes">
-        <location line="-2"/>
         <source>Open for %n block(s)</source>
-        <translation><numerusform>Otvoriť pre %n blok</numerusform><numerusform>Otvoriť pre %n blokov</numerusform><numerusform>Otvoriť pre %n blokov</numerusform></translation>
+        <translation type="obsolete">
+            <numerusform>Otvoriť pre %n blok</numerusform>
+            <numerusform>Otvoriť pre %n blokov</numerusform>
+            <numerusform>Otvoriť pre %n blokov</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>conflicted</source>
         <translation>v rozpore</translation>
     </message>
@@ -2146,14 +2209,18 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>%1 potvrdení</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+17"/>
         <source>Status</source>
         <translation>Stav</translation>
     </message>
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, vysielanie cez %n uzol</numerusform><numerusform>, vysielanie cez %n uzlov</numerusform><numerusform>, vysielanie cez %n uzlov</numerusform></translation>
+        <translation>
+            <numerusform>, vysielanie cez %n uzol</numerusform>
+            <numerusform>, vysielanie cez %n uzlov</numerusform>
+            <numerusform>, vysielanie cez %n uzlov</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2206,7 +2273,11 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>dozreje o ďalší %n blok</numerusform><numerusform>dozreje o ďalších %n blokov</numerusform><numerusform>dozreje o ďalších %n blokov</numerusform></translation>
+        <translation>
+            <numerusform>dozreje o ďalší %n blok</numerusform>
+            <numerusform>dozreje o ďalších %n blokov</numerusform>
+            <numerusform>dozreje o ďalších %n blokov</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2267,7 +2338,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Vstupy</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+21"/>
         <source>Amount</source>
         <translation>Suma</translation>
     </message>
@@ -2282,12 +2353,21 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>nepravda</translation>
     </message>
     <message>
-        <location line="-211"/>
+        <location line="-209"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, ešte nebola úspešne odoslaná</translation>
     </message>
+    <message numerus="yes">
+        <location line="-36"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform>Otvoriť pre %n ďalší blok</numerusform>
+            <numerusform>Otvoriť pre %n ďalšie bloky</numerusform>
+            <numerusform>Otvoriť pre %n ďalšie bloky</numerusform>
+        </translation>
+    </message>
     <message>
-        <location line="+35"/>
+        <location line="+71"/>
         <source>unknown</source>
         <translation>neznámy</translation>
     </message>
@@ -2308,7 +2388,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+226"/>
+        <location filename="../transactiontablemodel.cpp" line="+230"/>
         <source>Date</source>
         <translation>Dátum</translation>
     </message>
@@ -2328,7 +2408,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Hodnota</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+52"/>
         <source>Open until %1</source>
         <translation>Otvorené do %1</translation>
     </message>
@@ -2340,7 +2420,11 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
     <message numerus="yes">
         <location line="-15"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Otvoriť pre %n ďalší blok</numerusform><numerusform>Otvoriť pre %n ďalšie bloky</numerusform><numerusform>Otvoriť pre %n ďalšie bloky</numerusform></translation>
+        <translation>
+            <numerusform>Otvoriť pre %n ďalší blok</numerusform>
+            <numerusform>Otvoriť pre %n ďalšie bloky</numerusform>
+            <numerusform>Otvoriť pre %n ďalšie bloky</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2605,7 +2689,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+206"/>
+        <location filename="../walletmodel.cpp" line="+219"/>
         <source>Sending...</source>
         <translation>Posielam...</translation>
     </message>
@@ -2698,12 +2782,11 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Spojiť do danej adresy. Použite [host]:port zápis pre IPv6</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Stake your coins to support network and gain reward (default: 1)</source>
-        <translation>Nechajte stávkovať vaše mince pre podporu siete a získajte odmenu (predvolené: 1)</translation>
+        <translation type="obsolete">Nechajte stávkovať vaše mince pre podporu siete a získajte odmenu (predvolené: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Hranica pre odpojenie zle sa správajúcich peerov (predvolené: 100)</translation>
     </message>
@@ -2713,17 +2796,16 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Počet sekúnd kedy sa zabráni zle sa správajúcim peerom znovupripojenie (predvolené: 86400)</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-43"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Pri nastavovaní portu RPC %u pre počúvanie na IPv4 došlo k chybe: %s</translation>
     </message>
     <message>
-        <location line="+51"/>
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation>Odpojiť blok a databázy adries. Zvyšuje vypínací čas (predvolené: 0)</translation>
+        <translation type="obsolete">Odpojiť blok a databázy adries. Zvyšuje vypínací čas (predvolené: 0)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+157"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Chyba: Transakcia bola zamietnutá. To môže nastať, ak niektoré z mincí vo vašej peňaženke sa už použili, ako napríklad, ak ste použili kópiu wallet.dat a mince boli použité v kópii, ale neboli označené ako použité tu.</translation>
     </message>
@@ -2773,7 +2855,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Použiť testovaciu sieť</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-21"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Prijímať pripojenie z vonka (predvolené: 1, ak nie -proxy alebo -connect)</translation>
     </message>
@@ -2783,12 +2865,12 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Pri nastavovaní portu RPC %u pre počúvanie na IPv6, spadne späť do IPv4 došlo k chybe: %s</translation>
     </message>
     <message>
-        <location line="+117"/>
+        <location line="+115"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation>Chyba pri inicializácii databázy prostredie %s! Ak chcete obnoviť, ZÁLOHUJTE TENTO ADRESÁR, potom všetko z neho odstránte okrem wallet.dat.</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-21"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Nastavte maximálnu veľkosť high-priority/low-fee transakcií v bajtoch (predvolené: 27000)</translation>
     </message>
@@ -2803,7 +2885,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Upozornenie: Skontrolujte, že dátum a čas počítača sú správne! Ak je Váš čas nesprávny E-Gold nebude pracovať správne.</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-30"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Upozornenie: Chyba pri čítaní wallet.dat! Všetky kľúče načítané správne, ale transakčné dáta alebo položky adresára môže chýbať alebo byť nesprávne.</translation>
     </message>
@@ -2813,7 +2895,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Upozornenie: wallet.dat poškodený, údaje zachránené! Pôvodný wallet.dat bol uložený ako wallet.{timestamp}.bak v %s; ak váš zostatok alebo transakcie nie sú správne, mali by ste obnoviť zo zálohy.</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-31"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Pokus obnoviť súkromné kľúče z poškodeného wallet.dat</translation>
     </message>
@@ -2823,7 +2905,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Voľby vytvorenia bloku:</translation>
     </message>
     <message>
-        <location line="-62"/>
+        <location line="-59"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Pripojiť sa len k určenému uzlu(om)</translation>
     </message>
@@ -2833,22 +2915,22 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Objavte vlastnú IP adresa (predvolené: 1 pri počúvaní a nie -externalip)</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+92"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Nepodarilo sa počúvať žiadnom porte. Použite -listen=0 ak to chcete.</translation>
     </message>
     <message>
-        <location line="-90"/>
+        <location line="-88"/>
         <source>Find peers using DNS lookup (default: 1)</source>
         <translation>Nájsť peerov pomocou vyhľadávania DNS (predvolené: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>Sync checkpoints policy (predvolené: strict)</translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+82"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Neplatná -tor adresa: &apos;%s&apos;</translation>
     </message>
@@ -2858,7 +2940,7 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Neplatná suma pre -reservebalance=&lt;množstvo&gt;</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-81"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Maximum pre-pripojenie prijímacej vyrovnávacej pamäti, &lt;n&gt;*1000 bajtov (predvolené: 5000)</translation>
     </message>
@@ -2868,12 +2950,12 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Maximum pre-pripojenie posielacej vyrovnávacej pamäti, &lt;n&gt;*1000 bajtov (predvolené: 1000)</translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-15"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>Pripojiť len k uzlom siete &lt;net&gt; (IPv4, IPv6 alebo Tor)</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+25"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Výstupné ďalšie informácie o ladení. Znamená všetky -debug* možnosti</translation>
     </message>
@@ -2893,12 +2975,12 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>SSL možnosť: (pozrite Bitcoin Wiki pre návod na nastavenie SSL)</translation>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-71"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
         <translation>Vyberte verziu SOCKS proxy pre používanie (4-5, predvolené: 5)</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+38"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Odoslať trace/debug informácie na konzolu namiesto debug.info žurnálu</translation>
     </message>
@@ -2923,19 +3005,19 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Stlačiť debug.log súbor na spustenie klienta (predvolené: 1, keď nie -debug)</translation>
     </message>
     <message>
-        <location line="-42"/>
+        <location line="-39"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Určiť aut spojenia v milisekundách (predvolené: 5000)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+107"/>
         <source>Unable to sign checkpoint, wrong checkpointkey?
 </source>
         <translation>Nemožno podpísať kontrolný bod, zlý checkpointkey?
 </translation>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-79"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 0)</translation>
     </message>
@@ -2945,22 +3027,22 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Skúsiť použiť UPnP pre mapovanie počúvajúceho portu (default: 1 when listening)</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-24"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Použiť proxy server k získaniu Tor skrytých služieb (predvolené: rovnaká ako -proxy)</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+39"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Užívateľské meno pre JSON-RPC spojenia</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+48"/>
         <source>Verifying database integrity...</source>
         <translation>Overenie integrity databázy ...</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+56"/>
         <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
         <translation>UPOZORNENIE: detekovaný synchronizovaný porušený checkpoint, ale preskočený!</translation>
     </message>
@@ -2975,17 +3057,17 @@ To znamená, že je potrebný poplatok aspoň %2.</translation>
         <translation>Upozornenie: Táto verzia je zastaraná, vyžaduje sa aktualizácia!</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-47"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat je poškodený, záchrana zlyhala</translation>
     </message>
     <message>
-        <location line="-54"/>
+        <location line="-55"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Heslo pre JSON-rPC spojenia</translation>
     </message>
     <message>
-        <location line="-84"/>
+        <location line="-81"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -3014,12 +3096,12 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Nájsť peerov pomocou Internet Relay Chat (predvolené: 1)  {0)?}</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
         <translation>Synchronizácia času s ostatnými uzlami. Zakázať ak čas na vašom systéme je presný, napr synchronizáciu s NTP (predvolené: 1)</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+13"/>
         <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
         <translation>Pri vytváraní transakcií, ignorovať vstupy s hodnotou nižšou než táto (predvolené: 0.01)</translation>
     </message>
@@ -3109,7 +3191,12 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Akceptovateľné ciphers (predvolené: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+8"/>
+        <source>Initialization sanity check failed. E-Gold is shutting down.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
         <translation>Chyba: Peňaženka odomknuté len pre stávkovanie, nemožné vytvoriť transakciu.</translation>
     </message>
@@ -3119,12 +3206,12 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>UPOZORNENIE: Neplatný checkpoint nájdený! Uvedené transakcie nemusia byť správne! Možno budete musieť upgradovať, alebo upozorniť vývojárov.</translation>
     </message>
     <message>
-        <location line="-158"/>
+        <location line="-155"/>
         <source>This help message</source>
         <translation>Táto pomocná správa</translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+93"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>Peňaženka %s bydlisko mimo dátový adresár %s.</translation>
     </message>
@@ -3134,17 +3221,17 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Nemožno získať zámok na dátový adresár %s. E-Gold už pravdepodobne beží.</translation>
     </message>
     <message>
-        <location line="-98"/>
+        <location line="-96"/>
         <source>E-Gold</source>
         <translation>E-Gold</translation>
     </message>
     <message>
-        <location line="+140"/>
+        <location line="+137"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Nemôžem sa pripojiť k %s na tomto počítači (bind vrátil chybu %d, %s)</translation>
     </message>
     <message>
-        <location line="-130"/>
+        <location line="-127"/>
         <source>Connect through socks proxy</source>
         <translation>Pripojenie cez SOCKS proxy</translation>
     </message>
@@ -3154,12 +3241,12 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Povoliť vyhľadávanie DNS pre pridanie nódy a spojenie</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+119"/>
         <source>Loading addresses...</source>
         <translation>Načítavanie adries...</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-14"/>
         <source>Error loading blkindex.dat</source>
         <translation>Chyba pri načítaní blkindex.dat</translation>
     </message>
@@ -3209,7 +3296,7 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Nemožno rozložiť -externalip adresu: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-25"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Neplatná suma pre -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
@@ -3234,17 +3321,17 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Nedostatok prostriedkov</translation>
     </message>
     <message>
-        <location line="-34"/>
+        <location line="-33"/>
         <source>Loading block index...</source>
         <translation>Načítavanie zoznamu blokov...</translation>
     </message>
     <message>
-        <location line="-103"/>
+        <location line="-101"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Pridať nód na pripojenie a pokus o udržanie pripojenia otvoreného</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+119"/>
         <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
         <translation>Nemôžem sa pripojiť na %s na tomto počítači. E-Gold je pravdepodobne už beží.</translation>
     </message>
@@ -3259,7 +3346,7 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Neplatná suma pre -mininput=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+26"/>
         <source>Loading wallet...</source>
         <translation>Načítavam peňaženku...</translation>
     </message>
@@ -3269,9 +3356,8 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Nie je možné prejsť na nižšiu verziu peňaženky</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Cannot initialize keypool</source>
-        <translation>Nemožno inicializovať keypool</translation>
+        <translation type="obsolete">Nemožno inicializovať keypool</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3289,7 +3375,7 @@ napríklad: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.co
         <translation>Dokončené načítavanie</translation>
     </message>
     <message>
-        <location line="-167"/>
+        <location line="-164"/>
         <source>To use the %s option</source>
         <translation>Použiť %s možnosť.</translation>
     </message>

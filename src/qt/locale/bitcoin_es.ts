@@ -1,4 +1,7 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="es" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="es">
+<defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>AboutDialog</name>
     <message>
@@ -25,10 +28,19 @@ Copyright © 2014 The E-Gold developers</translation>
         <source>
 This is experimental software.
 
+Distributed under the MIT/X11 software license, see the accompanying file COPYING or &lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;http://www.opensource.org/licenses/mit-license.php&lt;/a&gt;.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (&lt;a href=&quot;https://www.openssl.org/&quot;&gt;https://www.openssl.org/&lt;/a&gt;) and cryptographic software written by Eric Young (&lt;a href=&quot;mailto:eay@cryptsoft.com&quot;&gt;eay@cryptsoft.com&lt;/a&gt;) and UPnP software written by Thomas Bernard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>
+This is experimental software.
+
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
+        <translation type="obsolete">
 Este es un software experimental.
 
 Distribuido bajo la licencia MIT/X11, vea el archivo adjunto
@@ -193,12 +205,11 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Para &quot;Staking&quot; solamente</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+35"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Introduzca la nueva contraseña del monedero.&lt;br/&gt;Por favor elija una con &lt;b&gt;10 o más caracteres aleatorios&lt;/b&gt;, u &lt;b&gt;ocho o más palabras&lt;/b&gt;.</translation>
+        <translation type="obsolete">Introduzca la nueva contraseña del monedero.&lt;br/&gt;Por favor elija una con &lt;b&gt;10 o más caracteres aleatorios&lt;/b&gt;, u &lt;b&gt;ocho o más palabras&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location filename="../askpassphrasedialog.cpp" line="+38"/>
         <source>Encrypt wallet</source>
         <translation>Cifrar el monedero</translation>
     </message>
@@ -233,7 +244,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Introduzca la contraseña anterior del monedero y la nueva. </translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+45"/>
         <source>Confirm wallet encryption</source>
         <translation>Confirmar cifrado del monedero</translation>
     </message>
@@ -265,7 +276,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Monedero cifrado</translation>
     </message>
     <message>
-        <location line="-58"/>
+        <location line="-140"/>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
         <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>E-Gold cerrará para terminar el proceso de encriptación. Recuerde que la encriptación de su monedero no puede proteger completamente que sus monedas sean robadas por malware infectando su computadora.</translation>
     </message>
@@ -314,7 +330,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+280"/>
+        <location filename="../bitcoingui.cpp" line="+282"/>
         <source>Sign &amp;message...</source>
         <translation>Firmar &amp;mensaje...</translation>
     </message>
@@ -416,7 +432,10 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message numerus="yes">
         <location line="+250"/>
         <source>~%n block(s) remaining</source>
-        <translation><numerusform>~%n bloque restante</numerusform><numerusform>~%n bloques restantes</numerusform></translation>
+        <translation>
+            <numerusform>~%n bloque restante</numerusform>
+            <numerusform>~%n bloques restantes</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -548,7 +567,10 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message numerus="yes">
         <location line="+70"/>
         <source>%n active connection(s) to E-Gold network</source>
-        <translation><numerusform>%n conexión activa a la red E-Gold</numerusform><numerusform>%n conexiones activas a la red E-Gold</numerusform></translation>
+        <translation>
+            <numerusform>%n conexión activa a la red E-Gold</numerusform>
+            <numerusform>%n conexiones activas a la red E-Gold</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+40"/>
@@ -556,7 +578,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Descargado %1 bloques de historial de transacciones.</translation>
     </message>
     <message>
-        <location line="+413"/>
+        <location line="+435"/>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation>Staking.&lt;br&gt;Su contribución es %1&lt;br&gt;Contribución de la red es %2&lt;br&gt;Tiempo esperado para ganar la recompensa es %3</translation>
     </message>
@@ -581,9 +603,12 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>No esta &quot;Staking&quot; ya que no tiene monedas maduras</translation>
     </message>
     <message numerus="yes">
-        <location line="-403"/>
+        <location line="-425"/>
         <source>%n second(s) ago</source>
-        <translation><numerusform>hace %n segundo</numerusform><numerusform>hace %n segundos</numerusform></translation>
+        <translation>
+            <numerusform>hace %n segundo</numerusform>
+            <numerusform>hace %n segundos</numerusform>
+        </translation>
     </message>
     <message>
         <location line="-284"/>
@@ -593,17 +618,26 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
     <message numerus="yes">
         <location line="+288"/>
         <source>%n minute(s) ago</source>
-        <translation><numerusform>hace %n minuto</numerusform><numerusform>hace %n minutos</numerusform></translation>
+        <translation>
+            <numerusform>hace %n minuto</numerusform>
+            <numerusform>hace %n minutos</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s) ago</source>
-        <translation><numerusform>hace %n hora</numerusform><numerusform>hace %n horas</numerusform></translation>
+        <translation>
+            <numerusform>hace %n hora</numerusform>
+            <numerusform>hace %n horas</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s) ago</source>
-        <translation><numerusform>hace %n dia</numerusform><numerusform>hace %n dias</numerusform></translation>
+        <translation>
+            <numerusform>hace %n dia</numerusform>
+            <numerusform>hace %n dias</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -616,7 +650,7 @@ Eric Young (eay@cryptsoft.com) y el software UPnP escrito por Thomas Bernard.</t
         <translation>Actualizando...</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+16"/>
         <source>Last received block was generated %1.</source>
         <translation>Último bloque recibido se generó en %1.</translation>
     </message>
@@ -696,27 +730,39 @@ Dirección: %4
         <translation>Hubo un error al tratar de salvar los datos de su monedero a la nueva ubicación.</translation>
     </message>
     <message numerus="yes">
-        <location line="+76"/>
+        <location line="+91"/>
         <source>%n second(s)</source>
-        <translation><numerusform>%n segundo</numerusform><numerusform>%n segundos</numerusform></translation>
+        <translation>
+            <numerusform>%n segundo</numerusform>
+            <numerusform>%n segundos</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
-        <translation><numerusform>%n minuto</numerusform><numerusform>%n minutos</numerusform></translation>
+        <translation>
+            <numerusform>%n minuto</numerusform>
+            <numerusform>%n minutos</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation><numerusform>%n hora</numerusform><numerusform>%n horas</numerusform></translation>
+        <translation>
+            <numerusform>%n hora</numerusform>
+            <numerusform>%n horas</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation><numerusform>%n día</numerusform><numerusform>%n días</numerusform></translation>
+        <translation>
+            <numerusform>%n día</numerusform>
+            <numerusform>%n días</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+19"/>
         <source>Not staking</source>
         <translation>No estás &quot;Staking&quot;</translation>
     </message>
@@ -729,7 +775,7 @@ Dirección: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+90"/>
+        <location filename="../clientmodel.cpp" line="+98"/>
         <source>Network Alert</source>
         <translation>Alerta de red</translation>
     </message>
@@ -1073,7 +1119,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+420"/>
+        <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>E-Gold-Qt</source>
         <translation>E-Gold-Qt</translation>
@@ -1157,14 +1203,12 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>&amp;Iniciar E-Gold al inicio del sistema</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
-        <translation>Separe el bloque y las bases de datos de direcciones al apagar el equipo. Esto significa que se puede mover a otro directorio de datos, pero desacelera el apagado. El monedero siempre está separado.</translation>
+        <translation type="obsolete">Separe el bloque y las bases de datos de direcciones al apagar el equipo. Esto significa que se puede mover a otro directorio de datos, pero desacelera el apagado. El monedero siempre está separado.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;Separe la bases de datos al apagar el equipo</translation>
+        <translation type="obsolete">&amp;Separe la bases de datos al apagar el equipo</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1272,17 +1316,15 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Elegir la subdivisión predeterminada para mostrar cantidades en la interfaz y cuando se envían bitcoins.</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Whether to show E-Gold addresses in the transaction list or not.</source>
-        <translation>Tanto para mostrar direcciones de E-Gold en la lista de transacciones o no.</translation>
+        <translation type="obsolete">Tanto para mostrar direcciones de E-Gold en la lista de transacciones o no.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Mostrar las direcciones en la lista de transacciones</translation>
+        <translation type="obsolete">&amp;Mostrar las direcciones en la lista de transacciones</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+9"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Mostrar o no funcionalidad de Coin Control</translation>
     </message>
@@ -1312,7 +1354,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>predeterminado</translation>
     </message>
     <message>
-        <location line="+149"/>
+        <location line="+147"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>Advertencia</translation>
@@ -1758,9 +1800,13 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>&amp;Enviar</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-173"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduce una dirección E-Gold (p.ej. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Introduce una dirección E-Gold (p.ej. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="-173"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1932,9 +1978,13 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Elimina este beneficiario</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Introduce una dirección E-Gold (p.ej. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Introduce una dirección E-Gold (p.ej. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsentry.cpp" line="+1"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2120,17 +2170,19 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+19"/>
+        <location filename="../transactiondesc.cpp" line="+20"/>
         <source>Open until %1</source>
         <translation>Abierto hasta %1</translation>
     </message>
     <message numerus="yes">
-        <location line="-2"/>
         <source>Open for %n block(s)</source>
-        <translation><numerusform>Abierto para %n bloque</numerusform><numerusform>Abierto para %n bloques</numerusform></translation>
+        <translation type="obsolete">
+            <numerusform>Abierto para %n bloque</numerusform>
+            <numerusform>Abierto para %n bloques</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>conflicted</source>
         <translation>en conflicto</translation>
     </message>
@@ -2150,14 +2202,17 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>%1 confirmaciones</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+17"/>
         <source>Status</source>
         <translation>Estado</translation>
     </message>
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, transmitir a través de %n nodo</numerusform><numerusform>, transmitir a través de %n nodos</numerusform></translation>
+        <translation>
+            <numerusform>, transmitir a través de %n nodo</numerusform>
+            <numerusform>, transmitir a través de %n nodos</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2210,7 +2265,10 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>disponible en %n bloque más</numerusform><numerusform>disponible en %n bloques más</numerusform></translation>
+        <translation>
+            <numerusform>disponible en %n bloque más</numerusform>
+            <numerusform>disponible en %n bloques más</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2271,7 +2329,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>entradas</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+21"/>
         <source>Amount</source>
         <translation>Cantidad</translation>
     </message>
@@ -2286,12 +2344,20 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>falso</translation>
     </message>
     <message>
-        <location line="-211"/>
+        <location line="-209"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, todavía no se ha sido difundido satisfactoriamente</translation>
     </message>
+    <message numerus="yes">
+        <location line="-36"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform>Abrir para %n bloque más</numerusform>
+            <numerusform>Abrir para %n bloques más</numerusform>
+        </translation>
+    </message>
     <message>
-        <location line="+35"/>
+        <location line="+71"/>
         <source>unknown</source>
         <translation>desconocido</translation>
     </message>
@@ -2312,7 +2378,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+226"/>
+        <location filename="../transactiontablemodel.cpp" line="+230"/>
         <source>Date</source>
         <translation>Fecha</translation>
     </message>
@@ -2332,7 +2398,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Cantidad</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+52"/>
         <source>Open until %1</source>
         <translation>Abierto hasta %1</translation>
     </message>
@@ -2344,7 +2410,10 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
     <message numerus="yes">
         <location line="-15"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Abrir para %n bloque más</numerusform><numerusform>Abrir para %n bloques más</numerusform></translation>
+        <translation>
+            <numerusform>Abrir para %n bloque más</numerusform>
+            <numerusform>Abrir para %n bloques más</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2609,7 +2678,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+206"/>
+        <location filename="../walletmodel.cpp" line="+219"/>
         <source>Sending...</source>
         <translation>Enviando...</translation>
     </message>
@@ -2705,12 +2774,11 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Enlazar a la dirección dada. Utilice la notación [host]:puerto para IPv6</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Stake your coins to support network and gain reward (default: 1)</source>
-        <translation>Pon tus monedas en participación &quot;Stake&quot; para dar soporte a la red y ganar alguna recompensa (por defecto: 1)</translation>
+        <translation type="obsolete">Pon tus monedas en participación &quot;Stake&quot; para dar soporte a la red y ganar alguna recompensa (por defecto: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Umbral para la desconexión de pares con mal comportamiento (predeterminado: 100)</translation>
     </message>
@@ -2720,17 +2788,16 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Número de segundos en que se evita la reconexión de pares con mal comportamiento (predeterminado: 86400)</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-43"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Ha ocurrido un error al configurar el puerto RPC %u para escucha en IPv4: %s</translation>
     </message>
     <message>
-        <location line="+51"/>
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation>Separa el bloque y la base de datos de direcciones. Aumenta el tiempo de apagado (por defecto: 0)</translation>
+        <translation type="obsolete">Separa el bloque y la base de datos de direcciones. Aumenta el tiempo de apagado (por defecto: 0)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+157"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Error: La transacción ha sido rechazada. Esto puede ocurrir si algunas de sus monedas en el monedero ya se gastaron, por ejemplo, si se usa una copia del wallet.dat y se gastaron las monedas de la copia pero no se han marcado como gastadas aquí.</translation>
     </message>
@@ -2783,7 +2850,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
 </translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-21"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Aceptar conexiones desde el exterior (predeterminado: 1 si no -proxy o -connect)</translation>
     </message>
@@ -2793,12 +2860,12 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Ha ocurrido un error al configurar el puerto RPC %u para escuchar mediante IPv6. Recurriendo a IPv4: %s</translation>
     </message>
     <message>
-        <location line="+117"/>
+        <location line="+115"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation>Error al inicializar el entorno de base de datos %s! Para recuperar, HAGA UNA COPIA DE SEGURIDAD DEL DIRECTORIO, a continuación, elimine todo de ella excepto el archivo wallet.dat.</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-21"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Establecer el tamaño máximo de las transacciones alta-prioridad/baja-comisión en bytes (por defecto: 27000)</translation>
     </message>
@@ -2813,7 +2880,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Advertencia: Verifique que la fecha y hora del equipo sean correctas! Si su reloj es erróneo E-Gold no funcionará correctamente.</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-30"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Aviso: ¡Error al leer wallet.dat! Todas las claves se han leído correctamente, pero podrían faltar o ser incorrectos los datos de transacciones o las entradas de la libreta de direcciones.</translation>
     </message>
@@ -2823,7 +2890,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Aviso: ¡Recuperados datos de wallet.dat corrupto! El wallet.dat original se ha guardado como wallet.{timestamp}.bak en %s; si hubiera errores en su saldo o transacciones, deberá restaurar una copia de seguridad.</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-31"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Intento de recuperar claves privadas de un wallet.dat corrupto</translation>
     </message>
@@ -2833,7 +2900,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Opciones de creación de bloques:</translation>
     </message>
     <message>
-        <location line="-62"/>
+        <location line="-59"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Conectar sólo a los nodos (o nodo) especificados</translation>
     </message>
@@ -2843,22 +2910,22 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Descubrir dirección IP propia (predeterminado: 1 al escuchar sin -externalip)</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+92"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Ha fallado la escucha en todos los puertos. Use -listen=0 si desea esto.</translation>
     </message>
     <message>
-        <location line="-90"/>
+        <location line="-88"/>
         <source>Find peers using DNS lookup (default: 1)</source>
         <translation>Encontrar pares usando la búsqueda de DNS (por defecto: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>Política de puntos de control de sincronización (por defecto: estricta)</translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+82"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Dirección -tor inválida: &apos;%s&apos;</translation>
     </message>
@@ -2868,7 +2935,7 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Cantidad no válida para -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-81"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Búfer de recepción máximo por conexión, &lt;n&gt;*1000 bytes (predeterminado: 5000)</translation>
     </message>
@@ -2878,12 +2945,12 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Búfer de recepción máximo por conexión, , &lt;n&gt;*1000 bytes (predeterminado: 1000)</translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-15"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>Conectarse solo a nodos de la red &lt;net&gt; (IPv4, IPv6 o Tor)</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+25"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Salida de información de depuración extra. Implica todas las opciones -debug* de depuración</translation>
     </message>
@@ -2903,12 +2970,12 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Opciones SSL: (ver la Bitcoin Wiki para instrucciones de configuración SSL)</translation>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-71"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
         <translation>Selecciona la versión de socks proxy a usar (4-5, por defecto: 5)</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+38"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Enviar información de trazas/depuración a la consola en lugar de al archivo debug.log</translation>
     </message>
@@ -2933,18 +3000,18 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Reducir el archivo debug.log al iniciar el cliente (predeterminado: 1 sin -debug)</translation>
     </message>
     <message>
-        <location line="-42"/>
+        <location line="-39"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Especificar el tiempo máximo de conexión en milisegundos (predeterminado: 5000)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+107"/>
         <source>Unable to sign checkpoint, wrong checkpointkey?
 </source>
         <translation>No es posible firmar el punto de control, clave de punto de control incorrecta?%s</translation>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-79"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Usar UPnP para asignar el puerto de escucha (predeterminado: 0)</translation>
     </message>
@@ -2954,23 +3021,23 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Usar UPnP para asignar el puerto de escucha (predeterminado: 1 al escuchar)</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-24"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Usar proxy para alcanzar a ver los servicios ocultos (por defecto: los mismos que -proxy)</translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+39"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Nombre de usuario para las conexiones JSON-RPC
 </translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+48"/>
         <source>Verifying database integrity...</source>
         <translation>Verificando la integridad de la base de datos...</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+56"/>
         <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
         <translation>ADVERTENCIA: violación de un punto de control sincronizado detectada, se saltara!</translation>
     </message>
@@ -2985,18 +3052,18 @@ Esto significa que se requiere una cuota de al menos %2.</translation>
         <translation>Aviso: Esta versión es obsoleta, actualización necesaria!</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-47"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrupto. Ha fallado la recuperación.</translation>
     </message>
     <message>
-        <location line="-54"/>
+        <location line="-55"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Contraseña para las conexiones JSON-RPC
 </translation>
     </message>
     <message>
-        <location line="-84"/>
+        <location line="-81"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -3026,12 +3093,12 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>Encontrar pares usando IRC (por defecto:1) {0)?}</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
         <translation>Sincronizar el tiempo con otros nodos. Desactivar si el tiempo en su sistema es preciso, por ejemplo si usa sincronización con NTP (por defecto: 1)</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+13"/>
         <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
         <translation>Al crear transacciones, ignorar las entradas con valor inferior a esta (por defecto: 0.01)</translation>
     </message>
@@ -3127,7 +3194,12 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>Cifras aceptables: (por defecto: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+8"/>
+        <source>Initialization sanity check failed. E-Gold is shutting down.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
         <translation>Error: Monedero desbloqueado sólo para hacer &quot;stake&quot;, no es posible crear una transacción.</translation>
     </message>
@@ -3137,13 +3209,13 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>ADVERTENCIA: Punto de control no válido encontrado! Las transacciones que se muestran pueden no ser correctas! Puede que tenga que actualizar o notificar a los desarrolladores.</translation>
     </message>
     <message>
-        <location line="-158"/>
+        <location line="-155"/>
         <source>This help message</source>
         <translation>Este mensaje de ayuda
 </translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+93"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>El monedero %s reside fuera del directorio de datos %s.</translation>
     </message>
@@ -3153,17 +3225,17 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>No se puede obtener un bloqueo en el directorio de datos %s. E-Gold probablemente ya esté en funcionamiento.</translation>
     </message>
     <message>
-        <location line="-98"/>
+        <location line="-96"/>
         <source>E-Gold</source>
         <translation>E-Gold</translation>
     </message>
     <message>
-        <location line="+140"/>
+        <location line="+137"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>No es posible conectar con %s en este sistema (bind ha dado el error %d, %s)</translation>
     </message>
     <message>
-        <location line="-130"/>
+        <location line="-127"/>
         <source>Connect through socks proxy</source>
         <translation>Conecte a través del socks proxy</translation>
     </message>
@@ -3173,12 +3245,12 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>Permitir búsquedas DNS para -addnode, -seednode y -connect</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+119"/>
         <source>Loading addresses...</source>
         <translation>Cargando direcciones...</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-14"/>
         <source>Error loading blkindex.dat</source>
         <translation>Error al cargar blkindex.dat</translation>
     </message>
@@ -3228,7 +3300,7 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>No se puede resolver la dirección de -externalip: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-25"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Cantidad inválida para -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
@@ -3253,17 +3325,17 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>Fondos insuficientes</translation>
     </message>
     <message>
-        <location line="-34"/>
+        <location line="-33"/>
         <source>Loading block index...</source>
         <translation>Cargando el índice de bloques...</translation>
     </message>
     <message>
-        <location line="-103"/>
+        <location line="-101"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Añadir un nodo al que conectarse y tratar de mantener la conexión abierta</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+119"/>
         <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
         <translation>No se puede enlazar a %s en este equipo. E-Gold probablemente ya esté en funcionamiento.</translation>
     </message>
@@ -3278,7 +3350,7 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>Cantidad no válida para -mininput=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+26"/>
         <source>Loading wallet...</source>
         <translation>Cargando monedero...</translation>
     </message>
@@ -3288,9 +3360,8 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>No se puede rebajar el monedero</translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Cannot initialize keypool</source>
-        <translation>No se puede inicializar el keypool</translation>
+        <translation type="obsolete">No se puede inicializar el keypool</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3308,7 +3379,7 @@ por ejemplo: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>Generado pero no aceptado</translation>
     </message>
     <message>
-        <location line="-167"/>
+        <location line="-164"/>
         <source>To use the %s option</source>
         <translation>Para utilizar la opción %s</translation>
     </message>

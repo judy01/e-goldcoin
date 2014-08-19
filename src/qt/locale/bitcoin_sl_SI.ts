@@ -1,4 +1,7 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="sl_SI" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.0" language="sl_SI">
+<defaultcodec>UTF-8</defaultcodec>
 <context>
     <name>AboutDialog</name>
     <message>
@@ -16,17 +19,26 @@
         <source>Copyright © 2009-2014 The Bitcoin developers
 Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The E-Gold developers</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
         <source>
 This is experimental software.
 
+Distributed under the MIT/X11 software license, see the accompanying file COPYING or &lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;http://www.opensource.org/licenses/mit-license.php&lt;/a&gt;.
+
+This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (&lt;a href=&quot;https://www.openssl.org/&quot;&gt;https://www.openssl.org/&lt;/a&gt;) and cryptographic software written by Eric Young (&lt;a href=&quot;mailto:eay@cryptsoft.com&quot;&gt;eay@cryptsoft.com&lt;/a&gt;) and UPnP software written by Thomas Bernard.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>
+This is experimental software.
+
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation>
+        <translation type="obsolete">
 To je poizkusen softver. 
 
 Distribuiran pod MIT/X11 softversko licenco, glej priloženo datoteko COPYING ali http://www.opensource.org/licenses/mit-license.php.
@@ -188,12 +200,11 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
         <translation>Samo za staking.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+35"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation>Vnesite novo geslo za vstop v denarnico.&lt;br/&gt;Prosimo, da geslo sestavite iz &lt;b&gt; 10 ali več naključnih znakov&lt;/b&gt; oz. &lt;b&gt;osem ali več besed&lt;/b&gt;.</translation>
+        <translation type="obsolete">Vnesite novo geslo za vstop v denarnico.&lt;br/&gt;Prosimo, da geslo sestavite iz &lt;b&gt; 10 ali več naključnih znakov&lt;/b&gt; oz. &lt;b&gt;osem ali več besed&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location line="+1"/>
+        <location filename="../askpassphrasedialog.cpp" line="+38"/>
         <source>Encrypt wallet</source>
         <translation>Šifriraj denarnico</translation>
     </message>
@@ -228,7 +239,7 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
         <translation>Vnesite staro in novo geslo denarnice.</translation>
     </message>
     <message>
-        <location line="+46"/>
+        <location line="+45"/>
         <source>Confirm wallet encryption</source>
         <translation>Potrdi šifriranje denarnice</translation>
     </message>
@@ -260,7 +271,12 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
         <translation>Denarnica šifrirana</translation>
     </message>
     <message>
-        <location line="-58"/>
+        <location line="-140"/>
+        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+82"/>
         <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>E-Gold se bo sedaj zaprl, da dokonča proces šifriranje. Pomnite, da tudi šifriranje vaše denarnice ne more v celoti zaščititi vaših kovancev pred krajo z zlonamernimi programi in računalniškimi virusi, če ti okužijo vaš računalnik.</translation>
     </message>
@@ -309,7 +325,7 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+280"/>
+        <location filename="../bitcoingui.cpp" line="+282"/>
         <source>Sign &amp;message...</source>
         <translation>Podpiši &amp;sporočilo ...</translation>
     </message>
@@ -411,7 +427,12 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     <message numerus="yes">
         <location line="+250"/>
         <source>~%n block(s) remaining</source>
-        <translation><numerusform>Ostaja ~%n bloka </numerusform><numerusform>Ostaja ~%n blokov</numerusform><numerusform>Ostaja ~%n blokov</numerusform><numerusform>Ostaja ~%n blokov </numerusform></translation>
+        <translation>
+            <numerusform>Ostaja ~%n bloka </numerusform>
+            <numerusform>Ostaja ~%n blokov</numerusform>
+            <numerusform>Ostaja ~%n blokov</numerusform>
+            <numerusform>Ostaja ~%n blokov </numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -543,7 +564,12 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     <message numerus="yes">
         <location line="+70"/>
         <source>%n active connection(s) to E-Gold network</source>
-        <translation><numerusform>%n aktivne povezave na E-Gold omrežje</numerusform><numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform><numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform><numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform></translation>
+        <translation>
+            <numerusform>%n aktivne povezave na E-Gold omrežje</numerusform>
+            <numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform>
+            <numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform>
+            <numerusform>%n aktivnih povezav na E-Gold omrežje</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+40"/>
@@ -551,7 +577,7 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
         <translation>Prenešenih %1 blokov transakcijske zgodovine.</translation>
     </message>
     <message>
-        <location line="+413"/>
+        <location line="+435"/>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation>Deležeje [Staking].&lt;br&gt;Teža vašega deleženja je %1&lt;br&gt;Teža celotne mreže deleženja je %2&lt;br&gt;Pričakovan čas do prejema nagrade %3</translation>
     </message>
@@ -576,9 +602,14 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
         <translation>Ne deležite ker nimate zrelih kovancev. </translation>
     </message>
     <message numerus="yes">
-        <location line="-403"/>
+        <location line="-425"/>
         <source>%n second(s) ago</source>
-        <translation><numerusform>pred %n sekundo</numerusform><numerusform>pred %n sekundama</numerusform><numerusform>pred %n sekundami</numerusform><numerusform>pred %n sekundami </numerusform></translation>
+        <translation>
+            <numerusform>pred %n sekundo</numerusform>
+            <numerusform>pred %n sekundama</numerusform>
+            <numerusform>pred %n sekundami</numerusform>
+            <numerusform>pred %n sekundami </numerusform>
+        </translation>
     </message>
     <message>
         <location line="-284"/>
@@ -588,17 +619,32 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
     <message numerus="yes">
         <location line="+288"/>
         <source>%n minute(s) ago</source>
-        <translation><numerusform>Pred %n minuto</numerusform><numerusform>Pred %n minutama</numerusform><numerusform>Pred %n minutami</numerusform><numerusform>Pred %n minutami</numerusform></translation>
+        <translation>
+            <numerusform>Pred %n minuto</numerusform>
+            <numerusform>Pred %n minutama</numerusform>
+            <numerusform>Pred %n minutami</numerusform>
+            <numerusform>Pred %n minutami</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s) ago</source>
-        <translation><numerusform>Pred %n uro.</numerusform><numerusform>Pred %n urama.</numerusform><numerusform>Pred %n urami.</numerusform><numerusform>Pred %n urami.</numerusform></translation>
+        <translation>
+            <numerusform>Pred %n uro.</numerusform>
+            <numerusform>Pred %n urama.</numerusform>
+            <numerusform>Pred %n urami.</numerusform>
+            <numerusform>Pred %n urami.</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s) ago</source>
-        <translation><numerusform>Pred %n dnevom.</numerusform><numerusform>Pred %n dnevoma.</numerusform><numerusform>Pred %n dnevi.</numerusform><numerusform>Pred %n dnevi.</numerusform></translation>
+        <translation>
+            <numerusform>Pred %n dnevom.</numerusform>
+            <numerusform>Pred %n dnevoma.</numerusform>
+            <numerusform>Pred %n dnevi.</numerusform>
+            <numerusform>Pred %n dnevi.</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -611,7 +657,7 @@ Ta proizvod vključuje softver razvit s strani projekta OpenSSL za uporabo v Ope
         <translation>Pridobivanje ...</translation>
     </message>
     <message>
-        <location line="+10"/>
+        <location line="+16"/>
         <source>Last received block was generated %1.</source>
         <translation>Zadnji prejeti blok je bil ustvarjen %1.</translation>
     </message>
@@ -691,27 +737,47 @@ Naslov: %4
         <translation>Prišlo je do napake ob poskušanju shranjevanja datoteke denarnice na novo lokacijo.</translation>
     </message>
     <message numerus="yes">
-        <location line="+76"/>
+        <location line="+91"/>
         <source>%n second(s)</source>
-        <translation><numerusform>%n sekundo</numerusform><numerusform>%n sekundama</numerusform><numerusform>%n sekund</numerusform><numerusform>%n sekund</numerusform></translation>
+        <translation>
+            <numerusform>%n sekundo</numerusform>
+            <numerusform>%n sekundama</numerusform>
+            <numerusform>%n sekund</numerusform>
+            <numerusform>%n sekund</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
-        <translation><numerusform>%n minuto</numerusform><numerusform>%n minutama</numerusform><numerusform>%n minut</numerusform><numerusform>%n minut</numerusform></translation>
+        <translation>
+            <numerusform>%n minuto</numerusform>
+            <numerusform>%n minutama</numerusform>
+            <numerusform>%n minut</numerusform>
+            <numerusform>%n minut</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation><numerusform>%n ura</numerusform><numerusform>%n uri</numerusform><numerusform>%n ure</numerusform><numerusform>%n ura</numerusform></translation>
+        <translation>
+            <numerusform>%n ura</numerusform>
+            <numerusform>%n uri</numerusform>
+            <numerusform>%n ure</numerusform>
+            <numerusform>%n ura</numerusform>
+        </translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation><numerusform>%n dan</numerusform><numerusform>%n dneva</numerusform><numerusform>%n dnevi</numerusform><numerusform>%n dni</numerusform></translation>
+        <translation>
+            <numerusform>%n dan</numerusform>
+            <numerusform>%n dneva</numerusform>
+            <numerusform>%n dnevi</numerusform>
+            <numerusform>%n dni</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+19"/>
         <source>Not staking</source>
         <translation>Ne deležite</translation>
     </message>
@@ -724,7 +790,7 @@ Naslov: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+90"/>
+        <location filename="../clientmodel.cpp" line="+98"/>
         <source>Network Alert</source>
         <translation>Omrežno Opozorilo</translation>
     </message>
@@ -1068,7 +1134,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+420"/>
+        <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
         <source>E-Gold-Qt</source>
         <translation>E-Gold-Qt</translation>
@@ -1152,14 +1218,12 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>&amp;Zaženi E-Gold ob prijavi v sistem</translation>
     </message>
     <message>
-        <location line="+7"/>
         <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
-        <translation>Loči podatkovne baze blokov in naslovov ob zaustavitvi. To pomeni da jih lahko prenesete na drugo lokacijo, a upočasni zaustavitev. Denarnica je vedno ločena. </translation>
+        <translation type="obsolete">Loči podatkovne baze blokov in naslovov ob zaustavitvi. To pomeni da jih lahko prenesete na drugo lokacijo, a upočasni zaustavitev. Denarnica je vedno ločena. </translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Detach databases at shutdown</source>
-        <translation>&amp;Loči podatkovne baze ob zaustavitvi</translation>
+        <translation type="obsolete">&amp;Loči podatkovne baze ob zaustavitvi</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1267,17 +1331,15 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Izberite privzeto delitev enot, ki naj bodo prikazane v vmesniku ob pošiljanju kovancev.</translation>
     </message>
     <message>
-        <location line="+9"/>
         <source>Whether to show E-Gold addresses in the transaction list or not.</source>
-        <translation>Izbira prikaza E-Gold naslovov v seznamu transakcij.</translation>
+        <translation type="obsolete">Izbira prikaza E-Gold naslovov v seznamu transakcij.</translation>
     </message>
     <message>
-        <location line="+3"/>
         <source>&amp;Display addresses in transaction list</source>
-        <translation>&amp;Prikaz naslovov v seznamu transakcij</translation>
+        <translation type="obsolete">&amp;Prikaz naslovov v seznamu transakcij</translation>
     </message>
     <message>
-        <location line="+7"/>
+        <location line="+9"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Izbira prikaza lastnosti kontrole kovancev.</translation>
     </message>
@@ -1307,7 +1369,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>privzeto</translation>
     </message>
     <message>
-        <location line="+149"/>
+        <location line="+147"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>Opozorilo</translation>
@@ -1753,9 +1815,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>P&amp;ošlji</translation>
     </message>
     <message>
-        <location filename="../sendcoinsdialog.cpp" line="-173"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite E-Gold naslov (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Vnesite E-Gold naslov (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsdialog.cpp" line="-173"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1927,9 +1993,13 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Odstrani tega prejemnika</translation>
     </message>
     <message>
-        <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>Vnesite E-Gold naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation type="obsolete">Vnesite E-Gold naslov (npr. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+    </message>
+    <message>
+        <location filename="../sendcoinsentry.cpp" line="+1"/>
+        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -2115,17 +2185,21 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+19"/>
+        <location filename="../transactiondesc.cpp" line="+20"/>
         <source>Open until %1</source>
         <translation>Odpri enoto %1</translation>
     </message>
     <message numerus="yes">
-        <location line="-2"/>
         <source>Open for %n block(s)</source>
-        <translation><numerusform>Odprt za %n blok</numerusform><numerusform>Odprt za %n bloka</numerusform><numerusform>Odprt za %n blokov</numerusform><numerusform>Odprt za %n blokov</numerusform></translation>
+        <translation type="obsolete">
+            <numerusform>Odprt za %n blok</numerusform>
+            <numerusform>Odprt za %n bloka</numerusform>
+            <numerusform>Odprt za %n blokov</numerusform>
+            <numerusform>Odprt za %n blokov</numerusform>
+        </translation>
     </message>
     <message>
-        <location line="+8"/>
+        <location line="+6"/>
         <source>conflicted</source>
         <translation>sporen</translation>
     </message>
@@ -2145,14 +2219,19 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>%1 potrdil</translation>
     </message>
     <message>
-        <location line="+18"/>
+        <location line="+17"/>
         <source>Status</source>
         <translation>Stanje</translation>
     </message>
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation><numerusform>, predvajanje skozi %n vozlišče</numerusform><numerusform>, predvajanje skozi %n vozlišči</numerusform><numerusform>, predvajanje skozi %n vozlišč</numerusform><numerusform>, predvajanje skozi %n vozlišč</numerusform></translation>
+        <translation>
+            <numerusform>, predvajanje skozi %n vozlišče</numerusform>
+            <numerusform>, predvajanje skozi %n vozlišči</numerusform>
+            <numerusform>, predvajanje skozi %n vozlišč</numerusform>
+            <numerusform>, predvajanje skozi %n vozlišč</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2205,7 +2284,12 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation><numerusform>dozori čez %n blok</numerusform><numerusform>dozori čez %n bloka</numerusform><numerusform>dozori čez %n blokov</numerusform><numerusform>dozori čez %n blokov</numerusform></translation>
+        <translation>
+            <numerusform>dozori čez %n blok</numerusform>
+            <numerusform>dozori čez %n bloka</numerusform>
+            <numerusform>dozori čez %n blokov</numerusform>
+            <numerusform>dozori čez %n blokov</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2266,7 +2350,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Vnosi</translation>
     </message>
     <message>
-        <location line="+23"/>
+        <location line="+21"/>
         <source>Amount</source>
         <translation>Količina</translation>
     </message>
@@ -2281,12 +2365,22 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>nepravilno</translation>
     </message>
     <message>
-        <location line="-211"/>
+        <location line="-209"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, še ni bil uspešno predvajan</translation>
     </message>
+    <message numerus="yes">
+        <location line="-36"/>
+        <source>Open for %n more block(s)</source>
+        <translation type="unfinished">
+            <numerusform>Odprt še  %n blok</numerusform>
+            <numerusform>Odprt še  %n bloka</numerusform>
+            <numerusform>Odprt še  %n blokov</numerusform>
+            <numerusform>Odprt še  %n blokov</numerusform>
+        </translation>
+    </message>
     <message>
-        <location line="+35"/>
+        <location line="+71"/>
         <source>unknown</source>
         <translation>neznano</translation>
     </message>
@@ -2307,7 +2401,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+226"/>
+        <location filename="../transactiontablemodel.cpp" line="+230"/>
         <source>Date</source>
         <translation>Datum</translation>
     </message>
@@ -2327,7 +2421,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Količina</translation>
     </message>
     <message>
-        <location line="+60"/>
+        <location line="+52"/>
         <source>Open until %1</source>
         <translation>Odpri enoto %1</translation>
     </message>
@@ -2339,7 +2433,12 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
     <message numerus="yes">
         <location line="-15"/>
         <source>Open for %n more block(s)</source>
-        <translation><numerusform>Odprt še  %n blok</numerusform><numerusform>Odprt še  %n bloka</numerusform><numerusform>Odprt še  %n blokov</numerusform><numerusform>Odprt še  %n blokov</numerusform></translation>
+        <translation>
+            <numerusform>Odprt še  %n blok</numerusform>
+            <numerusform>Odprt še  %n bloka</numerusform>
+            <numerusform>Odprt še  %n blokov</numerusform>
+            <numerusform>Odprt še  %n blokov</numerusform>
+        </translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2604,7 +2703,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+206"/>
+        <location filename="../walletmodel.cpp" line="+219"/>
         <source>Sending...</source>
         <translation>Pošiljanje...</translation>
     </message>
@@ -2697,12 +2796,11 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Naveži na dani naslov. Uporabi [host]:port ukaz za IPv6</translation>
     </message>
     <message>
-        <location line="+2"/>
         <source>Stake your coins to support network and gain reward (default: 1)</source>
-        <translation>Deleži svoje kovance za podporo omrežja in pridobi nagrado (default: 1)</translation>
+        <translation type="obsolete">Deleži svoje kovance za podporo omrežja in pridobi nagrado (default: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+6"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Prag za prekinitev povezav s slabimi odjemalci (privzeto: 1000)</translation>
     </message>
@@ -2712,17 +2810,16 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Število sekund preden se ponovno povežejo neodzivni soležniki (privzeto: 86400)</translation>
     </message>
     <message>
-        <location line="-44"/>
+        <location line="-43"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Prišlo je do napake pri nastavljanju RPC porta %u za vhodne povezave na IPv4: %s</translation>
     </message>
     <message>
-        <location line="+51"/>
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation>Loči podatkovne baze blokov in naslovov. Podaljša čas zaustavitve (privzeto: 0)</translation>
+        <translation type="obsolete">Loči podatkovne baze blokov in naslovov. Podaljša čas zaustavitve (privzeto: 0)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+157"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Napaka: Transakcija je bila zavrnjena. To se je lahko zgodilo, če so bili kovanci v vaši denarnici že zapravljeni, na primer če ste uporabili kopijo wallet.dat in so bili kovanci zapravljeni v kopiji, a tu še niso bili označeni kot zapravljeni.</translation>
     </message>
@@ -2772,7 +2869,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Uporabi testno omrežje</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-21"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Sprejmi zunanje povezave (privzeto: 1 če ni nastavljen -proxy ali -connect)</translation>
     </message>
@@ -2782,12 +2879,12 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Prišlo je do napake pri nastavljanju RPC porta %u za vhodne povezave na IPv6: %s</translation>
     </message>
     <message>
-        <location line="+117"/>
+        <location line="+115"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation>Napaka pri zagonu podatkovne baze okolja %s! Za popravilo, NAPRAVITE VARNOSTNO KOPIJO IMENIKA, in iz njega odstranite vse razen datoteke wallet.dat</translation>
     </message>
     <message>
-        <location line="-20"/>
+        <location line="-21"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Nastavi maksimalno velikost visoke-prioritete/nizke-provizije transakcij v bajtih (privzeto: 27000)</translation>
     </message>
@@ -2802,7 +2899,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Opozorilo: Prosimo preverite svoj datum in čas svojega računalnika! Če je vaša ura nastavljena napačno E-Gold ne bo deloval.</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-30"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Opozorilo: napaka pri branju wallet.dat! Vsi ključi so bili pravilno prebrani, podatki o transakciji ali imenik vnešenih naslovov so morda izgubljeni ali nepravilni.</translation>
     </message>
@@ -2812,7 +2909,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Opozorilo: wallet.dat je pokvarjena, podatki rešeni! Originalna wallet.dat je bila shranjena kot denarnica. {timestamp}.bak v %s; če imate napačno prikazano stanje na računu ali v transakcijah prenovite datoteko z varnostno kopijo. </translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-31"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Poizkusi rešiti zasebni ključ iz pokvarjene wallet.dat </translation>
     </message>
@@ -2822,7 +2919,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Možnosti ustvarjanja blokov:</translation>
     </message>
     <message>
-        <location line="-62"/>
+        <location line="-59"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Poveži se samo na določena vozlišče(a)</translation>
     </message>
@@ -2832,22 +2929,22 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Odkrij svoj IP naslov (privzeto: 1 ob poslušanju, ko ni aktiviran -externalip)</translation>
     </message>
     <message>
-        <location line="+94"/>
+        <location line="+92"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Poslušanje za vrata je spodletelo. Če želite lahko uporabite ukaz -listen=0.</translation>
     </message>
     <message>
-        <location line="-90"/>
+        <location line="-88"/>
         <source>Find peers using DNS lookup (default: 1)</source>
         <translation>Najdi soležnike z uporabno DNS vpogleda (privzeto: 1)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>Sinhronizacija načina točk preverjanja (privzeto: strogo)</translation>
     </message>
     <message>
-        <location line="+83"/>
+        <location line="+82"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Neveljaven -tor naslov: &apos;%s&apos;</translation>
     </message>
@@ -2857,7 +2954,7 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Neveljavni znesek za -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
-        <location line="-82"/>
+        <location line="-81"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Največji sprejemni medpomnilnik glede na povezavo, &lt;n&gt;*1000 bytov (privzeto: 5000)</translation>
     </message>
@@ -2867,12 +2964,12 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Največji oddajni medpomnilnik glede na povezavo, &lt;n&gt;*1000 bytov (privzeto: 1000)</translation>
     </message>
     <message>
-        <location line="-16"/>
+        <location line="-15"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>Poveži se samo z vozlišči v omrežju &lt;net&gt; (IPv4, IPv6 in Tor)</translation>
     </message>
     <message>
-        <location line="+28"/>
+        <location line="+25"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Output dodatnih informacij razhroščevanja. Obsega vse druge -debug* možnosti.</translation>
     </message>
@@ -2892,12 +2989,12 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>SSL možnosti: (glejte Bitcoin Wiki za navodla, kako nastaviti SSL)</translation>
     </message>
     <message>
-        <location line="-74"/>
+        <location line="-71"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
         <translation>Izberi verzijo socks proxya za uporabo (4-5, privzeto: 5)</translation>
     </message>
     <message>
-        <location line="+41"/>
+        <location line="+38"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Pošlji sledilne/razhroščevalne informacije v konzolo namesto jih shraniti v debug.log datoteko</translation>
     </message>
@@ -2922,19 +3019,19 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Skrči debug.log datoteko ob zagonu aplikacije (privzeto: 1 ko ni aktiviran -debug)</translation>
     </message>
     <message>
-        <location line="-42"/>
+        <location line="-39"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Določi čas pavze povezovanja v milisekundah (privzeto: 5000)</translation>
     </message>
     <message>
-        <location line="+109"/>
+        <location line="+107"/>
         <source>Unable to sign checkpoint, wrong checkpointkey?
 </source>
         <translation>Ni bilo mogoče vpisati točke preverjanja, napačen ključ za točko preverjanja?
 </translation>
     </message>
     <message>
-        <location line="-80"/>
+        <location line="-79"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Uporabi UPnP za mapiranje vrat poslušanja (privzeto: 0)</translation>
     </message>
@@ -2944,22 +3041,22 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Uporabi UPnP za mapiranje vrat poslušanja (privzeto: 1 med poslušanjem)</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-24"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Uporabi proxy za povezavo s skritimi storitvami tora (privzeto: isto kot -proxy) </translation>
     </message>
     <message>
-        <location line="+42"/>
+        <location line="+39"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Uporabniško ime za JSON-RPC povezave</translation>
     </message>
     <message>
-        <location line="+47"/>
+        <location line="+48"/>
         <source>Verifying database integrity...</source>
         <translation>Potrdite neoporečnost baze podatkov...</translation>
     </message>
     <message>
-        <location line="+57"/>
+        <location line="+56"/>
         <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
         <translation>OPOZORILO: zaznana je bila kršitev s sinhronizirami točkami preverjanja, a je bila izpuščena.</translation>
     </message>
@@ -2974,17 +3071,17 @@ Ta oznaka se obarva rdeče, če je prioriteta manjša kot &quot;srednja&quot;.
         <translation>Opozorilo: ta različica je zastarela, potrebna je nadgradnja!</translation>
     </message>
     <message>
-        <location line="-48"/>
+        <location line="-47"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat poškodovana, neuspešna obnova</translation>
     </message>
     <message>
-        <location line="-54"/>
+        <location line="-55"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Geslo za JSON-RPC povezave</translation>
     </message>
     <message>
-        <location line="-84"/>
+        <location line="-81"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -3014,12 +3111,12 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Najdi soležnike prek irca (privzeto: 0)</translation>
     </message>
     <message>
-        <location line="+5"/>
+        <location line="+4"/>
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
         <translation>Sinhroniziraj čas z drugimi vozlišči. Onemogoči, če je čas na vašem sistemu točno nastavljen, npr. sinhroniziranje z NTP (privzeto: 1)</translation>
     </message>
     <message>
-        <location line="+15"/>
+        <location line="+13"/>
         <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
         <translation>Ob ustvarjanju transakcij, prezri vnose z manjšo vrednostjo kot (privzeto: 0.01)</translation>
     </message>
@@ -3109,9 +3206,14 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Dovoljeni kodirniki (privzeti: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+53"/>
+        <location line="+8"/>
+        <source>Initialization sanity check failed. E-Gold is shutting down.</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location line="+45"/>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
-        <translation type="unfinished"/>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location line="+18"/>
@@ -3119,12 +3221,12 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>OPOZORILO: Najdene so bile neveljavne točke preverjanja! Prikazane transakcije so morda napačne! Poiščite novo različico aplikacije ali pa obvestite razvijalce.</translation>
     </message>
     <message>
-        <location line="-158"/>
+        <location line="-155"/>
         <source>This help message</source>
         <translation>To sporočilo pomoči</translation>
     </message>
     <message>
-        <location line="+95"/>
+        <location line="+93"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>Denarnica %s se nahaja zunaj datotečnega imenika %s.</translation>
     </message>
@@ -3134,17 +3236,17 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Ni bilo mogoče najti podatkovnega imenika %s. Aplikacija E-Gold je verjetno že zagnana.</translation>
     </message>
     <message>
-        <location line="-98"/>
+        <location line="-96"/>
         <source>E-Gold</source>
         <translation>E-Gold</translation>
     </message>
     <message>
-        <location line="+140"/>
+        <location line="+137"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Na tem računalniku je bilo nemogoče vezati na %s (bind returned error %d, %s)</translation>
     </message>
     <message>
-        <location line="-130"/>
+        <location line="-127"/>
         <source>Connect through socks proxy</source>
         <translation>Poveži se skozi socks proxy</translation>
     </message>
@@ -3154,12 +3256,12 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Omogoči DNS povezave za -addnode, -seednode in -connect</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+119"/>
         <source>Loading addresses...</source>
         <translation>Nalaganje naslovov ...</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-14"/>
         <source>Error loading blkindex.dat</source>
         <translation>Napaka pri nalaganju blkindex.dat</translation>
     </message>
@@ -3209,7 +3311,7 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Ni mogoče določiti -externalip naslova: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-25"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Neveljavni znesek za -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
@@ -3234,17 +3336,17 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Premalo sredstev</translation>
     </message>
     <message>
-        <location line="-34"/>
+        <location line="-33"/>
         <source>Loading block index...</source>
         <translation>Nalaganje indeksa blokov ...</translation>
     </message>
     <message>
-        <location line="-103"/>
+        <location line="-101"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Dodaj vozlišče za povezavo nanj in skušaj le to obdržati odprto</translation>
     </message>
     <message>
-        <location line="+122"/>
+        <location line="+119"/>
         <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
         <translation>Navezava v %s  na tem računalniku ni mogoča E-Gold aplikacija je verjetno že zagnana.</translation>
     </message>
@@ -3259,7 +3361,7 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Neveljavni znesek za -miniput=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+26"/>
         <source>Loading wallet...</source>
         <translation>Nalaganje denarnice ...</translation>
     </message>
@@ -3269,9 +3371,8 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Ne morem </translation>
     </message>
     <message>
-        <location line="+1"/>
         <source>Cannot initialize keypool</source>
-        <translation>Ni mogoče zagnati keypoola</translation>
+        <translation type="obsolete">Ni mogoče zagnati keypoola</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3289,7 +3390,7 @@ na primer: alertnotify=echo %%s | mail -s &quot;E-Gold Alarm&quot; admin@foo.com
         <translation>Nalaganje končano</translation>
     </message>
     <message>
-        <location line="-167"/>
+        <location line="-164"/>
         <source>To use the %s option</source>
         <translation>Za uporabo %s opcije</translation>
     </message>
