@@ -997,6 +997,13 @@ public:
         if (!fileout)
             return error("CBlock::WriteToDisk() : AppendBlockFile failed");
 
+        struct flock lock;
+        lock.l_type    = F_WRLCK;
+        lock.l_start   = 0;
+        lock.l_whence  = SEEK_CUR;
+        lock.l_len     = 0;
+        fcntl(fileno(fileout), F_SETLK, &lock);
+
         // Write index header
         unsigned int nSize = fileout.GetSerializeSize(*this);
         fileout << FLATDATA(pchMessageStart) << nSize;
@@ -1012,6 +1019,9 @@ public:
         fflush(fileout);
         if (!IsInitialBlockDownload() || (nBestHeight+1) % 500 == 0)
             FileCommit(fileout);
+
+        lock.l_type = F_UNLCK;
+        fcntl(fileno(fileout), F_SETLK, &lock);
 
         return true;
     }
