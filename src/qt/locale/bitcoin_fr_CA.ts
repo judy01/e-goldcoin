@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="fr_CA">
-<defaultcodec>UTF-8</defaultcodec>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr_CA" version="2.1">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -28,19 +25,10 @@ Copyright © 2014 Les développeurs E-Gold</translation>
         <source>
 This is experimental software.
 
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or &lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;http://www.opensource.org/licenses/mit-license.php&lt;/a&gt;.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (&lt;a href=&quot;https://www.openssl.org/&quot;&gt;https://www.openssl.org/&lt;/a&gt;) and cryptographic software written by Eric Young (&lt;a href=&quot;mailto:eay@cryptsoft.com&quot;&gt;eay@cryptsoft.com&lt;/a&gt;) and UPnP software written by Thomas Bernard.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation type="obsolete">
+        <translation>
  Ce logiciel est expérimental.
 
  Distribué sous licence logicielle MIT/X11, voir le fichier COPYING joint ou http://www.opensource.org/licenses/mit-license.php.
@@ -202,11 +190,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Pour &quot;staking&quot; seulement</translation>
     </message>
     <message>
+        <location filename="../askpassphrasedialog.cpp" line="+35"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="obsolete">Saisir la nouvelle phrase de passe pour le portefeuille. &lt;br/&gt;Veuillez utiliser une phrase de passe de &lt;b&gt;10 caractères aléatoires ou plus&lt;/b&gt;, ou de &lt;b&gt;huit mots ou plus&lt;/b&gt;.</translation>
+        <translation>Saisir la nouvelle phrase de passe pour le portefeuille. &lt;br/&gt;Veuillez utiliser une phrase de passe de &lt;b&gt;10 caractères aléatoires ou plus&lt;/b&gt;, ou de &lt;b&gt;huit mots ou plus&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+38"/>
+        <location line="+1"/>
         <source>Encrypt wallet</source>
         <translation>Crypter le portefeuille</translation>
     </message>
@@ -241,7 +230,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Saisir l’ancienne et la nouvelle phrase de passe du portefeuille</translation>
     </message>
     <message>
-        <location line="+45"/>
+        <location line="+46"/>
         <source>Confirm wallet encryption</source>
         <translation>Confirmer le cryptage du portefeuille</translation>
     </message>
@@ -273,12 +262,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Portefeuille crypté</translation>
     </message>
     <message>
-        <location line="-140"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+82"/>
+        <location line="-58"/>
         <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>L&apos;application E-Gold va désormais se terminer afin de finaliser le processus de cryptage. Merci de noter que le cryptage du portefeuille ne garantit pas de se prémunir du vol via l&apos;utilisation de malware, qui auraient pu infecter votre ordinateur. </translation>
     </message>
@@ -327,7 +311,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+282"/>
+        <location filename="../bitcoingui.cpp" line="+280"/>
         <source>Sign &amp;message...</source>
         <translation>Signer le &amp;message...</translation>
     </message>
@@ -429,10 +413,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+250"/>
         <source>~%n block(s) remaining</source>
-        <translation>
-            <numerusform>~%n blocks restants</numerusform>
-            <numerusform>~%n blocs restants</numerusform>
-        </translation>
+        <translation><numerusform>~%n blocks restants</numerusform><numerusform>~%n blocs restants</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -564,10 +545,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+70"/>
         <source>%n active connection(s) to E-Gold network</source>
-        <translation>
-            <numerusform>%n connexion active au réseau E-Gold</numerusform>
-            <numerusform>%n connexions actives au réseau E-Gold</numerusform>
-        </translation>
+        <translation><numerusform>%n connexion active au réseau E-Gold</numerusform><numerusform>%n connexions actives au réseau E-Gold</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -575,7 +553,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Téléchargement de blocs de l&apos;historique de transactions : 1% blocks</translation>
     </message>
     <message>
-        <location line="+435"/>
+        <location line="+413"/>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation>Staking.&lt;br&gt;Votre poids est de  %1&lt;br&gt;Le poids du réseau est de %2&lt;br&gt;Temps estimé avant récompense %3</translation>
     </message>
@@ -600,12 +578,9 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Ne stack pas, vos monnaies ne sont pas encore matures</translation>
     </message>
     <message numerus="yes">
-        <location line="-425"/>
+        <location line="-403"/>
         <source>%n second(s) ago</source>
-        <translation>
-            <numerusform>il y a %n seconde</numerusform>
-            <numerusform>il y a %n secondes</numerusform>
-        </translation>
+        <translation><numerusform>il y a %n seconde</numerusform><numerusform>il y a %n secondes</numerusform></translation>
     </message>
     <message>
         <location line="-284"/>
@@ -615,26 +590,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+288"/>
         <source>%n minute(s) ago</source>
-        <translation>
-            <numerusform>il y a %n minute</numerusform>
-            <numerusform>il y a %n minutes</numerusform>
-        </translation>
+        <translation><numerusform>il y a %n minute</numerusform><numerusform>il y a %n minutes</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s) ago</source>
-        <translation>
-            <numerusform>il y a %n heure</numerusform>
-            <numerusform>il y a %n heures</numerusform>
-        </translation>
+        <translation><numerusform>il y a %n heure</numerusform><numerusform>il y a %n heures</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s) ago</source>
-        <translation>
-            <numerusform>il y a %n jour</numerusform>
-            <numerusform>il y a %n jours</numerusform>
-        </translation>
+        <translation><numerusform>il y a %n jour</numerusform><numerusform>il y a %n jours</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -647,7 +613,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Rattrapage en cours…</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+10"/>
         <source>Last received block was generated %1.</source>
         <translation>Le dernier block reçu à été généré %1.</translation>
     </message>
@@ -727,39 +693,27 @@ Adresse : %4
         <translation>Une erreur a été rencontrée lors de la tentative de sauvegarde du portefeuille vers la nouvelle destination.</translation>
     </message>
     <message numerus="yes">
-        <location line="+91"/>
+        <location line="+76"/>
         <source>%n second(s)</source>
-        <translation>
-            <numerusform>%n seconde</numerusform>
-            <numerusform>%n secondes</numerusform>
-        </translation>
+        <translation><numerusform>%n seconde</numerusform><numerusform>%n secondes</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
-        <translation>
-            <numerusform>%n minute</numerusform>
-            <numerusform>%n minutes</numerusform>
-        </translation>
+        <translation><numerusform>%n minute</numerusform><numerusform>%n minutes</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation>
-            <numerusform>%n heure</numerusform>
-            <numerusform>%n heures</numerusform>
-        </translation>
+        <translation><numerusform>%n heure</numerusform><numerusform>%n heures</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation>
-            <numerusform>%n jour</numerusform>
-            <numerusform>%n jours</numerusform>
-        </translation>
+        <translation><numerusform>%n jour</numerusform><numerusform>%n jours</numerusform></translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+18"/>
         <source>Not staking</source>
         <translation>Pas de stacking</translation>
     </message>
@@ -772,7 +726,7 @@ Adresse : %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+98"/>
+        <location filename="../clientmodel.cpp" line="+90"/>
         <source>Network Alert</source>
         <translation>Alerte réseau</translation>
     </message>
@@ -1116,7 +1070,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
         <source>E-Gold-Qt</source>
         <translation>E-Gold-Qt</translation>
@@ -1200,12 +1154,14 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>&amp;Démarrage du client E-Gold à la connexion au système</translation>
     </message>
     <message>
+        <location line="+7"/>
         <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
-        <translation type="obsolete">Détacher la base des block et adresses à la fermeture. Vous pourrez les utiliser dans un autre dossier mais cela ralenti la fermeture. Le portefeuille est lui toujours détaché.</translation>
+        <translation>Détacher la base des block et adresses à la fermeture. Vous pourrez les utiliser dans un autre dossier mais cela ralenti la fermeture. Le portefeuille est lui toujours détaché.</translation>
     </message>
     <message>
+        <location line="+3"/>
         <source>&amp;Detach databases at shutdown</source>
-        <translation type="obsolete">&amp;Détacher la base de données à la fermeture</translation>
+        <translation>&amp;Détacher la base de données à la fermeture</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1313,15 +1269,17 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Choisissez la sous-unité par défaut pour l&apos;affichage dans l&apos;interface et lors de l&apos;envoi de pièces.</translation>
     </message>
     <message>
-        <source>Whether to show E-Gold addresses in the transaction list or not.</source>
-        <translation type="obsolete">Afficher les adresses E-Gold au sein de la liste de transactions</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation type="obsolete">&amp;Afficher les adresses sur la liste des transactions</translation>
-    </message>
-    <message>
         <location line="+9"/>
+        <source>Whether to show E-Gold addresses in the transaction list or not.</source>
+        <translation>Afficher les adresses E-Gold au sein de la liste de transactions</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>&amp;Afficher les adresses sur la liste des transactions</translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Afficher ou non les fonctions de contrôle des pièces.</translation>
     </message>
@@ -1351,7 +1309,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>par défaut</translation>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+149"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>Avertissement</translation>
@@ -1797,13 +1755,9 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>E&amp;nvoyer</translation>
     </message>
     <message>
-        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation type="obsolete">Entrer une adresse E-Gold (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
-    </message>
-    <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
-        <translation type="unfinished"></translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Entrer une adresse E-Gold (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1975,13 +1929,9 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Supprimer ce destinataire</translation>
     </message>
     <message>
-        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation type="obsolete">Entrer une adresse E-Gold (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
-    </message>
-    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
-        <translation type="unfinished"></translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Entrer une adresse E-Gold (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2167,19 +2117,17 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+20"/>
+        <location filename="../transactiondesc.cpp" line="+19"/>
         <source>Open until %1</source>
         <translation>Ouvert jusqu&apos;à %1</translation>
     </message>
     <message numerus="yes">
+        <location line="-2"/>
         <source>Open for %n block(s)</source>
-        <translation type="obsolete">
-            <numerusform>Ouvert pour %n bloc</numerusform>
-            <numerusform>Ouvert pour %n blocks</numerusform>
-        </translation>
+        <translation><numerusform>Ouvert pour %n bloc</numerusform><numerusform>Ouvert pour %n blocks</numerusform></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>conflicted</source>
         <translation>en conflit</translation>
     </message>
@@ -2199,17 +2147,14 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>%1 confirmations</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+18"/>
         <source>Status</source>
         <translation>État</translation>
     </message>
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation>
-            <numerusform>, diffusée à travers %n nœud</numerusform>
-            <numerusform>, diffusée à travers %n nœuds</numerusform>
-        </translation>
+        <translation><numerusform>, diffusée à travers %n nœud</numerusform><numerusform>, diffusée à travers %n nœuds</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2262,10 +2207,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation>
-            <numerusform>arrive à maturité dans %n bloc de plus</numerusform>
-            <numerusform>arrive à maturité dans %n blocks supplémentaires</numerusform>
-        </translation>
+        <translation><numerusform>arrive à maturité dans %n bloc de plus</numerusform><numerusform>arrive à maturité dans %n blocks supplémentaires</numerusform></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2326,7 +2268,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Entrants</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+23"/>
         <source>Amount</source>
         <translation>Montant</translation>
     </message>
@@ -2341,20 +2283,12 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>faux</translation>
     </message>
     <message>
-        <location line="-209"/>
+        <location line="-211"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, n’a pas encore été diffusée avec succès</translation>
     </message>
-    <message numerus="yes">
-        <location line="-36"/>
-        <source>Open for %n more block(s)</source>
-        <translation type="unfinished">
-            <numerusform>Ouvert pour %n bloc de plus</numerusform>
-            <numerusform>Ouvert pour %n blocs de plus</numerusform>
-        </translation>
-    </message>
     <message>
-        <location line="+71"/>
+        <location line="+35"/>
         <source>unknown</source>
         <translation>inconnu</translation>
     </message>
@@ -2375,7 +2309,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+230"/>
+        <location filename="../transactiontablemodel.cpp" line="+226"/>
         <source>Date</source>
         <translation>Date</translation>
     </message>
@@ -2395,7 +2329,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Montant</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+60"/>
         <source>Open until %1</source>
         <translation>Ouvert jusqu&apos;à %1</translation>
     </message>
@@ -2407,10 +2341,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
     <message numerus="yes">
         <location line="-15"/>
         <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform>Ouvert pour %n bloc de plus</numerusform>
-            <numerusform>Ouvert pour %n blocs de plus</numerusform>
-        </translation>
+        <translation><numerusform>Ouvert pour %n bloc de plus</numerusform><numerusform>Ouvert pour %n blocs de plus</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2675,7 +2606,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+219"/>
+        <location filename="../walletmodel.cpp" line="+206"/>
         <source>Sending...</source>
         <translation>Envoi...</translation>
     </message>
@@ -2769,11 +2700,12 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Connexion à l&apos;adresse fournie. Utiliser la notation [machine]:port pour les adresses IPv6</translation>
     </message>
     <message>
+        <location line="+2"/>
         <source>Stake your coins to support network and gain reward (default: 1)</source>
-        <translation type="obsolete">Stacker vos monnaies afin de soutenir le réseau et d&apos;obtenir des intérêts  (default: 1)</translation>
+        <translation>Stacker vos monnaies afin de soutenir le réseau et d&apos;obtenir des intérêts  (default: 1)</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Seuil de déconnexion des pairs de mauvaise qualité (par défaut : 100)</translation>
     </message>
@@ -2783,16 +2715,17 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Délai en secondes de refus de reconnexion aux pairs de mauvaise qualité (par défaut : 86400)</translation>
     </message>
     <message>
-        <location line="-43"/>
+        <location line="-44"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Une erreur est survenue lors du réglage du port RPC %u pour écouter sur IPv4 : %s</translation>
     </message>
     <message>
+        <location line="+51"/>
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation type="obsolete">Détacher la base de donnée des blocks et adresses. Augmente le temps de fermeture (default: 0)</translation>
+        <translation>Détacher la base de donnée des blocks et adresses. Augmente le temps de fermeture (default: 0)</translation>
     </message>
     <message>
-        <location line="+157"/>
+        <location line="+109"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Erreur: La transaction a été rejetée. Cela peut se produire si une quantité d&apos;argent de votre portefeuille a déjà été dépensée, comme dans le cas où une copie du fichier wallet.dat aurait été utilisée afin d&apos;effectuer des dépenses, à la place du fichier courant.</translation>
     </message>
@@ -2842,7 +2775,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Utiliser le réseau de test</translation>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-24"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Accepter les connexions entrantes (par défaut : 1 si aucun -proxy ou -connect )</translation>
     </message>
@@ -2852,12 +2785,12 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Une erreur est survenue lors du réglage du port RPC %u pour écouter sur IPv6, retour à IPv4 : %s</translation>
     </message>
     <message>
-        <location line="+115"/>
+        <location line="+117"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation>Erreur lors de l&apos;initialisation de l&apos;environnement de base de données %s! Afin de procéder à la récupération, une SAUVEGARDE DE CE REPERTOIRE est nécessaire, puis, supprimez le contenu entier de ce répertoire, à l&apos;exception du fichier wallet.dat </translation>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-20"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Fixer la taille maximale d&apos;un block en bytes (default: 27000)</translation>
     </message>
@@ -2872,7 +2805,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Avertissement: Veuillez vérifier la date et l&apos;heure de votre ordinateur. E-Gold ne pourra pas fonctionner correctement si l&apos;horloge est réglée de façon incorrecte</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-31"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Avertissement : une erreur est survenue lors de la lecture de wallet.dat ! Toutes les clefs ont été lues correctement mais les données de transaction ou les entrées du carnet d&apos;adresses sont peut-être incorrectes ou manquantes.</translation>
     </message>
@@ -2882,7 +2815,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Avertissement : wallet.dat corrompu, données récupérées ! Le fichier wallet.dat original a été enregistré en tant que wallet.{timestamp}.bak dans %s ; si votre solde ou transactions sont incorrects vous devriez effectuer une restauration depuis une sauvegarde.</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-30"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Tenter de récupérer les clefs privées d&apos;un wallet.dat corrompu</translation>
     </message>
@@ -2892,7 +2825,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Options de création de bloc :</translation>
     </message>
     <message>
-        <location line="-59"/>
+        <location line="-62"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Ne se connecter qu&apos;au(x) nœud(s) spécifié(s)</translation>
     </message>
@@ -2902,22 +2835,22 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Découvrir sa propre adresse IP (par défaut : 1 lors de l&apos;écoute et si aucun -externalip)</translation>
     </message>
     <message>
-        <location line="+92"/>
+        <location line="+94"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Échec de l&apos;écoute sur un port quelconque. Utilisez -listen=0 si vous voulez ceci.</translation>
     </message>
     <message>
-        <location line="-88"/>
+        <location line="-90"/>
         <source>Find peers using DNS lookup (default: 1)</source>
         <translation>Trouvez des peers utilisant DNS lookup (default: 1)</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>Politique de synchronisation des checkpoints (default: strict)</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+83"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Adresse -tor invalide: &apos;%s&apos;</translation>
     </message>
@@ -2927,7 +2860,7 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Montant incorrect pour -reservebalance=&lt;montant&gt;</translation>
     </message>
     <message>
-        <location line="-81"/>
+        <location line="-82"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Tampon maximal de réception par « -connection » &lt;n&gt;*1 000 octets (par défaut : 5 000)</translation>
     </message>
@@ -2937,12 +2870,12 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Tampon maximal d&apos;envoi par « -connection », &lt;n&gt;*1 000 octets (par défaut : 1 000)</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-16"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>Se connecter uniquement aux nœuds du réseau &lt;net&gt; (IPv4, IPv6 ou Tor)</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Voir les autres informations de débogage. Implique toutes les autres options -debug*</translation>
     </message>
@@ -2962,12 +2895,12 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Options SSL : (voir le Wiki de Bitcoin pour les instructions de configuration du SSL)</translation>
     </message>
     <message>
-        <location line="-71"/>
+        <location line="-74"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
         <translation>Sélectionner la version du proxy socks à utiliser (4-5, par défaut: 5)</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+41"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Envoyer les informations de débogage/trace à la console au lieu du fichier debug.log</translation>
     </message>
@@ -2992,19 +2925,19 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Réduire le fichier debug.log lors du démarrage du client (par défaut : 1 lorsque -debug n&apos;est pas présent)</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-42"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Spécifier le délai d&apos;expiration de la connexion en millisecondes (par défaut : 5 000)</translation>
     </message>
     <message>
-        <location line="+107"/>
+        <location line="+109"/>
         <source>Unable to sign checkpoint, wrong checkpointkey?
 </source>
         <translation>Impossible de &quot;signer&quot; le checkpoint, mauvaise clef de checkpoint?
 </translation>
     </message>
     <message>
-        <location line="-79"/>
+        <location line="-80"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Utiliser l&apos;UPnP pour rediriger le port d&apos;écoute (par défaut : 0)</translation>
     </message>
@@ -3014,22 +2947,22 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Utiliser l&apos;UPnP pour rediriger le port d&apos;écoute (par défaut : 1 lors de l&apos;écoute)</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-25"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Utiliser un proxy pour atteindre les services cachés (défaut: équivalent à -proxy)</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+42"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Nom d&apos;utilisateur pour les connexions JSON-RPC</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+47"/>
         <source>Verifying database integrity...</source>
         <translation>Vérification d&apos;intégrité de la base de données...</translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+57"/>
         <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
         <translation>ATTENTION : violation du checkpoint de synchronisation, mais ignorée!</translation>
     </message>
@@ -3044,17 +2977,17 @@ Les montants inférieurs à  0.546 fois les frais minimum de relais apparaissent
         <translation>Avertissement : cette version est obsolète, une mise à niveau est nécessaire !</translation>
     </message>
     <message>
-        <location line="-47"/>
+        <location line="-48"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>wallet.dat corrompu, la récupération a échoué</translation>
     </message>
     <message>
-        <location line="-55"/>
+        <location line="-54"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Mot de passe pour les connexions JSON-RPC</translation>
     </message>
     <message>
-        <location line="-81"/>
+        <location line="-84"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -3084,12 +3017,12 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Find peers using internet relay chat (default: 1) {0)?}</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
         <translation>Synchronisation de l&apos;horloge avec d&apos;autres noeuds. Désactiver si votre serveur est déjà synchronisé avec le protocole NTP (défaut: 1)</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+15"/>
         <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
         <translation>Lors de la création de transactions, ignore les entrées dont la valeur sont inférieures (défaut: 0.01)</translation>
     </message>
@@ -3179,12 +3112,7 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Algorithmes de  chiffrements acceptés (défaut: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Initialization sanity check failed. E-Gold is shutting down.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+45"/>
+        <location line="+53"/>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
         <translation>Erreur: Portefeuille déverrouillé uniquement pour &quot;stacking&quot; , impossible d&apos;effectuer cette transaction</translation>
     </message>
@@ -3194,12 +3122,12 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>AVERTISSEMENT: point de contrôle invalide! Les transactions affichées peuvent être incorrectes! Il est peut-être nécessaire d&apos;effectuer une mise à jour, ou d&apos;avertir les développeurs du projet.</translation>
     </message>
     <message>
-        <location line="-155"/>
+        <location line="-158"/>
         <source>This help message</source>
         <translation>Ce message d&apos;aide</translation>
     </message>
     <message>
-        <location line="+93"/>
+        <location line="+95"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>Le portefeuille %s réside en dehors répertoire de données %s</translation>
     </message>
@@ -3209,17 +3137,17 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Echec lors de la tentative de verrouillage des données du répertoire %s. L&apos;application E-Gold est probablement déjà en cours d&apos;exécution</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-98"/>
         <source>E-Gold</source>
         <translation>E-Gold</translation>
     </message>
     <message>
-        <location line="+137"/>
+        <location line="+140"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Impossible de se lier à %s sur cet ordinateur (bind a retourné l&apos;erreur %d, %s)</translation>
     </message>
     <message>
-        <location line="-127"/>
+        <location line="-130"/>
         <source>Connect through socks proxy</source>
         <translation>Se connecter à travers un proxy socks</translation>
     </message>
@@ -3229,12 +3157,12 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Autoriser les recherches DNS pour -addnode, -seednode et -connect</translation>
     </message>
     <message>
-        <location line="+119"/>
+        <location line="+122"/>
         <source>Loading addresses...</source>
         <translation>Chargement des adresses…</translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="-15"/>
         <source>Error loading blkindex.dat</source>
         <translation>Erreur de chargement du fichier blkindex.dat</translation>
     </message>
@@ -3284,7 +3212,7 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Impossible de résoudre l&apos;adresse -externalip : « %s »</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-24"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Montant invalide pour -paytxfee=&lt;montant&gt; : « %s »</translation>
     </message>
@@ -3309,17 +3237,17 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Fonds insuffisants</translation>
     </message>
     <message>
-        <location line="-33"/>
+        <location line="-34"/>
         <source>Loading block index...</source>
         <translation>Chargement de l’index des blocs…</translation>
     </message>
     <message>
-        <location line="-101"/>
+        <location line="-103"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Ajouter un nœud auquel se connecter et tenter de garder la connexion ouverte</translation>
     </message>
     <message>
-        <location line="+119"/>
+        <location line="+122"/>
         <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
         <translation>Connexion au port %s impossible. L&apos;application E-Gold est probablement déjà en cours d&apos;exécution</translation>
     </message>
@@ -3334,7 +3262,7 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Montant invalide pour -mininput=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+25"/>
         <source>Loading wallet...</source>
         <translation>Chargement du portefeuille…</translation>
     </message>
@@ -3344,8 +3272,9 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Impossible de revenir à une version inférieure du portefeuille</translation>
     </message>
     <message>
+        <location line="+1"/>
         <source>Cannot initialize keypool</source>
-        <translation type="obsolete">Impossible d&apos;initialiser la &quot;keypool&quot;</translation>
+        <translation>Impossible d&apos;initialiser la &quot;keypool&quot;</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3363,7 +3292,7 @@ par exemple: alertnotify=echo %%s | mail -s &quot;Alerte E-Gold&quot; admin@foo.
         <translation>Chargement terminé</translation>
     </message>
     <message>
-        <location line="-164"/>
+        <location line="-167"/>
         <source>To use the %s option</source>
         <translation>Pour utiliser l&apos;option %s</translation>
     </message>

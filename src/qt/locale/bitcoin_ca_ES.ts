@@ -1,7 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="ca_ES">
-<defaultcodec>UTF-8</defaultcodec>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="ca_ES" version="2.1">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -28,19 +25,10 @@ Copyright © 2014 The E-Gold developers</translation>
         <source>
 This is experimental software.
 
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or &lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;http://www.opensource.org/licenses/mit-license.php&lt;/a&gt;.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (&lt;a href=&quot;https://www.openssl.org/&quot;&gt;https://www.openssl.org/&lt;/a&gt;) and cryptographic software written by Eric Young (&lt;a href=&quot;mailto:eay@cryptsoft.com&quot;&gt;eay@cryptsoft.com&lt;/a&gt;) and UPnP software written by Thomas Bernard.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation type="obsolete">\n Aquest és software experimental.\n\n Distribuït sota llicència de software MIT/11, veure l&apos;arxiu COPYING o http://www.opensource.org/licenses/mit-license.php.\n\nAquest producte inclou software desarrollat pel projecte OpenSSL per a l&apos;ús de OppenSSL Toolkit (http://www.openssl.org/) i de software criptogràfic escrit per l&apos;Eric Young (eay@cryptsoft.com) i software UPnP escrit per en Thomas Bernard.</translation>
+        <translation>\n Aquest és software experimental.\n\n Distribuït sota llicència de software MIT/11, veure l&apos;arxiu COPYING o http://www.opensource.org/licenses/mit-license.php.\n\nAquest producte inclou software desarrollat pel projecte OpenSSL per a l&apos;ús de OppenSSL Toolkit (http://www.openssl.org/) i de software criptogràfic escrit per l&apos;Eric Young (eay@cryptsoft.com) i software UPnP escrit per en Thomas Bernard.</translation>
     </message>
 </context>
 <context>
@@ -197,11 +185,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Només per a fer &quot;stake&quot;</translation>
     </message>
     <message>
+        <location filename="../askpassphrasedialog.cpp" line="+35"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="obsolete">Introdueixi la nova contrasenya al moneder&lt;br/&gt;Si us plau useu una contrasenya de &lt;b&gt;10 o més caracters aleatoris&lt;/b&gt;, o &lt;b&gt;vuit o més paraules&lt;/b&gt;.</translation>
+        <translation>Introdueixi la nova contrasenya al moneder&lt;br/&gt;Si us plau useu una contrasenya de &lt;b&gt;10 o més caracters aleatoris&lt;/b&gt;, o &lt;b&gt;vuit o més paraules&lt;/b&gt;.</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+38"/>
+        <location line="+1"/>
         <source>Encrypt wallet</source>
         <translation>Xifrar el moneder</translation>
     </message>
@@ -236,7 +225,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Introdueixi tant l&apos;antiga com la nova contrasenya de moneder.</translation>
     </message>
     <message>
-        <location line="+45"/>
+        <location line="+46"/>
         <source>Confirm wallet encryption</source>
         <translation>Confirmar l&apos;encriptació del moneder</translation>
     </message>
@@ -268,12 +257,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Moneder encriptat</translation>
     </message>
     <message>
-        <location line="-140"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+82"/>
+        <location line="-58"/>
         <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
         <translation>E-Gold tancarà ara per acabar el procés de xifrat. Recordeu que l&apos;encriptació del seu moneder no pot protegir completament les seves monedes de ser robades pel malware que pugui infectar al seu equip.</translation>
     </message>
@@ -322,7 +306,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+282"/>
+        <location filename="../bitcoingui.cpp" line="+280"/>
         <source>Sign &amp;message...</source>
         <translation>Signar &amp;missatge...</translation>
     </message>
@@ -424,11 +408,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+250"/>
         <source>~%n block(s) remaining</source>
-        <translation>
-            <numerusform>~%n bloc restant</numerusform>
-            <numerusform>~%n blocs restants</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>~%n bloc restant</numerusform><numerusform>~%n blocs restants</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -560,11 +540,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+70"/>
         <source>%n active connection(s) to E-Gold network</source>
-        <translation>
-            <numerusform>%n conexió activa a la xarxa E-Gold</numerusform>
-            <numerusform>%n conexions actives a la xarxa E-Gold</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>%n conexió activa a la xarxa E-Gold</numerusform><numerusform>%n conexions actives a la xarxa E-Gold</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -572,7 +548,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Descarregats %1 blocs d&apos;historial de transaccions</translation>
     </message>
     <message>
-        <location line="+435"/>
+        <location line="+413"/>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation>Fent &quot;stake&quot;.&lt;br&gt;El teu pes és %1&lt;br&gt;El pes de la xarxa és %2&lt;br&gt;El temps estimat per a guanyar una recompensa és 3%</translation>
     </message>
@@ -597,13 +573,9 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>No s&apos;està fent &quot;stake&quot; perquè no tens monedes madures</translation>
     </message>
     <message numerus="yes">
-        <location line="-425"/>
+        <location line="-403"/>
         <source>%n second(s) ago</source>
-        <translation>
-            <numerusform>fa %n segon</numerusform>
-            <numerusform>fa %n segons</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>fa %n segon</numerusform><numerusform>fa %n segons</numerusform></translation>
     </message>
     <message>
         <location line="-284"/>
@@ -613,29 +585,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+288"/>
         <source>%n minute(s) ago</source>
-        <translation>
-            <numerusform>fa %n minut</numerusform>
-            <numerusform>fa %n minuts</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>fa %n minut</numerusform><numerusform>fa %n minuts</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s) ago</source>
-        <translation>
-            <numerusform>fa %n hora</numerusform>
-            <numerusform>fa %n hores</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>fa %n hora</numerusform><numerusform>fa %n hores</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s) ago</source>
-        <translation>
-            <numerusform>fa %n dia</numerusform>
-            <numerusform>fa %n dies</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>fa %n dia</numerusform><numerusform>fa %n dies</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -648,7 +608,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>Posar-se al dia ...</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+10"/>
         <source>Last received block was generated %1.</source>
         <translation>El darrer bloc rebut s&apos;ha generat %1.</translation>
     </message>
@@ -724,43 +684,27 @@ Address: %4
         <translation>Hi ha un error al tractar de salvar les dades del seu moneder a la nova ubicació.</translation>
     </message>
     <message numerus="yes">
-        <location line="+91"/>
+        <location line="+76"/>
         <source>%n second(s)</source>
-        <translation>
-            <numerusform>%n segon</numerusform>
-            <numerusform>%n segons</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>%n segon</numerusform><numerusform>%n segons</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
-        <translation>
-            <numerusform>%n minut</numerusform>
-            <numerusform>%n minuts</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>%n minut</numerusform><numerusform>%n minuts</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation>
-            <numerusform>%n hora</numerusform>
-            <numerusform>%n hores</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>%n hora</numerusform><numerusform>%n hores</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation>
-            <numerusform>%n dia</numerusform>
-            <numerusform>%n dies</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>%n dia</numerusform><numerusform>%n dies</numerusform></translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+18"/>
         <source>Not staking</source>
         <translation>No s&apos;està fent &quot;stake&quot; </translation>
     </message>
@@ -773,7 +717,7 @@ Address: %4
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+98"/>
+        <location filename="../clientmodel.cpp" line="+90"/>
         <source>Network Alert</source>
         <translation>Alerta de xarxa</translation>
     </message>
@@ -1117,7 +1061,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
         <source>E-Gold-Qt</source>
         <translation>E-Gold-Qt</translation>
@@ -1201,12 +1145,14 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>&amp;Iniciar E-Gold amb l&apos;inici de sessió</translation>
     </message>
     <message>
+        <location line="+7"/>
         <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
-        <translation type="obsolete">Separeu el bloc i les bases de dades d&apos;adreces en apagar l&apos;equip. En aquest cas es pot moure a un altre directori de dades, però alenteix l&apos;apagada. El moneder està sempre separat.</translation>
+        <translation>Separeu el bloc i les bases de dades d&apos;adreces en apagar l&apos;equip. En aquest cas es pot moure a un altre directori de dades, però alenteix l&apos;apagada. El moneder està sempre separat.</translation>
     </message>
     <message>
+        <location line="+3"/>
         <source>&amp;Detach databases at shutdown</source>
-        <translation type="obsolete">&amp;Separar bases de dades a l&apos;apagar l&apos;equip</translation>
+        <translation>&amp;Separar bases de dades a l&apos;apagar l&apos;equip</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1314,15 +1260,17 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Sel·lecciona la unitat de subdivisió per defecte per mostrar en la interficie quan s&apos;envien monedes.</translation>
     </message>
     <message>
-        <source>Whether to show E-Gold addresses in the transaction list or not.</source>
-        <translation type="obsolete">Per mostrar E-Gold adreces a la llista de transaccions o no.</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation type="obsolete">&amp;Mostrar adreces al llistat de transaccions</translation>
-    </message>
-    <message>
         <location line="+9"/>
+        <source>Whether to show E-Gold addresses in the transaction list or not.</source>
+        <translation>Per mostrar E-Gold adreces a la llista de transaccions o no.</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>&amp;Mostrar adreces al llistat de transaccions</translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Whether to show coin control features or not.</source>
         <translation>Per mostrar les característiques de control de la moneda o no.</translation>
     </message>
@@ -1352,7 +1300,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Per defecte</translation>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+149"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>Avís</translation>
@@ -1798,13 +1746,9 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>E&amp;nviar</translation>
     </message>
     <message>
-        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation type="obsolete">Introdueix una adreça E-Gold (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
-    </message>
-    <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
-        <translation type="unfinished"></translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça E-Gold (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1976,13 +1920,9 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Eliminar aquest destinatari</translation>
     </message>
     <message>
-        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation type="obsolete">Introdueix una adreça E-Gold (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
-    </message>
-    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
-        <translation type="unfinished"></translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>Introdueix una adreça E-Gold (p.ex. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2168,20 +2108,17 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+20"/>
+        <location filename="../transactiondesc.cpp" line="+19"/>
         <source>Open until %1</source>
         <translation>Obert fins %1</translation>
     </message>
     <message numerus="yes">
+        <location line="-2"/>
         <source>Open for %n block(s)</source>
-        <translation type="obsolete">
-            <numerusform>Obert per a %n bloc</numerusform>
-            <numerusform>Obert per a %n blocs</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>Obert per a %n bloc</numerusform><numerusform>Obert per a %n blocs</numerusform></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>conflicted</source>
         <translation>conflicte</translation>
     </message>
@@ -2201,18 +2138,14 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>%1 confrimacions</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+18"/>
         <source>Status</source>
         <translation>Estat</translation>
     </message>
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation>
-            <numerusform>, transmès a través de %n node</numerusform>
-            <numerusform>, transmès a través de %n nodes</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>, transmès a través de %n node</numerusform><numerusform>, transmès a través de %n nodes</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2265,11 +2198,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation>
-            <numerusform>madura en %n bloc més</numerusform>
-            <numerusform>madura en %n blocs més</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>madura en %n bloc més</numerusform><numerusform>madura en %n blocs més</numerusform></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2330,7 +2259,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Entrades</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+23"/>
         <source>Amount</source>
         <translation>Quantitat</translation>
     </message>
@@ -2345,21 +2274,12 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>fals</translation>
     </message>
     <message>
-        <location line="-209"/>
+        <location line="-211"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>, encara no ha estat emès correctement</translation>
     </message>
-    <message numerus="yes">
-        <location line="-36"/>
-        <source>Open for %n more block(s)</source>
-        <translation type="unfinished">
-            <numerusform>Obert per a %n bloc més</numerusform>
-            <numerusform>Obert per a %n blocs més</numerusform>
-            <numerusform></numerusform>
-        </translation>
-    </message>
     <message>
-        <location line="+71"/>
+        <location line="+35"/>
         <source>unknown</source>
         <translation>desconegut</translation>
     </message>
@@ -2380,7 +2300,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+230"/>
+        <location filename="../transactiontablemodel.cpp" line="+226"/>
         <source>Date</source>
         <translation>Data</translation>
     </message>
@@ -2400,7 +2320,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Quantitat</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+60"/>
         <source>Open until %1</source>
         <translation>Obert fins %1</translation>
     </message>
@@ -2412,11 +2332,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
     <message numerus="yes">
         <location line="-15"/>
         <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform>Obert per a %n bloc més</numerusform>
-            <numerusform>Obert per a %n blocs més</numerusform>
-            <numerusform></numerusform>
-        </translation>
+        <translation><numerusform>Obert per a %n bloc més</numerusform><numerusform>Obert per a %n blocs més</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2681,7 +2597,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+219"/>
+        <location filename="../walletmodel.cpp" line="+206"/>
         <source>Sending...</source>
         <translation>Enviant...</translation>
     </message>
@@ -2774,11 +2690,12 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Enllaçar a l&apos;adreça donada. Utilitzeu la notació [host]:port per a IPv6</translation>
     </message>
     <message>
+        <location line="+2"/>
         <source>Stake your coins to support network and gain reward (default: 1)</source>
-        <translation type="obsolete">Posa les teves monedes a fer &quot;stake&quot; per donar suport a la xarxa i obtenir una recompensa (per defecte: 1)</translation>
+        <translation>Posa les teves monedes a fer &quot;stake&quot; per donar suport a la xarxa i obtenir una recompensa (per defecte: 1)</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>Límit per a desconectar connexions errònies (per defecte: 100)</translation>
     </message>
@@ -2788,16 +2705,17 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Nombre de segons abans de reconectar amb connexions errònies (per defecte: 86400)</translation>
     </message>
     <message>
-        <location line="-43"/>
+        <location line="-44"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>Ha sorgit un error al configurar el port RPC %u escoltant a IPv4: %s</translation>
     </message>
     <message>
+        <location line="+51"/>
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation type="obsolete">Separeu el bloc i les bases de dades d&apos;adreces. Augmenta el temps d&apos;apagada (per defecte: 0)</translation>
+        <translation>Separeu el bloc i les bases de dades d&apos;adreces. Augmenta el temps d&apos;apagada (per defecte: 0)</translation>
     </message>
     <message>
-        <location line="+157"/>
+        <location line="+109"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>Error: La transacció ha sigut rebutjada. Això pot passar si algunes de les monedes al moneder ja s&apos;han gastat, per exemple, si vostè utilitza una còpia del wallet.dat i les monedes han estat gastades a la cópia pero no s&apos;han marcat com a gastades aqui.</translation>
     </message>
@@ -2847,7 +2765,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Usar la xarxa de prova</translation>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-24"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>Aceptar connexions d&apos;afora (per defecte: 1 si no -proxy o -connect)</translation>
     </message>
@@ -2857,12 +2775,12 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Ha sorgit un error al configurar el port RPC %u escoltant a IPv6, retrocedint a IPv4: %s</translation>
     </message>
     <message>
-        <location line="+115"/>
+        <location line="+117"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation>Error en inicialitzar l&apos;entorn de base de dades %s! Per recuperar, FACI UNA COPIA DE SEGURETAT D&apos;AQUEST DIRECTORI, a continuació, retiri tot d&apos;ella excepte l&apos;arxiu wallet.dat.</translation>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-20"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>Establir la grandària màxima de les transaccions alta-prioritat/baixa-comisió en bytes (per defecte: 27000)</translation>
     </message>
@@ -2877,7 +2795,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Avís: Comproveu que la data i hora de l&apos;equip siguin correctes! Si el seu rellotge és erroni E-Gold no funcionarà correctament.</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-31"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>Advertència: Error llegint l&apos;arxiu wallet.dat!! Totes les claus es llegeixen correctament, però hi ha dades de transaccions o entrades del llibre d&apos;adreces absents o bé son incorrectes.</translation>
     </message>
@@ -2887,7 +2805,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Advertència: L&apos;arxiu wallet.dat és corrupte, dades rescatades! L&apos;arxiu wallet.dat original ha estat desat com wallet.{estampa_temporal}.bak al directori %s; si el teu balanç o transaccions son incorrectes hauries de restaurar-lo de un backup.</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-30"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>Intentar recuperar les claus privades d&apos;un arxiu wallet.dat corrupte</translation>
     </message>
@@ -2897,7 +2815,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Opcions de la creació de blocs:</translation>
     </message>
     <message>
-        <location line="-59"/>
+        <location line="-62"/>
         <source>Connect only to the specified node(s)</source>
         <translation>Connectar només al(s) node(s) especificats</translation>
     </message>
@@ -2907,22 +2825,22 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Descobrir la pròpia adreça IP (per defecte: 1 quan escoltant i no -externalip)</translation>
     </message>
     <message>
-        <location line="+92"/>
+        <location line="+94"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>Error al escoltar a qualsevol port. Utilitza -listen=0 si vols això.</translation>
     </message>
     <message>
-        <location line="-88"/>
+        <location line="-90"/>
         <source>Find peers using DNS lookup (default: 1)</source>
         <translation>Trobar companys utilitzant la recerca de DNS (per defecte: 1)</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>Política dels punts de control de sincronització (per defecte: estricta)</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+83"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>Adreça -tor invalida: &apos;%s&apos;</translation>
     </message>
@@ -2932,7 +2850,7 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Quantitat invalida per a -reservebalance=&lt;amount&gt;</translation>
     </message>
     <message>
-        <location line="-81"/>
+        <location line="-82"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>Mida màxima del buffer de recepció per a cada connexió, &lt;n&gt;*1000 bytes (default: 5000)</translation>
     </message>
@@ -2942,12 +2860,12 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Mida màxima del buffer d&apos;enviament per a cada connexió, &lt;n&gt;*1000 bytes (default: 5000)</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-16"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>Només connectar als nodes de la xarxa &lt;net&gt; (IPv4, IPv6 o Tor)</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>Sortida d&apos;informació de depuració extra. Implica totes les opcions de depuracó -debug*</translation>
     </message>
@@ -2967,12 +2885,12 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Opcions SSL: (veure la Wiki de Bitcoin per a instruccions de configuració SSL)</translation>
     </message>
     <message>
-        <location line="-71"/>
+        <location line="-74"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
         <translation>Seleccioneu la versió de proxy socks per utilitzar (4-5, per defecte: 5)</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+41"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>Enviar informació de traça/depuració a la consola en comptes del arxiu debug.log</translation>
     </message>
@@ -2997,19 +2915,19 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Reduir l&apos;arxiu debug.log al iniciar el client (per defecte 1 quan no -debug)</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-42"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>Especificar el temps limit per a un intent de connexió en milisegons (per defecte: 5000)</translation>
     </message>
     <message>
-        <location line="+107"/>
+        <location line="+109"/>
         <source>Unable to sign checkpoint, wrong checkpointkey?
 </source>
         <translation>No es pot signar el punt de control, la clau del punt de control esta malament?
 </translation>
     </message>
     <message>
-        <location line="-79"/>
+        <location line="-80"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>Utilitza UPnP per a mapejar els ports d&apos;escolta (per defecte: 0)</translation>
     </message>
@@ -3019,22 +2937,22 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Utilitza UPnP per a mapejar els ports d&apos;escolta (per defecte: 1 quan s&apos;escolta)</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-25"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>Utilitza proxy per arribar als serveis ocults de Tor (per defecte: la mateixa que -proxy)</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+42"/>
         <source>Username for JSON-RPC connections</source>
         <translation>Nom d&apos;usuari per a connexions JSON-RPC</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+47"/>
         <source>Verifying database integrity...</source>
         <translation>Comprovant la integritat de la base de dades ...</translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+57"/>
         <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
         <translation>ADVERTÈNCIA: violació de punt de control sincronitzat detectada, es saltarà!</translation>
     </message>
@@ -3049,17 +2967,17 @@ En aquest cas es requereix una comisió d&apos;almenys 2%.</translation>
         <translation>Advertència: Aquetsa versió està obsoleta, és necessari actualitzar!</translation>
     </message>
     <message>
-        <location line="-47"/>
+        <location line="-48"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>L&apos;arxiu wallet.data és corrupte, el rescat de les dades ha fallat</translation>
     </message>
     <message>
-        <location line="-55"/>
+        <location line="-54"/>
         <source>Password for JSON-RPC connections</source>
         <translation>Contrasenya per a connexions JSON-RPC</translation>
     </message>
     <message>
-        <location line="-81"/>
+        <location line="-84"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -3089,12 +3007,12 @@ per exemple: alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.c
         <translation>Trobar companys utilitzant l&apos;IRC (per defecte: 1) {0)?}</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
         <translation>Sincronitzar el temps amb altres nodes. Desactivar si el temps al seu sistema és precís, per exemple, si fa ús de sincronització amb NTP (per defecte: 1)</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+15"/>
         <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
         <translation>En crear transaccions, ignorar les entrades amb valor inferior a aquesta (per defecte: 0.01)</translation>
     </message>
@@ -3185,12 +3103,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>Xifres acceptables (per defecte: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Initialization sanity check failed. E-Gold is shutting down.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+45"/>
+        <location line="+53"/>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
         <translation>Error: Cartera bloquejada nomès per a fer &quot;stake&quot;, no es pot de crear la transacció</translation>
     </message>
@@ -3200,12 +3113,12 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>ADVERTÈNCIA: Punt de control invàlid! Les transaccions mostrades podríen no ser correctes! Podria ser necessari actualitzar o notificar-ho als desenvolupadors.</translation>
     </message>
     <message>
-        <location line="-155"/>
+        <location line="-158"/>
         <source>This help message</source>
         <translation>Aquest misatge d&apos;ajuda</translation>
     </message>
     <message>
-        <location line="+93"/>
+        <location line="+95"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>El moneder %s resideix fora del directori de dades %s.</translation>
     </message>
@@ -3215,17 +3128,17 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>No es pot obtenir un bloqueig en el directori de dades %s. E-Gold probablement ja estigui en funcionament.</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-98"/>
         <source>E-Gold</source>
         <translation>E-Gold</translation>
     </message>
     <message>
-        <location line="+137"/>
+        <location line="+140"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>Impossible d&apos;unir %s a aquest ordinador (s&apos;ha retornat l&apos;error %d, %s)</translation>
     </message>
     <message>
-        <location line="-127"/>
+        <location line="-130"/>
         <source>Connect through socks proxy</source>
         <translation>Conectar a través d&apos;un proxy SOCKS</translation>
     </message>
@@ -3235,12 +3148,12 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>Permetre consultes DNS per a -addnode, -seednode i -connect</translation>
     </message>
     <message>
-        <location line="+119"/>
+        <location line="+122"/>
         <source>Loading addresses...</source>
         <translation>Carregant adreces...</translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="-15"/>
         <source>Error loading blkindex.dat</source>
         <translation>Error carregant blkindex.dat</translation>
     </message>
@@ -3290,7 +3203,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>No es pot resoldre l&apos;adreça -externalip: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-24"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>Quantitat invalida per a -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
@@ -3315,17 +3228,17 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>Balanç insuficient</translation>
     </message>
     <message>
-        <location line="-33"/>
+        <location line="-34"/>
         <source>Loading block index...</source>
         <translation>Carregant índex de blocs...</translation>
     </message>
     <message>
-        <location line="-101"/>
+        <location line="-103"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>Afegir un node per a connectar&apos;s-hi i intentar mantenir la connexió oberta</translation>
     </message>
     <message>
-        <location line="+119"/>
+        <location line="+122"/>
         <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
         <translation>No es pot enllaçar a %s en aquest equip. E-Gold probablement ja estigui en funcionament.</translation>
     </message>
@@ -3340,7 +3253,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>Quantitat invalida per a -mininput=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+25"/>
         <source>Loading wallet...</source>
         <translation>Carregant moneder...</translation>
     </message>
@@ -3350,8 +3263,9 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>No es pot reduir la versió del moneder</translation>
     </message>
     <message>
+        <location line="+1"/>
         <source>Cannot initialize keypool</source>
-        <translation type="obsolete">No es pot inicialitzar el keypool</translation>
+        <translation>No es pot inicialitzar el keypool</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3369,7 +3283,7 @@ Executar una ordre quan es rep un avís rellevant (%s en cmd es substitueix per 
         <translation>Càrrega acabada</translation>
     </message>
     <message>
-        <location line="-164"/>
+        <location line="-167"/>
         <source>To use the %s option</source>
         <translation>Utilitza la opció %s</translation>
     </message>

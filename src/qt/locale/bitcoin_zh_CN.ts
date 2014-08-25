@@ -1,18 +1,15 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.0" language="zh_CN">
-<defaultcodec>UTF-8</defaultcodec>
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_CN" version="2.1">
 <context>
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
         <source>About E-Gold</source>
-        <translation>关于E-Gold</translation>
+        <translation>关于黑币</translation>
     </message>
     <message>
         <location line="+39"/>
         <source>&lt;b&gt;E-Gold&lt;/b&gt; version</source>
-        <translation>&lt;b&gt;E-Gold客户端&lt;/b&gt; 版本</translation>
+        <translation>&lt;b&gt;黑币客户端&lt;/b&gt; 版本</translation>
     </message>
     <message>
         <location line="+41"/>
@@ -21,26 +18,17 @@ Copyright © 2012-2014 The NovaCoin developers
 Copyright © 2014 The E-Gold developers</source>
         <translation>版权所有 © 2009-2014 比特币Bitcoin开发组
 版权所有 © 2012-2014 新星币Novacoin开发组
-版权所有 © 2014 E-Gold开发组</translation>
+版权所有 © 2014 黑币E-Gold开发组</translation>
     </message>
     <message>
         <location line="+15"/>
         <source>
 This is experimental software.
 
-Distributed under the MIT/X11 software license, see the accompanying file COPYING or &lt;a href=&quot;http://www.opensource.org/licenses/mit-license.php&quot;&gt;http://www.opensource.org/licenses/mit-license.php&lt;/a&gt;.
-
-This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (&lt;a href=&quot;https://www.openssl.org/&quot;&gt;https://www.openssl.org/&lt;/a&gt;) and cryptographic software written by Eric Young (&lt;a href=&quot;mailto:eay@cryptsoft.com&quot;&gt;eay@cryptsoft.com&lt;/a&gt;) and UPnP software written by Thomas Bernard.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <source>
-This is experimental software.
-
 Distributed under the MIT/X11 software license, see the accompanying file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit (http://www.openssl.org/) and cryptographic software written by Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.</source>
-        <translation type="obsolete">
+        <translation>
 测试版软件
 
 经MIT/X11软件授权发布, 具体参见http://www.opensource.org/licenses/mit-license.php.
@@ -78,7 +66,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-46"/>
         <source>These are your E-Gold addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
-        <translation>这是您用来接收支付的E-Gold地址列表。为不同的支付方建立不同的地址以便于了解支付来源。</translation>
+        <translation>这是您用来接收支付的黑币地址列表。为不同的支付方建立不同的地址以便于了解支付来源。</translation>
     </message>
     <message>
         <location line="+60"/>
@@ -93,7 +81,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+11"/>
         <source>Sign a message to prove you own a E-Gold address</source>
-        <translation>对信息进行签名以证明您对该E-Gold地址的所有权</translation>
+        <translation>对信息进行签名以证明您对该黑币地址的所有权</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -108,7 +96,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-14"/>
         <source>Verify a message to ensure it was signed with a specified E-Gold address</source>
-        <translation>验证信息以保证其经过指定E-Gold地址的签名</translation>
+        <translation>验证信息以保证其经过指定黑币地址的签名</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -202,11 +190,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>仅用于权益增值</translation>
     </message>
     <message>
+        <location filename="../askpassphrasedialog.cpp" line="+35"/>
         <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;10 or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="obsolete">输入钱包的新密码。&lt;br/&gt;使用的密码请至少包含&lt;b&gt;10个以上随机字符&lt;/&gt;，或者是&lt;b&gt;8个以上的单词&lt;/b&gt;。</translation>
+        <translation>输入钱包的新密码。&lt;br/&gt;使用的密码请至少包含&lt;b&gt;10个以上随机字符&lt;/&gt;，或者是&lt;b&gt;8个以上的单词&lt;/b&gt;。</translation>
     </message>
     <message>
-        <location filename="../askpassphrasedialog.cpp" line="+38"/>
+        <location line="+1"/>
         <source>Encrypt wallet</source>
         <translation>加密钱包</translation>
     </message>
@@ -241,14 +230,14 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>请输入该钱包的旧密码与新密码。</translation>
     </message>
     <message>
-        <location line="+45"/>
+        <location line="+46"/>
         <source>Confirm wallet encryption</source>
         <translation>确认加密钱包</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR COINS&lt;/b&gt;!</source>
-        <translation>警告：如果您丢失了加密该钱包的密码，其中所有的E-Gold将会丢失！</translation>
+        <translation>警告：如果您丢失了加密该钱包的密码，其中所有的黑币将会丢失！</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -273,14 +262,9 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>钱包已加密</translation>
     </message>
     <message>
-        <location line="-140"/>
-        <source>Enter the new passphrase to the wallet.&lt;br/&gt;Please use a passphrase of &lt;b&gt;ten or more random characters&lt;/b&gt;, or &lt;b&gt;eight or more words&lt;/b&gt;.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+82"/>
+        <location line="-58"/>
         <source>E-Gold will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your coins from being stolen by malware infecting your computer.</source>
-        <translation>E-Gold客户端即将关闭以完成加密过程。请记住，加密钱包并不能完全防止您的电子货币被入侵您计算机的木马软件盗窃。</translation>
+        <translation>黑币客户端即将关闭以完成加密过程。请记住，加密钱包并不能完全防止您的电子货币被入侵您计算机的木马软件盗窃。</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -327,7 +311,7 @@ This product includes software developed by the OpenSSL Project for use in the O
 <context>
     <name>BitcoinGUI</name>
     <message>
-        <location filename="../bitcoingui.cpp" line="+282"/>
+        <location filename="../bitcoingui.cpp" line="+280"/>
         <source>Sign &amp;message...</source>
         <translation>消息签名(&amp;M)...</translation>
     </message>
@@ -369,7 +353,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-13"/>
         <source>&amp;Receive coins</source>
-        <translation>接收E-Gold(&amp;R)</translation>
+        <translation>接收黑币(&amp;R)</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -379,7 +363,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-7"/>
         <source>&amp;Send coins</source>
-        <translation>发送E-Gold(&amp;S)</translation>
+        <translation>发送黑币(&amp;S)</translation>
     </message>
     <message>
         <location line="+35"/>
@@ -394,7 +378,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+4"/>
         <source>Show information about E-Gold</source>
-        <translation>显示关于E-Gold的信息</translation>
+        <translation>显示关于黑币的信息</translation>
     </message>
     <message>
         <location line="+2"/>
@@ -429,9 +413,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+250"/>
         <source>~%n block(s) remaining</source>
-        <translation>
-            <numerusform>~%n 个区块未完成</numerusform>
-        </translation>
+        <translation><numerusform>~%n 个区块未完成</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -446,7 +428,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-62"/>
         <source>Send coins to a E-Gold address</source>
-        <translation>向指定的地址发送E-Gold</translation>
+        <translation>向指定的地址发送黑币</translation>
     </message>
     <message>
         <location line="+45"/>
@@ -491,7 +473,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="-200"/>
         <source>E-Gold</source>
-        <translation>E-Gold</translation>
+        <translation>黑币</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -501,7 +483,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+178"/>
         <source>&amp;About E-Gold</source>
-        <translation>关于E-Gold(&amp;A)</translation>
+        <translation>关于黑币(&amp;A)</translation>
     </message>
     <message>
         <location line="+9"/>
@@ -558,14 +540,12 @@ This product includes software developed by the OpenSSL Project for use in the O
         <location line="+0"/>
         <location line="+60"/>
         <source>E-Gold client</source>
-        <translation>E-Gold客户端</translation>
+        <translation>黑币客户端</translation>
     </message>
     <message numerus="yes">
         <location line="+70"/>
         <source>%n active connection(s) to E-Gold network</source>
-        <translation>
-            <numerusform>与E-Gold网络建立了 %n 个连接</numerusform>
-        </translation>
+        <translation><numerusform>与黑币网络建立了 %n 个连接</numerusform></translation>
     </message>
     <message>
         <location line="+40"/>
@@ -573,7 +553,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>已下载 %1 个区块的交易记录</translation>
     </message>
     <message>
-        <location line="+435"/>
+        <location line="+413"/>
         <source>Staking.&lt;br&gt;Your weight is %1&lt;br&gt;Network weight is %2&lt;br&gt;Expected time to earn reward is %3</source>
         <translation>权益增值中 &lt;br&gt;您的权重为 %1 &lt;br&gt;网络总权重为 %2&lt;br&gt;预计将在 %3 之后获得收益</translation>
     </message>
@@ -595,14 +575,12 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message>
         <location line="+2"/>
         <source>Not staking because you don&apos;t have mature coins</source>
-        <translation>未进行权益增值，因为钱包中没有成熟的E-Gold</translation>
+        <translation>未进行权益增值，因为钱包中没有成熟的黑币</translation>
     </message>
     <message numerus="yes">
-        <location line="-425"/>
+        <location line="-403"/>
         <source>%n second(s) ago</source>
-        <translation>
-            <numerusform>%n 秒前</numerusform>
-        </translation>
+        <translation><numerusform>%n 秒前</numerusform></translation>
     </message>
     <message>
         <location line="-284"/>
@@ -612,23 +590,17 @@ This product includes software developed by the OpenSSL Project for use in the O
     <message numerus="yes">
         <location line="+288"/>
         <source>%n minute(s) ago</source>
-        <translation>
-            <numerusform>%n 分钟前</numerusform>
-        </translation>
+        <translation><numerusform>%n 分钟前</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s) ago</source>
-        <translation>
-            <numerusform>%n 小时前</numerusform>
-        </translation>
+        <translation><numerusform>%n 小时前</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s) ago</source>
-        <translation>
-            <numerusform>%n 天前</numerusform>
-        </translation>
+        <translation><numerusform>%n 天前</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -641,7 +613,7 @@ This product includes software developed by the OpenSSL Project for use in the O
         <translation>更新中...</translation>
     </message>
     <message>
-        <location line="+16"/>
+        <location line="+10"/>
         <source>Last received block was generated %1.</source>
         <translation>最近生成的区块接收于%1</translation>
     </message>
@@ -688,7 +660,7 @@ Address: %4
         <location line="-15"/>
         <location line="+15"/>
         <source>URI can not be parsed! This can be caused by an invalid E-Gold address or malformed URI parameters.</source>
-        <translation>无法解析URI：无效的E-Gold地址或错误的URI参数。</translation>
+        <translation>无法解析URI：无效的黑币地址或错误的URI参数。</translation>
     </message>
     <message>
         <location line="+18"/>
@@ -721,48 +693,40 @@ Address: %4
         <translation>试图将钱包地址保存到新位置时出现错误</translation>
     </message>
     <message numerus="yes">
-        <location line="+91"/>
+        <location line="+76"/>
         <source>%n second(s)</source>
-        <translation>
-            <numerusform>%n秒</numerusform>
-        </translation>
+        <translation><numerusform>%n秒</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n minute(s)</source>
-        <translation>
-            <numerusform>%n 分钟</numerusform>
-        </translation>
+        <translation><numerusform>%n 分钟</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n hour(s)</source>
-        <translation>
-            <numerusform>%n 小时</numerusform>
-        </translation>
+        <translation><numerusform>%n 小时</numerusform></translation>
     </message>
     <message numerus="yes">
         <location line="+4"/>
         <source>%n day(s)</source>
-        <translation>
-            <numerusform>%n 天</numerusform>
-        </translation>
+        <translation><numerusform>%n 天</numerusform></translation>
     </message>
     <message>
-        <location line="+19"/>
+        <location line="+18"/>
         <source>Not staking</source>
         <translation>未进行权益增值</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+109"/>
         <source>A fatal error occurred. E-Gold can no longer continue safely and will quit.</source>
-        <translation>发生严重错误，E-Gold客户端即将关闭。</translation>
+        <translation>发生严重错误，黑币客户端即将关闭。</translation>
     </message>
 </context>
 <context>
     <name>ClientModel</name>
     <message>
-        <location filename="../clientmodel.cpp" line="+98"/>
+        <location filename="../clientmodel.cpp" line="+90"/>
         <source>Network Alert</source>
         <translation>网络警报</translation>
     </message>
@@ -772,7 +736,7 @@ Address: %4
     <message>
         <location filename="../forms/coincontroldialog.ui" line="+14"/>
         <source>Coin Control</source>
-        <translation>E-Gold控制</translation>
+        <translation>黑币控制</translation>
     </message>
     <message>
         <location line="+31"/>
@@ -1083,7 +1047,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-5"/>
         <source>The entered address &quot;%1&quot; is not a valid E-Gold address.</source>
-        <translation>“%1” 不是有效的E-Gold地址。</translation>
+        <translation>“%1” 不是有效的黑币地址。</translation>
     </message>
     <message>
         <location line="+10"/>
@@ -1099,10 +1063,10 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>GUIUtil::HelpMessageBox</name>
     <message>
-        <location filename="../guiutil.cpp" line="+424"/>
+        <location filename="../guiutil.cpp" line="+420"/>
         <location line="+12"/>
         <source>E-Gold-Qt</source>
-        <translation>E-Gold客户端E-Gold-Qt</translation>
+        <translation>黑币客户端E-Gold-Qt</translation>
     </message>
     <message>
         <location line="-12"/>
@@ -1175,20 +1139,22 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+31"/>
         <source>Automatically start E-Gold after logging in to the system.</source>
-        <translation>开机自动启动E-Gold客户端</translation>
+        <translation>开机自动启动黑币客户端</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>&amp;Start E-Gold on system login</source>
-        <translation>开机时自动启动E-Gold客户端(&amp;S)</translation>
+        <translation>开机时自动启动黑币客户端(&amp;S)</translation>
     </message>
     <message>
+        <location line="+7"/>
         <source>Detach block and address databases at shutdown. This means they can be moved to another data directory, but it slows down shutdown. The wallet is always detached.</source>
-        <translation type="obsolete">关机时断开区块和地址数据连接使得它们可以被移动到其他目录。这样做会使关机速度变慢。钱包数据总是断开存储的。</translation>
+        <translation>关机时断开区块和地址数据连接使得它们可以被移动到其他目录。这样做会使关机速度变慢。钱包数据总是断开存储的。</translation>
     </message>
     <message>
+        <location line="+3"/>
         <source>&amp;Detach databases at shutdown</source>
-        <translation type="obsolete">关机时断开区块和地址数据库连接(&amp;D)</translation>
+        <translation>关机时断开区块和地址数据库连接(&amp;D)</translation>
     </message>
     <message>
         <location line="+21"/>
@@ -1198,7 +1164,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+6"/>
         <source>Automatically open the E-Gold client port on the router. This only works when your router supports UPnP and it is enabled.</source>
-        <translation>路由器自动打开E-Gold客户端端口。该功能仅在路由器开启UPnP支持时有效。</translation>
+        <translation>路由器自动打开黑币客户端端口。该功能仅在路由器开启UPnP支持时有效。</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1208,7 +1174,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+7"/>
         <source>Connect to the E-Gold network through a SOCKS proxy (e.g. when connecting through Tor).</source>
-        <translation>经SOCKS代理连接到E-Gold网络(例如使用Tor)</translation>
+        <translation>经SOCKS代理连接到黑币网络(例如使用Tor)</translation>
     </message>
     <message>
         <location line="+3"/>
@@ -1283,35 +1249,37 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+13"/>
         <source>The user interface language can be set here. This setting will take effect after restarting E-Gold.</source>
-        <translation>在此设置用户界面语言。重启E-Gold客户端后设置生效。</translation>
+        <translation>在此设置用户界面语言。重启黑币客户端后设置生效。</translation>
     </message>
     <message>
         <location line="+11"/>
         <source>&amp;Unit to show amounts in:</source>
-        <translation>E-Gold金额单位(&amp;U)：</translation>
+        <translation>黑币金额单位(&amp;U)：</translation>
     </message>
     <message>
         <location line="+13"/>
         <source>Choose the default subdivision unit to show in the interface and when sending coins.</source>
-        <translation>选择E-Gold单位。</translation>
-    </message>
-    <message>
-        <source>Whether to show E-Gold addresses in the transaction list or not.</source>
-        <translation type="obsolete">是否在交易列表中显示E-Gold地址</translation>
-    </message>
-    <message>
-        <source>&amp;Display addresses in transaction list</source>
-        <translation type="obsolete">在交易清单中显示E-Gold地址(&amp;D)</translation>
+        <translation>选择黑币单位。</translation>
     </message>
     <message>
         <location line="+9"/>
+        <source>Whether to show E-Gold addresses in the transaction list or not.</source>
+        <translation>是否在交易列表中显示黑币地址</translation>
+    </message>
+    <message>
+        <location line="+3"/>
+        <source>&amp;Display addresses in transaction list</source>
+        <translation>在交易清单中显示黑币地址(&amp;D)</translation>
+    </message>
+    <message>
+        <location line="+7"/>
         <source>Whether to show coin control features or not.</source>
         <translation>是否需要交易源地址控制功能。</translation>
     </message>
     <message>
         <location line="+3"/>
         <source>Display coin &amp;control features (experts only!)</source>
-        <translation>显示E-Gold控制选项(仅用于专家用户)</translation>
+        <translation>显示黑币控制选项(仅用于专家用户)</translation>
     </message>
     <message>
         <location line="+71"/>
@@ -1334,7 +1302,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>默认</translation>
     </message>
     <message>
-        <location line="+147"/>
+        <location line="+149"/>
         <location line="+9"/>
         <source>Warning</source>
         <translation>警告</translation>
@@ -1598,12 +1566,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="-104"/>
         <source>E-Gold - Debug window</source>
-        <translation>E-Gold客户端-调试窗口</translation>
+        <translation>黑币客户端-调试窗口</translation>
     </message>
     <message>
         <location line="+25"/>
         <source>E-Gold Core</source>
-        <translation>E-Gold核心进程</translation>
+        <translation>黑币核心进程</translation>
     </message>
     <message>
         <location line="+279"/>
@@ -1623,7 +1591,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../rpcconsole.cpp" line="-33"/>
         <source>Welcome to the E-Gold RPC console.</source>
-        <translation>欢迎使用E-GoldRPC控制台。</translation>
+        <translation>欢迎使用黑币RPC控制台。</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -1780,13 +1748,9 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>发送(&amp;E)</translation>
     </message>
     <message>
-        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation type="obsolete">输入E-Gold地址(例如：B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
-    </message>
-    <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
-        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
-        <translation type="unfinished"></translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>输入黑币地址(例如：B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1886,7 +1850,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+251"/>
         <source>WARNING: Invalid E-Gold address</source>
-        <translation>警告：无效的E-Gold地址</translation>
+        <translation>警告：无效的黑币地址</translation>
     </message>
     <message>
         <location line="+13"/>
@@ -1958,13 +1922,9 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>删除收款人</translation>
     </message>
     <message>
-        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation type="obsolete">输入一个E-Gold地址 (例：B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
-    </message>
-    <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
-        <translation type="unfinished"></translation>
+        <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
+        <translation>输入一个黑币地址 (例：B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
 </context>
 <context>
@@ -2025,7 +1985,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+21"/>
         <source>Sign the message to prove you own this E-Gold address</source>
-        <translation>对该消息进行签名以证明您对该E-Gold地址的所有权</translation>
+        <translation>对该消息进行签名以证明您对该黑币地址的所有权</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2052,12 +2012,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+21"/>
         <source>The address the message was signed with (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>用来签名该消息的E-Gold地址(例： B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation>用来签名该消息的黑币地址(例： B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="+40"/>
         <source>Verify the message to ensure it was signed with the specified E-Gold address</source>
-        <translation>确认该消息以保证它经由指定的E-Gold地址签名</translation>
+        <translation>确认该消息以保证它经由指定的黑币地址签名</translation>
     </message>
     <message>
         <location line="+17"/>
@@ -2068,7 +2028,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
         <source>Enter a E-Gold address (e.g. B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</source>
-        <translation>输入E-Gold地址(例： B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
+        <translation>输入黑币地址(例： B8gZqgY4r2RoEdqYk3QsAqFckyf9pRHN6i)</translation>
     </message>
     <message>
         <location line="-2"/>
@@ -2078,7 +2038,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+3"/>
         <source>Enter E-Gold signature</source>
-        <translation>输入E-Gold签名</translation>
+        <translation>输入黑币签名</translation>
     </message>
     <message>
         <location line="+82"/>
@@ -2150,18 +2110,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>TransactionDesc</name>
     <message>
-        <location filename="../transactiondesc.cpp" line="+20"/>
+        <location filename="../transactiondesc.cpp" line="+19"/>
         <source>Open until %1</source>
         <translation>至 %1 个数据块时开启</translation>
     </message>
     <message numerus="yes">
+        <location line="-2"/>
         <source>Open for %n block(s)</source>
-        <translation type="obsolete">
-            <numerusform>为 %n 个数据块开启</numerusform>
-        </translation>
+        <translation><numerusform>为 %n 个数据块开启</numerusform></translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+8"/>
         <source>conflicted</source>
         <translation>发现冲突</translation>
     </message>
@@ -2181,16 +2140,14 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>%1 已确认</translation>
     </message>
     <message>
-        <location line="+17"/>
+        <location line="+18"/>
         <source>Status</source>
         <translation>状态</translation>
     </message>
     <message numerus="yes">
         <location line="+7"/>
         <source>, broadcast through %n node(s)</source>
-        <translation>
-            <numerusform>通过 %n 个节点广播</numerusform>
-        </translation>
+        <translation><numerusform>通过 %n 个节点广播</numerusform></translation>
     </message>
     <message>
         <location line="+4"/>
@@ -2243,9 +2200,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message numerus="yes">
         <location line="-102"/>
         <source>matures in %n more block(s)</source>
-        <translation>
-            <numerusform>将在 %n 个数据块后成熟</numerusform>
-        </translation>
+        <translation><numerusform>将在 %n 个数据块后成熟</numerusform></translation>
     </message>
     <message>
         <location line="+2"/>
@@ -2306,7 +2261,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>输入</translation>
     </message>
     <message>
-        <location line="+21"/>
+        <location line="+23"/>
         <source>Amount</source>
         <translation>金额</translation>
     </message>
@@ -2321,19 +2276,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>错误</translation>
     </message>
     <message>
-        <location line="-209"/>
+        <location line="-211"/>
         <source>, has not been successfully broadcast yet</source>
         <translation>，未被成功广播</translation>
     </message>
-    <message numerus="yes">
-        <location line="-36"/>
-        <source>Open for %n more block(s)</source>
-        <translation type="unfinished">
-            <numerusform>为 %n 个更多的区块开启</numerusform>
-        </translation>
-    </message>
     <message>
-        <location line="+71"/>
+        <location line="+35"/>
         <source>unknown</source>
         <translation>未知</translation>
     </message>
@@ -2354,7 +2302,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>TransactionTableModel</name>
     <message>
-        <location filename="../transactiontablemodel.cpp" line="+230"/>
+        <location filename="../transactiontablemodel.cpp" line="+226"/>
         <source>Date</source>
         <translation>日期</translation>
     </message>
@@ -2374,7 +2322,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>数量</translation>
     </message>
     <message>
-        <location line="+52"/>
+        <location line="+60"/>
         <source>Open until %1</source>
         <translation>至 %1 个数据块时开启</translation>
     </message>
@@ -2386,9 +2334,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message numerus="yes">
         <location line="-15"/>
         <source>Open for %n more block(s)</source>
-        <translation>
-            <numerusform>为 %n 个更多的区块开启</numerusform>
-        </translation>
+        <translation><numerusform>为 %n 个更多的区块开启</numerusform></translation>
     </message>
     <message>
         <location line="+6"/>
@@ -2653,7 +2599,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 <context>
     <name>WalletModel</name>
     <message>
-        <location filename="../walletmodel.cpp" line="+219"/>
+        <location filename="../walletmodel.cpp" line="+206"/>
         <source>Sending...</source>
         <translation>正在发送</translation>
     </message>
@@ -2663,7 +2609,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../bitcoinstrings.cpp" line="+33"/>
         <source>E-Gold version</source>
-        <translation>E-Gold客户端 版本</translation>
+        <translation>黑币客户端 版本</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2750,11 +2696,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>以IPv6 [host]:端口绑定给定地址</translation>
     </message>
     <message>
+        <location line="+2"/>
         <source>Stake your coins to support network and gain reward (default: 1)</source>
-        <translation type="obsolete">进行权益累积以支持E-Gold网络并获得报酬(默认: 1)</translation>
+        <translation>进行权益累积以支持黑币网络并获得报酬(默认: 1)</translation>
     </message>
     <message>
-        <location line="+6"/>
+        <location line="+5"/>
         <source>Threshold for disconnecting misbehaving peers (default: 100)</source>
         <translation>断开出现问题节点阀值（缺省: 100）</translation>
     </message>
@@ -2764,16 +2711,17 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>Number of seconds to keep misbehaving peers from reconnecting (缺省: 86400)</translation>
     </message>
     <message>
-        <location line="-43"/>
+        <location line="-44"/>
         <source>An error occurred while setting up the RPC port %u for listening on IPv4: %s</source>
         <translation>设置RPC监听端口%u时发生错误, IPv4:%s</translation>
     </message>
     <message>
+        <location line="+51"/>
         <source>Detach block and address databases. Increases shutdown time (default: 0)</source>
-        <translation type="obsolete">离线保存区块和地址数据库. 增加关机时间。 (默认: 0)</translation>
+        <translation>离线保存区块和地址数据库. 增加关机时间。 (默认: 0)</translation>
     </message>
     <message>
-        <location line="+157"/>
+        <location line="+109"/>
         <source>Error: The transaction was rejected.  This might happen if some of the coins in your wallet were already spent, such as if you used a copy of wallet.dat and coins were spent in the copy but not marked as spent here.</source>
         <translation>错误：交易被拒绝。可能由于钱包中部分金额已被使用，例如您使用了钱包数据的副本，在副本中某些金额已被使用，但在此处尚未被标记为已使用。</translation>
     </message>
@@ -2827,7 +2775,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
 </translation>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-24"/>
         <source>Accept connections from outside (default: 1 if no -proxy or -connect)</source>
         <translation>接受来自外部的连接 (缺省: 如果不带 -proxy or -connect 参数设置为1)</translation>
     </message>
@@ -2837,12 +2785,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>在IPv6模式下设置RPC监听端口 %u 失败，返回到IPv4模式: %s</translation>
     </message>
     <message>
-        <location line="+115"/>
+        <location line="+117"/>
         <source>Error initializing database environment %s! To recover, BACKUP THAT DIRECTORY, then remove everything from it except for wallet.dat.</source>
         <translation>数据库环境 %s 初始化错误。要修复，备份该目录并将其下除wallet.dat以外的文件全部删除。</translation>
     </message>
     <message>
-        <location line="-21"/>
+        <location line="-20"/>
         <source>Set maximum size of high-priority/low-fee transactions in bytes (default: 27000)</source>
         <translation>设置高优先度/低手续费交易的最大字节数 (默认: 27000)</translation>
     </message>
@@ -2854,10 +2802,10 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location line="+61"/>
         <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong E-Gold will not work properly.</source>
-        <translation>警告：请确认您计算机的本地时间。如果时钟错误，E-Gold客户端将不能正常工作。</translation>
+        <translation>警告：请确认您计算机的本地时间。如果时钟错误，黑币客户端将不能正常工作。</translation>
     </message>
     <message>
-        <location line="-30"/>
+        <location line="-31"/>
         <source>Warning: error reading wallet.dat! All keys read correctly, but transaction data or address book entries might be missing or incorrect.</source>
         <translation>警告：钱包文件wallet.dat读取失败！最重要的公钥、私钥数据都没有问题，但是交易记录或地址簿数据不正确，或者存在数据丢失。</translation>
     </message>
@@ -2867,7 +2815,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>警告：钱包文件wallet.dat损坏! 原始的钱包文件已经备份到%s目录下并重命名为{timestamp}.bak 。如果您的账户余额或者交易记录不正确，请使用您的钱包备份文件恢复。</translation>
     </message>
     <message>
-        <location line="-31"/>
+        <location line="-30"/>
         <source>Attempt to recover private keys from a corrupt wallet.dat</source>
         <translation>尝试从损坏的钱包文件wallet.dat中恢复私钥</translation>
     </message>
@@ -2877,7 +2825,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>数据块创建选项：</translation>
     </message>
     <message>
-        <location line="-59"/>
+        <location line="-62"/>
         <source>Connect only to the specified node(s)</source>
         <translation>仅连接到指定节点</translation>
     </message>
@@ -2887,22 +2835,22 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>发现自己的IP地址(缺省:不带 -externalip 参数监听时设置为1)</translation>
     </message>
     <message>
-        <location line="+92"/>
+        <location line="+94"/>
         <source>Failed to listen on any port. Use -listen=0 if you want this.</source>
         <translation>监听端口失败。请使用 -listen=0 参数。</translation>
     </message>
     <message>
-        <location line="-88"/>
+        <location line="-90"/>
         <source>Find peers using DNS lookup (default: 1)</source>
         <translation>以DNS查找方式寻找节点 (默认：1)</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Sync checkpoints policy (default: strict)</source>
         <translation>同步检测点政策 (默认：严格)</translation>
     </message>
     <message>
-        <location line="+82"/>
+        <location line="+83"/>
         <source>Invalid -tor address: &apos;%s&apos;</source>
         <translation>无效的 -tor 地址: &apos;%s&apos;</translation>
     </message>
@@ -2912,7 +2860,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>-reservebalance=&lt;amount&gt; 金额无效</translation>
     </message>
     <message>
-        <location line="-81"/>
+        <location line="-82"/>
         <source>Maximum per-connection receive buffer, &lt;n&gt;*1000 bytes (default: 5000)</source>
         <translation>每个连接的最大接收缓存，&lt;n&gt;*1000 字节(缺省：5000)</translation>
     </message>
@@ -2922,12 +2870,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>每个连接的最大发送缓存，&lt;n&gt;*1000 字节(缺省：1000)</translation>
     </message>
     <message>
-        <location line="-15"/>
+        <location line="-16"/>
         <source>Only connect to nodes in network &lt;net&gt; (IPv4, IPv6 or Tor)</source>
         <translation>仅连接至指定网络的节点&lt;net&gt;(IPv4, IPv6 或者 Tor)</translation>
     </message>
     <message>
-        <location line="+25"/>
+        <location line="+28"/>
         <source>Output extra debugging information. Implies all other -debug* options</source>
         <translation>输出额外的调试信息。相当于开启了其它所有-debug选项</translation>
     </message>
@@ -2947,12 +2895,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>SSL选项：(参见Bitcoin Wiki关于SSL设置栏目)</translation>
     </message>
     <message>
-        <location line="-71"/>
+        <location line="-74"/>
         <source>Select the version of socks proxy to use (4-5, default: 5)</source>
         <translation>选择要使用的SOCKS代理版本 (4-5, 默认 5)</translation>
     </message>
     <message>
-        <location line="+38"/>
+        <location line="+41"/>
         <source>Send trace/debug info to console instead of debug.log file</source>
         <translation>跟踪/调试信息输出到控制台，不输出到 debug.log 文件</translation>
     </message>
@@ -2977,18 +2925,18 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>客户端启动时压缩debug.log文件(缺省：no-debug模式时为1)</translation>
     </message>
     <message>
-        <location line="-39"/>
+        <location line="-42"/>
         <source>Specify connection timeout in milliseconds (default: 5000)</source>
         <translation>设置连接超时时间(缺省：5000毫秒)</translation>
     </message>
     <message>
-        <location line="+107"/>
+        <location line="+109"/>
         <source>Unable to sign checkpoint, wrong checkpointkey?
 </source>
         <translation>无法为记录点签名，错误的记录点密钥。</translation>
     </message>
     <message>
-        <location line="-79"/>
+        <location line="-80"/>
         <source>Use UPnP to map the listening port (default: 0)</source>
         <translation>使用UPnP映射监听端口 (缺省: 0)</translation>
     </message>
@@ -2998,22 +2946,22 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>使用UPnp映射监听端口(缺省: 监听状态设为1)</translation>
     </message>
     <message>
-        <location line="-24"/>
+        <location line="-25"/>
         <source>Use proxy to reach tor hidden services (default: same as -proxy)</source>
         <translation>开启代理以使用隐藏服务 (默认: 和-proxy设置相同)</translation>
     </message>
     <message>
-        <location line="+39"/>
+        <location line="+42"/>
         <source>Username for JSON-RPC connections</source>
         <translation>JSON-RPC 连接用户名</translation>
     </message>
     <message>
-        <location line="+48"/>
+        <location line="+47"/>
         <source>Verifying database integrity...</source>
         <translation>正在检查数据库完整性...</translation>
     </message>
     <message>
-        <location line="+56"/>
+        <location line="+57"/>
         <source>WARNING: syncronized checkpoint violation detected, but skipped!</source>
         <translation>警告：检测到同步记录点错误，已跳过。</translation>
     </message>
@@ -3028,18 +2976,18 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>警告：该软件版本已过时，请升级！</translation>
     </message>
     <message>
-        <location line="-47"/>
+        <location line="-48"/>
         <source>wallet.dat corrupt, salvage failed</source>
         <translation>钱包文件wallet.dat损坏，抢救备份失败</translation>
     </message>
     <message>
-        <location line="-55"/>
+        <location line="-54"/>
         <source>Password for JSON-RPC connections</source>
         <translation>JSON-RPC 连接密码
 </translation>
     </message>
     <message>
-        <location line="-81"/>
+        <location line="-84"/>
         <source>%s, you must set a rpcpassword in the configuration file:
  %s
 It is recommended you use the following random password:
@@ -3069,12 +3017,12 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>寻找使用互联网接力聊天的节点 (默认: 1) {0)?}</translation>
     </message>
     <message>
-        <location line="+4"/>
+        <location line="+5"/>
         <source>Sync time with other nodes. Disable if time on your system is precise e.g. syncing with NTP (default: 1)</source>
         <translation>自动和其它节点同步时间。如果本地计算机世界是准确的，建议关闭。(默认: 1)</translation>
     </message>
     <message>
-        <location line="+13"/>
+        <location line="+15"/>
         <source>When creating transactions, ignore inputs with value less than this (default: 0.01)</source>
         <translation>创建交易时自动忽略该值以下的数额 (默认：0.01)</translation>
     </message>
@@ -3167,12 +3115,7 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>可用加密算法 (默认: TLSv1+HIGH:!SSLv2:!aNULL:!eNULL:!AH:!3DES:@STRENGTH)</translation>
     </message>
     <message>
-        <location line="+8"/>
-        <source>Initialization sanity check failed. E-Gold is shutting down.</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+45"/>
+        <location line="+53"/>
         <source>Error: Wallet unlocked for staking only, unable to create transaction.</source>
         <translation>错误：无法创建交易，已解锁的钱包仅用于权益累积。</translation>
     </message>
@@ -3182,33 +3125,33 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>警告：发现无效的记录点。所显示的交易信息未必正确！请升级客户端或联系开发者。</translation>
     </message>
     <message>
-        <location line="-155"/>
+        <location line="-158"/>
         <source>This help message</source>
         <translation>本帮助信息
 </translation>
     </message>
     <message>
-        <location line="+93"/>
+        <location line="+95"/>
         <source>Wallet %s resides outside data directory %s.</source>
         <translation>钱包 %s 位于数据目录 %s 之外.</translation>
     </message>
     <message>
         <location line="+1"/>
         <source>Cannot obtain a lock on data directory %s.  E-Gold is probably already running.</source>
-        <translation>无法从数据目录 %s 获得锁定.  E-Gold客户端可能已在运行中.</translation>
+        <translation>无法从数据目录 %s 获得锁定.  黑币客户端可能已在运行中.</translation>
     </message>
     <message>
-        <location line="-96"/>
+        <location line="-98"/>
         <source>E-Gold</source>
-        <translation>E-Gold</translation>
+        <translation>黑币</translation>
     </message>
     <message>
-        <location line="+137"/>
+        <location line="+140"/>
         <source>Unable to bind to %s on this computer (bind returned error %d, %s)</source>
         <translation>无法绑定本机端口 %s  (返回错误消息 %d, %s)</translation>
     </message>
     <message>
-        <location line="-127"/>
+        <location line="-130"/>
         <source>Connect through socks proxy</source>
         <translation>通过socks代理连接</translation>
     </message>
@@ -3218,12 +3161,12 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>使用 -addnode, -seednode 和 -connect 选项时允许查询DNS</translation>
     </message>
     <message>
-        <location line="+119"/>
+        <location line="+122"/>
         <source>Loading addresses...</source>
         <translation>正在加载地址簿...</translation>
     </message>
     <message>
-        <location line="-14"/>
+        <location line="-15"/>
         <source>Error loading blkindex.dat</source>
         <translation>blkindex.dat 文件加载出错</translation>
     </message>
@@ -3273,7 +3216,7 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>无法解析 -externalip 地址: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="-25"/>
+        <location line="-24"/>
         <source>Invalid amount for -paytxfee=&lt;amount&gt;: &apos;%s&apos;</source>
         <translation>非法金额 -paytxfee=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
@@ -3298,19 +3241,19 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>金额不足</translation>
     </message>
     <message>
-        <location line="-33"/>
+        <location line="-34"/>
         <source>Loading block index...</source>
         <translation>正在加载数据块索引...</translation>
     </message>
     <message>
-        <location line="-101"/>
+        <location line="-103"/>
         <source>Add a node to connect to and attempt to keep the connection open</source>
         <translation>添加节点并与其保持连接</translation>
     </message>
     <message>
-        <location line="+119"/>
+        <location line="+122"/>
         <source>Unable to bind to %s on this computer. E-Gold is probably already running.</source>
-        <translation>无法绑定到该计算机上的 %s. E-Gold客户端可能已在运行中。</translation>
+        <translation>无法绑定到该计算机上的 %s. 黑币客户端可能已在运行中。</translation>
     </message>
     <message>
         <location line="-97"/>
@@ -3323,7 +3266,7 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>无效的数量。 -mininput=&lt;amount&gt;: &apos;%s&apos;</translation>
     </message>
     <message>
-        <location line="+26"/>
+        <location line="+25"/>
         <source>Loading wallet...</source>
         <translation>正在加载钱包...</translation>
     </message>
@@ -3333,8 +3276,9 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>无法降级钱包</translation>
     </message>
     <message>
+        <location line="+1"/>
         <source>Cannot initialize keypool</source>
-        <translation type="obsolete">无法初始化密钥池。</translation>
+        <translation>无法初始化密钥池。</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -3352,7 +3296,7 @@ alertnotify=echo %%s | mail -s &quot;E-Gold Alert&quot; admin@foo.com
         <translation>加载完成</translation>
     </message>
     <message>
-        <location line="-164"/>
+        <location line="-167"/>
         <source>To use the %s option</source>
         <translation>使用 %s 选项</translation>
     </message>
