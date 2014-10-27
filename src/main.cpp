@@ -2911,6 +2911,16 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
         cPeerBlockCounts.input(pfrom->nStartingHeight);
 
+        // Be more aggressive with blockchain download. Send new getblocks() message after connection
+        // to new node if waited longer than MAX_TIME_PER_BLOCK_SEND.
+        int64_t TimeSinceBestBlock = GetTime() - nTimeBestReceived;
+        if (TimeSinceBestBlock > MAX_TIME_PER_BLOCK_SEND) {
+                printf("INFO: Waiting %"PRIx64" sec which is too long. Sending GetBlocks(0)\n", TimeSinceBestBlock);
+                pfrom->PushGetBlocks(pindexBest, uint256(0));
+        }
+
+
+
         // ppcoin: ask for pending sync-checkpoint if any
         if (!IsInitialBlockDownload())
             Checkpoints::AskForPendingSyncCheckpoint(pfrom);
@@ -3084,7 +3094,11 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
                         // download node to accept as orphan (proof-of-stake
                         // block might be rejected by stake connection check)
                         vector<CInv> vInv;
-                        vInv.push_back(CInv(MSG_BLOCK, GetLastBlockIndex(pindexBest, false)->GetBlockHash()));
+                        if (nBestHeight > HIGH_BLOCK_INDEX) {
+                            vInv.push_back(CInv(MSG_BLOCK, hashHighBlock));
+                        } else {
+                            vInv.push_back(CInv(MSG_BLOCK, GetLastBlockIndex(pindexBest, false)->GetBlockHash()));
+                        }
                         pfrom->PushMessage("inv", vInv);
                         pfrom->hashContinue = 0;
                     }
@@ -3131,7 +3145,7 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         // Send the rest of the chain
         if (pindex)
             pindex = pindex->pnext;
-        int nLimit = 500;
+        int nLimit = 5000; //was 500
         printf("getblocks %d to %s limit %d\n", (pindex ? pindex->nHeight : -1), hashStop.ToString().substr(0,20).c_str(), nLimit);
         for (; pindex; pindex = pindex->pnext)
         {
@@ -3281,8 +3295,16 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         CInv inv(MSG_BLOCK, hashBlock);
         pfrom->AddInventoryKnown(inv);
 
-        if (ProcessBlock(pfrom, &block))
+        if (ProcessBlock(pfrom, &block)) {
             mapAlreadyAskedFor.erase(inv);
+        } else {
+            int64_t TimeSinceBestBlock = GetTime() - nTimeBestReceived;
+            if (TimeSinceBestBlock > MAX_TIME_PER_BLOCK_SEND) {
+                printf("INFO: Waiting %"PRIx64" sec which is too long. Sending GetBlocks(0)\n", TimeSinceBestBlock);
+                pfrom->PushGetBlocks(pindexBest, uint256(0));
+            }
+        }
+
         if (block.nDoS) pfrom->Misbehaving(block.nDoS);
     }
 

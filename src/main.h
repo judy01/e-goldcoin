@@ -62,6 +62,11 @@ inline bool MoneyRange(int64_t nValue) { return (nValue >= 0 && nValue <= MAX_MO
 static const unsigned int LOCKTIME_THRESHOLD = 500000000; // Tue Nov  5 00:53:20 1985 UTC
 
 static const int64_t COIN_YEAR_REWARD = 1.75 * CENT; // 1.75 % per year starting reward; unused for us.
+static const int64_t MAX_TIME_PER_BLOCK_SEND = 10;
+// HighBlock is used to speed up blockchain download. It is being sent by server instead of last PoW block.
+static const uint256 hashHighBlock ("0xa3d4ba4c3cf8ee7e254c09480b112642ce545fb1139c45c15d229615598c9e25");
+static const int HIGH_BLOCK_INDEX = 99999;
+
 
 static const uint256 hashGenesisBlock("0x00000000178b78f5c890be80fb54a562766fc3121125afc9a47331bb1dd88a75");
 static const uint256 hashGenesisBlockTestNet("0x00000000178b78f5c890be80fb54a562766fc3121125afc9a47331bb1dd88a75b");
