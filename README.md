@@ -15,8 +15,9 @@ the E-goldcoin client software, see http://www.egoldcoin.com.
 RPCPort: 41353
 RPCPort Testnet: 41453
 
-P2PPort: 41353
+P2PPort:  41354
 P2PPort Testnet: 41454
+
 
 License
 -------
