@@ -13,8 +13,9 @@ packages:
 - "faketime"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/E-gold-team/e-goldcoin.git"
+- "url": "file:///home/bushido/e-goldcoin"
   "dir": "e-gold"
+  "commit": master
 files:
 - "qt-win32-4.8.5-gitian-r5.zip"
 - "boost-win32-1.55.0-gitian-r6.zip"
@@ -41,16 +42,18 @@ script: |
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC
   ln -s $STAGING $HOME/qt
-  $HOME/staging/host/bin/qmake -spec unsupported/win32-g++-cross MINIUPNPC_LIB_PATH=$STAGING MINIUPNPC_INCLUDE_PATH=$STAGING BDB_LIB_PATH=$STAGING BDB_INCLUDE_PATH=$STAGING BOOST_LIB_PATH=$STAGING BOOST_INCLUDE_PATH=$STAGING BOOST_LIB_SUFFIX=-mt-s BOOST_THREAD_LIB_SUFFIX=_win32-mt-s OPENSSL_LIB_PATH=$STAGING OPENSSL_INCLUDE_PATH=$STAGING QRENCODE_LIB_PATH=$STAGING QRENCODE_INCLUDE_PATH=$STAGING USE_QRCODE=1 INCLUDEPATH=$STAGING DEFINES=BOOST_THREAD_USE_LIB BITCOIN_NEED_QT_PLUGINS=1 QMAKE_LRELEASE=lrelease QMAKE_CXXFLAGS=-frandom-seed=vertcoin USE_BUILD_INFO=1 USE_SSE2=1 USE_UPNP=1
-  make $MAKEOPTS
-  $HOST-strip release/e-gold-qt.exe
+  $HOME/staging/host/bin/qmake -spec unsupported/win32-g++-cross MINIUPNPC_LIB_PATH=$STAGING MINIUPNPC_INCLUDE_PATH=$STAGING BDB_LIB_PATH=$STAGING BDB_INCLUDE_PATH=$STAGING BOOST_LIB_PATH=$STAGING BOOST_INCLUDE_PATH=$STAGING BOOST_LIB_SUFFIX=-mt-s BOOST_THREAD_LIB_SUFFIX=_win32-mt-s OPENSSL_LIB_PATH=$STAGING OPENSSL_INCLUDE_PATH=$STAGING QRENCODE_LIB_PATH=$STAGING QRENCODE_INCLUDE_PATH=$STAGING USE_QRCODE=1 INCLUDEPATH=$STAGING DEFINES=BOOST_THREAD_USE_LIB BITCOIN_NEED_QT_PLUGINS=1 QMAKE_LRELEASE=lrelease QMAKE_CXXFLAGS=-frandom-seed=egold USE_BUILD_INFO=1 USE_SSE2=1 USE_UPNP=1 egold-qt.pro
+  ls -la release
+  make $MAKEOPTS  
+  $HOST-strip release/E-Gold-qt.exe
   cp release/E-Gold-qt.exe $OUTDIR/
   #
   cd src
   export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
   export FAKETIME=$REFERENCE_DATETIME
   export TZ=UTC
-  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING e-gold.exe USE_UPNP=1 DEBUGFLAGS="-frandom-seed=e-gold" USE_SSE2=1
+  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING USE_UPNP=1 DEBUGFLAGS="-frandom-seed=egold" USE_SSE2=1
+  ls -la
   $HOST-strip egdd.exe
   mkdir $OUTDIR/daemon
   cp egdd.exe $OUTDIR/daemon

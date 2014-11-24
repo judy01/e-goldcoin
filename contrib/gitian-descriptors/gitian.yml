@@ -14,8 +14,9 @@ packages:
 - "libpng12-dev"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/E-gold-team/e-goldcoin.git"
+- "url": "file:///home/bushido/e-goldcoin"
   "dir": "e-gold"
+  "commit": master
 files:
 - "e-gold-deps-linux32-gitian-r2.zip"
 - "e-gold-deps-linux64-gitian-r2.zip"
@@ -34,8 +35,8 @@ script: |
   cd build/e-gold
   mkdir -p $OUTDIR/src
   git archive HEAD | tar -x -C $OUTDIR/src
-  cp $OUTDIR/src/doc/README.md $OUTDIR
-  cp $OUTDIR/src/COPYING $OUTDIR
+  #cp $OUTDIR/src/doc/README.md $OUTDIR
+  #cp $OUTDIR/src/COPYING $OUTDIR
   cd src
   make -f makefile.unix STATIC=1 OPENSSL_INCLUDE_PATH="$INSTDIR/include" OPENSSL_LIB_PATH="$INSTDIR/lib" BOOST_LIB_SUFFIX="-mt" $MAKEOPTS egdd USE_UPNP=0 DEBUGFLAGS= USE_SSE2=1
   mkdir -p $OUTDIR/bin/$GBUILD_BITS
