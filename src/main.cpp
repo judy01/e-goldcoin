@@ -2911,15 +2911,6 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
 
         cPeerBlockCounts.input(pfrom->nStartingHeight);
 
-        // Be more aggressive with blockchain download. Send new getblocks() message after connection
-        // to new node if waited longer than MAX_TIME_PER_BLOCK_SEND.
-        int64_t TimeSinceBestBlock = GetTime() - nTimeBestReceived;
-        if (TimeSinceBestBlock > MAX_TIME_PER_BLOCK_SEND) {
-                printf("INFO: Waiting %"PRIx64" sec which is too long. Sending GetBlocks(0)\n", TimeSinceBestBlock);
-                pfrom->PushGetBlocks(pindexBest, uint256(0));
-        }
-
-
 
         // ppcoin: ask for pending sync-checkpoint if any
         if (!IsInitialBlockDownload())
@@ -3287,15 +3278,9 @@ bool static ProcessMessage(CNode* pfrom, string strCommand, CDataStream& vRecv, 
         CInv inv(MSG_BLOCK, hashBlock);
         pfrom->AddInventoryKnown(inv);
 
-        if (ProcessBlock(pfrom, &block)) {
+        if (ProcessBlock(pfrom, &block))
             mapAlreadyAskedFor.erase(inv);
-        } else {
-            int64_t TimeSinceBestBlock = GetTime() - nTimeBestReceived;
-            if (TimeSinceBestBlock > MAX_TIME_PER_BLOCK_SEND) {
-                printf("INFO: Waiting %"PRIx64" sec which is too long. Sending GetBlocks(0)\n", TimeSinceBestBlock);
-                pfrom->PushGetBlocks(pindexBest, uint256(0));
-            }
-        }
+
 
         if (block.nDoS) pfrom->Misbehaving(block.nDoS);
     }
