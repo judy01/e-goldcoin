@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE TS>
-<TS version="2.0" language="zh_CN">
-<defaultcodec>UTF-8</defaultcodec>
+<TS version="2.1" language="zh_CN">
 <context>
     <name>AboutDialog</name>
     <message>
@@ -1365,6 +1364,12 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
         <translation>所显示的信息尚未更新，建立连接后钱包客户端会自动和网络进行同步，但目前该过程尚未完成。</translation>
     </message>
     <message>
+        <location line="+33"/>
+        <location line="+231"/>
+        <source>Make sure to backup your wallet regularly in a safe place! For example an USB Stick, SDCard, external Harddrive or another PC.</source>
+        <translation>请务必定期在安全处备份您的钱包！例如USB, SD卡, 外接硬盘或另一台个人电脑</translation>
+    </message>
+    <message>
         <location line="-160"/>
         <source>Stake:</source>
         <translation>用于权益累积：</translation>
@@ -1786,7 +1791,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../sendcoinsdialog.cpp" line="-173"/>
         <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
     <message>
         <location line="+15"/>
@@ -1964,7 +1969,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
         <source>Enter a E-Gold address (e.g. EVSuBFAggF6N9XiT8MhiVDnn7XXXTQXqpv)</source>
-        <translation type="unfinished"></translation>
+        <translation></translation>
     </message>
 </context>
 <context>
@@ -2328,7 +2333,7 @@ This label turns red, if the priority is smaller than &quot;medium&quot;.
     <message numerus="yes">
         <location line="-36"/>
         <source>Open for %n more block(s)</source>
-        <translation type="unfinished">
+        <translation>
             <numerusform>为 %n 个更多的区块开启</numerusform>
         </translation>
     </message>
