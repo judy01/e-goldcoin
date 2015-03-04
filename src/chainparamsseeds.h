@@ -6,7 +6,7 @@
 // Each line contains a 16-byte IPv6 address and a port.
 // IPv4 as well as onion addresses are wrapped inside a IPv6 address accordingly.
 static SeedSpec6 pnSeed6_main[] = {
-//todo: add seeds here
+    {{0x26,0x10,0x01,0xc0,0x00,0x00,0x00,0x06,0x02,0x1e,0xc9,0xff,0xfe,0xdd,0xea,0x1b}, 15714}
 };
 
 static SeedSpec6 pnSeed6_test[] = {

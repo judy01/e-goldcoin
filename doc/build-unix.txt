@@ -14,10 +14,10 @@ To Build
 --------
 
 cd src/
-make -f makefile.unix            # Headless eggd (e-gold daemon)
+make -f makefile.unix            # Headless E-Gold
 
 See readme-qt.rst for instructions on building E-Gold QT,
-the graphical E-Gold QT.
+the graphical E-Gold client.
 
 Dependencies
 ------------
@@ -76,7 +76,7 @@ Dependency Build Instructions: Gentoo
 emerge -av1 --noreplace boost openssl sys-libs/db
 
 Take the following steps to build (no UPnP support):
- cd ${E-GOLDCOIN_DIR}/src
+ cd ${E-GOLD_DIR}/src
  make -f makefile.unix USE_UPNP=
  strip egdd
 
@@ -113,7 +113,7 @@ sudo su
 
 Security
 --------
-To help make your E-Gold installation more secure by making certain attacks impossible to
+To help make your e-gold installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, you can take the following measures:
 
 * Position Independent Executable
@@ -138,7 +138,7 @@ exploit even if a vulnerability is found, you can take the following measures:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, E-Gold should be built with a non-executable stack
+    vulnerable buffers are found. By default, e-gold should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.

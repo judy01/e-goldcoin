@@ -76,9 +76,9 @@ make -f Makefile.mingw
 mkdir miniupnpc
 cp *.h miniupnpc/
 
-BlackCoin
+E-Gold Daemon (egdd)
 -------
 DOS prompt:
-cd \e-goldcoin\src
+cd \e-gold\src
 mingw32-make -f makefile.mingw
 strip egdd.exe

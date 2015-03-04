@@ -2,7 +2,7 @@
 #define GUICONSTANTS_H
 
 /* Milliseconds between model updates */
-static const int MODEL_UPDATE_DELAY = 20;
+static const int MODEL_UPDATE_DELAY = 250;
 
 /* AskPassphraseDialog -- Maximum passphrase length */
 static const int MAX_PASSPHRASE_SIZE = 1024;
@@ -27,9 +27,6 @@ static const int TOOLTIP_WRAP_THRESHOLD = 80;
 
 /* Maximum allowed URI length */
 static const int MAX_URI_LENGTH = 255;
-
-/* Number of frames in spinner animation */
-#define SPINNER_FRAMES 35
 
 /* QRCodeDialog -- size of exported QR Code image */
 #define EXPORT_IMAGE_SIZE 256
