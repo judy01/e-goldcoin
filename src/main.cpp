@@ -973,7 +973,7 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         nSubsidy = 0 * COIN; // Allow more empty PoWBlocks to get staking going and move coins around
 
     if (fDebug && GetBoolArg("-printcreation", false))
-        printf("GetProofOfWorkReward() : create=%s nSubsidy=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
+        printf("GetProofOfWorkReward() : create=%s nSubsidy=%lld\n", FormatMoney(nSubsidy).c_str(), nSubsidy);
 
     return nSubsidy + nFees;
 }
@@ -988,7 +988,7 @@ int64_t GetProofOfStakeReward(int64_t nCoinAge, int64_t nFees)
     int64_t nSubsidy = nCoinAge * nCoinYearReward * 33 / (365 * 33 + 8);
 
     if (fDebug && GetBoolArg("-printcreation", false))
-        printf("GetProofOfStakeReward(): create=%s nCoinAge=%"PRId64"\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
+        printf("GetProofOfStakeReward(): create=%s nCoinAge=%lld\n", FormatMoney(nSubsidy).c_str(), nCoinAge);
 
     return nSubsidy + nFees;
 }
