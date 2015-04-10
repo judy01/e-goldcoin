@@ -6,7 +6,7 @@ What is E-goldCoin?
 ----------------
 E-goldCoin is a lite version of peercoin using a proof-of-stake algorithm.
  - 60 seconds block targets
- - 1%
+ - 1,75% initial reward - halves every 4 years
  - ~84 million total coins
 
 For more information, as well as an immediately useable, binary version of
